@@ -1,6 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1783418931.15252 "c:/Users/giann/Documents/GitHub/TESI/frontespizio.tex" "frontespizio.pdf" "frontespizio" 1783418931.89365 0
-  "C:/Users/giann/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1783418827 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+["pdflatex"] 1783545087.50705 "c:/Users/giann/Documents/GitHub/TESI/chapters/frontespizio/frontespizio.tex" "frontespizio.pdf" "frontespizio" 1783545088.2372 0
+  "../../images/logo_unibo.png" 1783418659 294607 6eb2442abf12735ed1fd4c38dc32d3fd ""
+  "C:/Users/giann/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1783545016 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/giann/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1772489214 13333848 263a19a42d0c9631bd7b1402601012ce ""
   "C:/Users/giann/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx10.tfm" 1136765053 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "C:/Users/giann/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -43,10 +44,9 @@
   "C:/Users/giann/AppData/Local/Programs/MiKTeX/tex/latex/graphics/keyval.sty" 1749322634 2671 d9941f4bf4750e9b0603c9a2ec54693b ""
   "C:/Users/giann/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty" 1749322634 4023 e66acf578d6b564c4670fb57ff336a7a ""
   "C:/Users/giann/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1761202581 30662 bfd6e864f4ffc5018b0e2b6260c3181c ""
-  "c:/Users/giann/Documents/GitHub/TESI/frontespizio.tex" 1783418930 4768 759fcbd69ee3cae794975b6317037f4e ""
-  "frontespizio.aux" 1783418931 172 3a5be4c2e6d9e5c37161bda2caf96064 "pdflatex"
-  "frontespizio.tex" 1783418930 4768 759fcbd69ee3cae794975b6317037f4e ""
-  "images/logo_unibo.png" 1783418659 294607 6eb2442abf12735ed1fd4c38dc32d3fd ""
+  "c:/Users/giann/Documents/GitHub/TESI/chapters/frontespizio/frontespizio.tex" 1783545086 4775 bcd4e905f199c061a055f5048ff6f26a ""
+  "frontespizio.aux" 1783545088 172 3a5be4c2e6d9e5c37161bda2caf96064 "pdflatex"
+  "frontespizio.tex" 1783545086 4775 bcd4e905f199c061a055f5048ff6f26a ""
   (generated)
   "frontespizio.aux"
   "frontespizio.log"

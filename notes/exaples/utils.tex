@@ -1,0 +1,163 @@
+% ============================================================================
+% UTILS LaTeX - Snippet utili per la scrittura tesi
+% Nota: questo file e' una raccolta di esempi da copiare/incollare.
+% ============================================================================
+
+% -------------------------
+% Struttura documento
+% -------------------------
+\chapter{Titolo Capitolo}
+\label{chap:capitolo}
+
+\section{Titolo Sezione}
+\label{sec:sezione}
+
+\subsection{Titolo Sottosezione}
+\label{subsec:sottosezione}
+
+\subsubsection{Titolo Sottosottosezione}
+\label{subsubsec:tema}
+
+% -------------------------
+% Riferimenti incrociati
+% -------------------------
+Vedi il Capitolo~\ref{chap:capitolo}, la Sezione~\ref{sec:sezione}
+e la Figura~\ref{fig:esempio}.
+
+% -------------------------
+% Liste
+% -------------------------
+\begin{enumerate}
+\item primo oggetto
+\item secondo oggetto
+\item terzo oggetto
+\item quarto oggetto
+\end{enumerate}
+
+\begin{itemize}
+\item primo oggetto
+\item secondo oggetto
+\end{itemize}
+
+\begin{description}
+\item[OGGETTO1] prima descrizione.
+\item[OGGETTO2] seconda descrizione.
+\item[OGGETTO3] terza descrizione.
+\end{description}
+
+% -------------------------
+% Figure
+% -------------------------
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.60\textwidth]{images/nome_immagine.png}
+\caption[Legenda breve per indice]{Legenda completa sotto la figura.}
+\label{fig:esempio}
+\end{figure}
+
+% Due immagini affiancate (richiede pacchetto subcaption)
+% \usepackage{subcaption}
+\begin{figure}[htbp]
+\centering
+\begin{subfigure}[b]{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{images/fig_a.png}
+\caption{Caso A}
+\label{fig:caso-a}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{images/fig_b.png}
+\caption{Caso B}
+\label{fig:caso-b}
+\end{subfigure}
+\caption{Confronto tra due casi.}
+\label{fig:confronto-casi}
+\end{figure}
+
+% -------------------------
+% Tabelle
+% -------------------------
+\begin{table}[htbp]
+\centering
+\begin{tabular}{r|c|c}
+\hline \hline
+$(1,1)$ & $(1,2)$ & $(1,3)$\\
+\hline
+$(2,1)$ & $(2,2)$ & $(2,3)$\\
+\hline
+$(3,1)$ & $(3,2)$ & $(3,3)$\\
+\hline \hline
+\end{tabular}
+\caption[Legenda breve tabella]{Legenda completa tabella.}
+\label{tab:uno}
+\end{table}
+
+% Variante consigliata (richiede booktabs)
+% \usepackage{booktabs}
+% \begin{tabular}{lcc}
+% \toprule
+% Colonna A & Colonna B & Colonna C \\
+% \midrule
+% Valore 1 & 10 & 20 \\
+% Valore 2 & 12 & 18 \\
+% \bottomrule
+% \end{tabular}
+
+% -------------------------
+% Formule
+% -------------------------
+Formula inline: $E = mc^2$.
+
+\begin{equation}
+f(x) = ax^2 + bx + c
+\label{eq:parabola}
+\end{equation}
+
+\begin{align}
+y &= mx + q \\
+z &= \alpha x + \beta
+\end{align}
+
+% -------------------------
+% Citazioni e bibliografia
+% -------------------------
+Riferimento singolo: \cite{K1}.
+Riferimento multiplo: \cite{K1,K2,K3}.
+
+% -------------------------
+% URL, note, enfasi
+% -------------------------
+% (richiede hyperref)
+Link: \url{https://www.example.com}
+Link con testo: \href{https://www.example.com}{Sito di esempio}
+
+Testo in \textbf{grassetto}, \textit{corsivo} e \textsc{maiuscoletto}.
+Nota a pie' di pagina\footnote{Questa e' una nota di esempio.}.
+
+% -------------------------
+% Codice/listati
+% -------------------------
+\begin{verbatim}
+In questo ambiente posso scrivere come voglio,
+incluso il simbolo % senza commentare.
+\end{verbatim}
+
+% Alternativa migliore per codice: listings
+% \usepackage{listings}
+% \begin{lstlisting}[language=Python, caption={Esempio Python}, label={lst:py-esempio}]
+% def hello(name):
+%     return f"Ciao {name}"
+% \end{lstlisting}
+
+% -------------------------
+% Comandi personalizzati
+% -------------------------
+% Da mettere nel preambolo del file principale:
+% \newcommand{\pmbok}{PMBOK~8}
+% \newcommand{\prince}{PRINCE2}
+% \newcommand{\agile}{Agile}
+
+% Uso nel testo:
+% In questo capitolo confrontiamo \pmbok{} e \prince{}.
