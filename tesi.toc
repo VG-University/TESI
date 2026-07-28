@@ -5,25 +5,23 @@
 \contentsline {section}{\numberline {0.2}Metodologia di analisi}{i}{}%
 \contentsline {section}{\numberline {0.3}Struttura del documento}{i}{}%
 \contentsline {chapter}{\numberline {1}Metodi tradizionali di Project Management}{1}{}%
-\contentsline {section}{\numberline {1.1}PMBOK 8}{1}{}%
-\contentsline {subsection}{\numberline {1.1.1}Principi e framework}{1}{}%
-\contentsline {subsection}{\numberline {1.1.2}Applicazione pratica}{1}{}%
-\contentsline {section}{\numberline {1.2}PRINCE2}{1}{}%
-\contentsline {subsection}{\numberline {1.2.1}Principi e processi}{1}{}%
-\contentsline {subsection}{\numberline {1.2.2}Ruoli e governance}{1}{}%
-\contentsline {section}{\numberline {1.3}Confronto tra PMBOK 8 e PRINCE2}{1}{}%
-\contentsline {chapter}{\numberline {2}Approccio Agile}{3}{}%
-\contentsline {section}{\numberline {2.1}Valori e principi}{3}{}%
-\contentsline {section}{\numberline {2.2}Framework e pratiche}{3}{}%
-\contentsline {section}{\numberline {2.3}Contesti di adozione}{3}{}%
+\contentsline {section}{\numberline {1.1}Cos'\`e il Project Management: origini e definizioni}{1}{}%
+\contentsline {subsection}{\numberline {1.1.1}Evoluzione storica: da Gantt a PERT/CPM}{1}{}%
+\contentsline {subsection}{\numberline {1.1.2}Definizioni di riferimento (PMI, ISO 21500)}{1}{}%
+\contentsline {section}{\numberline {1.2}PMBOK 8}{2}{}%
+\contentsline {subsection}{\numberline {1.2.1}Principi e framework}{2}{}%
+\contentsline {subsection}{\numberline {1.2.2}Applicazione pratica}{2}{}%
+\contentsline {section}{\numberline {1.3}PRINCE2}{2}{}%
+\contentsline {subsection}{\numberline {1.3.1}Principi e processi}{2}{}%
+\contentsline {subsection}{\numberline {1.3.2}Ruoli e governance}{2}{}%
+\contentsline {section}{\numberline {1.4}Confronto interno tra PMBOK 8 e PRINCE2}{2}{}%
+\contentsline {chapter}{\numberline {2}Approcci Agile al Project Management}{3}{}%
 \contentsline {chapter}{\numberline {3}Confronto tra approcci tradizionali e Agile}{5}{}%
 \contentsline {section}{\numberline {3.1}Affinit\`a}{5}{}%
 \contentsline {section}{\numberline {3.2}Differenze}{5}{}%
-\contentsline {section}{\numberline {3.3}Scenari di integrazione}{5}{}%
-\contentsline {chapter}{\numberline {4}Stato attuale delle aziende}{7}{}%
-\contentsline {section}{\numberline {4.1}Trend di adozione}{7}{}%
-\contentsline {section}{\numberline {4.2}Approcci prevalenti}{7}{}%
-\contentsline {section}{\numberline {4.3}Sfide e opportunit\`a}{7}{}%
+\contentsline {section}{\numberline {3.3}Scenari di integrazione: approcci ibridi}{5}{}%
+\contentsline {section}{\numberline {3.4}Verso una definizione sintetica di Project Management}{6}{}%
+\contentsline {chapter}{\numberline {4}Stato attuale del Project Management nelle aziende IT}{7}{}%
 \contentsline {chapter}{Conclusioni}{9}{}%
 \contentsline {chapter}{\numberline {A}Prima Appendice}{11}{}%
 \contentsline {chapter}{\numberline {B}Seconda Appendice}{13}{}%

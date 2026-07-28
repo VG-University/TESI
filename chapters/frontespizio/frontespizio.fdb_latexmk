@@ -1,11 +1,10 @@
 # Fdb version 4
-["pdflatex"] 1783545087.50705 "c:/Users/giann/Documents/GitHub/TESI/chapters/frontespizio/frontespizio.tex" "frontespizio.pdf" "frontespizio" 1783545088.2372 0
+["pdflatex"] 1785264355.01118 "c:/Users/giann/Documents/GitHub/TESI/chapters/frontespizio/frontespizio.tex" "frontespizio.pdf" "frontespizio" 1785264355.76091 0
   "../../images/logo_unibo.png" 1783418659 294607 6eb2442abf12735ed1fd4c38dc32d3fd ""
-  "C:/Users/giann/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1783545016 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+  "C:/Users/giann/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1784307986 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/giann/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1772489214 13333848 263a19a42d0c9631bd7b1402601012ce ""
   "C:/Users/giann/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx10.tfm" 1136765053 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "C:/Users/giann/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
-  "C:/Users/giann/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbxti10.tfm" 1136765053 1532 9162035f4e7176612125649e348e2195 ""
   "C:/Users/giann/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmcsc10.tfm" 1136765053 1300 63a6111ee6274895728663cf4b4e7e81 ""
   "C:/Users/giann/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi12.tfm" 1136765053 1524 4414a8315f39513458b80dfc63bff03a ""
   "C:/Users/giann/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr10.tfm" 1136765053 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
@@ -15,7 +14,6 @@
   "C:/Users/giann/AppData/Local/Programs/MiKTeX/fonts/tfm/public/latex-fonts/lasy10.tfm" 1136765053 520 82a3d37183f34b6eb363a161dfc002c2 ""
   "C:/Users/giann/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1247596666 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "C:/Users/giann/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
-  "C:/Users/giann/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb" 1247596667 36554 b67dc2cfa451409e100b3fcf5f506509 ""
   "C:/Users/giann/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb" 1247596667 32001 6aeea3afe875097b1eb0da29acd61e28 ""
   "C:/Users/giann/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/giann/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -44,9 +42,9 @@
   "C:/Users/giann/AppData/Local/Programs/MiKTeX/tex/latex/graphics/keyval.sty" 1749322634 2671 d9941f4bf4750e9b0603c9a2ec54693b ""
   "C:/Users/giann/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty" 1749322634 4023 e66acf578d6b564c4670fb57ff336a7a ""
   "C:/Users/giann/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1761202581 30662 bfd6e864f4ffc5018b0e2b6260c3181c ""
-  "c:/Users/giann/Documents/GitHub/TESI/chapters/frontespizio/frontespizio.tex" 1783545086 4775 bcd4e905f199c061a055f5048ff6f26a ""
-  "frontespizio.aux" 1783545088 172 3a5be4c2e6d9e5c37161bda2caf96064 "pdflatex"
-  "frontespizio.tex" 1783545086 4775 bcd4e905f199c061a055f5048ff6f26a ""
+  "c:/Users/giann/Documents/GitHub/TESI/chapters/frontespizio/frontespizio.tex" 1785264354 4778 a53b332b170b040df0581f568c90a3c4 ""
+  "frontespizio.aux" 1785264355 172 3a5be4c2e6d9e5c37161bda2caf96064 "pdflatex"
+  "frontespizio.tex" 1785264354 4778 a53b332b170b040df0581f568c90a3c4 ""
   (generated)
   "frontespizio.aux"
   "frontespizio.log"
