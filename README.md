@@ -2,6 +2,8 @@
 
 Questa repository è un progetto LaTeX utilizzato per scrivere una tesi in project management.
 
+📄 **[Leggi la tesi online](https://vg-university.github.io/TESI/)** — aggiornata automaticamente ad ogni push su `main`.
+
 ## Ambito della tesi
 
 - Metodi tradizionali: PMBOK 8 e PRINCE2

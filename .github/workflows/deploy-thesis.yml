@@ -1,0 +1,59 @@
+name: Compila e pubblica la tesi
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Evita deploy sovrapposti; lascia terminare quello in corso.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      # Il frontespizio è un documento a sé: va compilato per primo perché
+      # tesi.tex lo include già come PDF (\includepdf{chapters/frontespizio/frontespizio.pdf}).
+      # work_in_root_file_dir compila dentro chapters/frontespizio/, così il
+      # riferimento relativo ../../images/logo_unibo.png funziona correttamente.
+      - name: Compila il frontespizio
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: chapters/frontespizio/frontespizio.tex
+          work_in_root_file_dir: true
+
+      - name: Compila la tesi
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: tesi.tex
+
+      - name: Prepara il sito da pubblicare
+        run: |
+          mkdir -p site
+          cp tesi.pdf site/tesi.pdf
+          cp .github/pages/index.html site/index.html
+
+      - name: Configura GitHub Pages
+        uses: actions/configure-pages@v6
+
+      - name: Carica l'artefatto per Pages
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: ./site
+
+      - name: Pubblica su GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
