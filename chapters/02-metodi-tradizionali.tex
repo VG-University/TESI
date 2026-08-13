@@ -16,7 +16,7 @@ Accenna in poche righe all'origine storica (Gantt, PERT, CPM) per spiegare perch
 Definizione di riferimento del PMI/PMBOK e quella della norma ISO 21500
 
 \section{PMBOK 8}
-PMBOK è lo standard standard del PMI, cos'è e come nasce.
+PMBOK \`e lo standard standard del PMI, cos'\`e e come nasce.
 
 \subsection{Principi e framework}
 
@@ -28,15 +28,47 @@ Esempio concreto di come si applica il PMBOK a un progetto IT reale evidenziando
 
 \section{PRINCE2}
 
-Prince 2 è l'alternativa al PMBOK non considerata uno standard come il PMBOK, ma comunque molto diffusa in ambito pubblico e privato.
+A differenza del PMBOK, che si presenta come un corpo di conoscenza (\emph{body of knowledge}) mantenuto da un'associazione professionale, PRINCE2 (\emph{PRojects IN Controlled Environments}) \`e un metodo strutturato di gestione progetti, applicabile a prescindere da scala, tipologia, organizzazione, area geografica o cultura del progetto \cite{prince2course}. PRINCE2 nasce nel 1989 per iniziativa della CCTA (\emph{Central Computer and Telecommunications Agency}) del governo britannico, sulla base di PROMPT, un metodo sviluppato da Simpact Systems Ltd nel 1975 e adottato dalla CCTA nel 1979 come standard per i progetti informatici governativi. Il metodo \`e stato aggiornato nel 2009, per allinearne la terminologia, e nel 2017, con un'attenzione maggiore al tema del tailoring. Oggi PRINCE2 \`e un marchio registrato del Cabinet Office britannico, gestito da AXELOS, e costituisce a tutti gli effetti lo standard de facto della pubblica amministrazione del Regno Unito, pur essendo largamente diffuso anche nel settore privato a livello internazionale \cite{prince2course}.
+
+Diversamente dal PMBOK, che assume un'organizzazione interna al progetto, PRINCE2 presuppone per definizione un ambiente cliente/fornitore (\emph{customer/supplier environment}): il progetto \`e inteso come un'organizzazione temporanea creata allo scopo di consegnare uno o pi\`u prodotti di business secondo un Business Case concordato.
 
 \subsection{Principi e processi}
 
-Prince 2 è basato su principi e processi.
+Il metodo PRINCE2 si fonda su quattro elementi integrati: i Principi, i Temi, i Processi e il \emph{Tailoring}, cio\`e l'adattamento del metodo al contesto specifico del progetto \cite{prince2course}. I Temi (Business Case, Organization, Quality, Plans, Risk, Change, Progress) definiscono gli aspetti della gestione progetto che devono essere continuamente indirizzati; nel presente lavoro i contenuti relativi a Business Case e Organization sono ripresi nella sottosezione seguente insieme ai ruoli, mentre gli altri temi (Quality, Plans, Risk, Change, Progress) sono trattati solo indirettamente, come premessa ai processi: si tratta di uno dei principali ambiti da approfondire in una revisione successiva (si veda oltre, elenco delle mancanze).
+
+I sette principi sono le regole guida universali, autovalidanti e abilitanti (cio\`e permettono ai practitioner di interpretare come applicare il metodo) su cui si basa qualunque progetto PRINCE2 \cite{prince2course}:
+\begin{itemize}
+    \item \textbf{Giustificazione commerciale continua} (\emph{continued business justification}): un progetto deve avere una motivazione documentata e valida per tutta la sua durata; se la giustificazione viene meno, il progetto va rivisto o chiuso.
+    \item \textbf{Apprendere dall'esperienza}: le lezioni apprese vanno cercate all'inizio del progetto, registrate durante il suo svolgimento e trasmesse ai progetti successivi.
+    \item \textbf{Ruoli e responsabilit\`a definiti}: ogni progetto coinvolge tre interessi primari -- business, utente e fornitore -- rappresentati da ruoli con responsabilit\`a esplicite.
+    \item \textbf{Gestione per fasi} (\emph{manage by stages}): il progetto \`e pianificato, monitorato e controllato fase per fase, con un minimo di due fasi di gestione.
+    \item \textbf{Gestione per eccezione} (\emph{manage by exception}): a ciascun livello di delega vengono assegnate delle tolleranze (tempo, costo, qualit\`a, scopo, benefici, rischio); solo se una fase prevede di superarle il controllo risale al livello superiore, rendendo il metodo efficiente in termini di tempo del management.
+    \item \textbf{Attenzione ai prodotti} (\emph{focus on products}): la pianificazione parte dalla definizione dei prodotti da consegnare (\emph{product-based planning}) piuttosto che dalle sole attivit\`a, cosicch\'e un progetto di successo \`e orientato all'output.
+    \item \textbf{Adattare il metodo al contesto del progetto} (\emph{tailor to suit the project environment}): PRINCE2 va calibrato in base a dimensione, complessit\`a, importanza, capacit\`a e rischio del progetto specifico, intervenendo su temi, processi e prodotti di gestione.
+\end{itemize}
+
+Il ciclo di vita del progetto \`e descritto da sette processi, distribuiti su tre livelli di responsabilit\`a -- Direzione (Project Board), Gestione (Project Manager) e Consegna (Team Manager) -- oltre al livello esterno di Corporate o Programme Management che innesca il progetto tramite il mandato iniziale \cite{prince2course}. In estrema sintesi, il percorso di un progetto PRINCE2 pu\`o essere ricostruito cos\`i \cite{prince2walkthrough}: la Corporate/Programme Management emette il mandato di progetto e nomina l'Executive, che a sua volta nomina il Project Manager (\emph{Starting Up a Project}, SU); Executive e Project Manager redigono il Project Brief e ne verificano la fattibilit\`a, dopo di che il Project Board autorizza l'avvio della fase di inizializzazione; il Project Manager elabora la Project Initiation Documentation -- comprensiva di piano di progetto, strategie di gestione, Business Case dettagliato, struttura del team e modalit\`a di tailoring -- e pianifica la prima fase di consegna (\emph{Initiating a Project}, IP); il Project Board autorizza quindi il progetto e la prima fase (\emph{Directing a Project}, DP). Nel corso di ciascuna fase di consegna il Project Manager assegna e monitora i Work Package (\emph{Controlling a Stage}, CS), mentre i Team Manager e i team producono i prodotti specialistici (\emph{Managing Product Delivery}, MP); al termine di ogni fase il Project Manager predispone la fase successiva e ne richiede l'autorizzazione al Project Board (\emph{Managing a Stage Boundary}, SB), fino alla fase finale, al termine della quale il Project Manager prepara la chiusura e il Project Board autorizza la conclusione del progetto (\emph{Closing a Project}, CP).
+
+Il materiale disponibile rappresenta questo flusso anche attraverso un diagramma con legenda a colori, che classifica ciascun elemento in base alla frequenza con cui pu\`o ricorrere nel progetto: elementi eseguiti una sola volta nel progetto (es. Starting Up, Initiating, Closing), elementi eseguiti una volta per fase (es. Managing a Stage Boundary), elementi che si possono ripetere pi\`u volte all'interno della stessa fase (es. Give ad hoc direction, Highlight Report) ed elementi legati a ciascun singolo Work Package \cite{prince2course}.
+
+Per rendere pi\`u concreta la teoria, il materiale include un caso applicativo completo -- il progetto \emph{CopyWorld365 ``Pen Project''}, un'azienda di 15 dipendenti che avvia un piccolo progetto per distribuire penne promozionali ai propri clienti -- corredato di tutti i documenti di gestione compilati (mandato, Project Brief, PID, registri, ecc.) secondo lo scenario reale \cite{penproject}. Questo caso, pensato esplicitamente come preparazione all'esame Practitioner, sar\`a ripreso nella sottosezione seguente per illustrare in pratica il tema del tailoring dei ruoli.
 
 \subsection{Ruoli e governance}
 
-Ruoli chiave e struttura di governance di un progetto gestito con PRINCE2.
+Il tema Organization definisce la struttura di ruoli e responsabilit\`a del progetto, articolata su quattro livelli \cite{prince2course}: la Corporate o Programme Management, esterna al progetto, che fornisce il mandato iniziale e le direttive aziendali; il livello di Direzione (\emph{Directing}), rappresentato dal Project Board; il livello di Gestione (\emph{Managing}), incarnato dal Project Manager; il livello di Consegna (\emph{Delivering}), affidato ai Team Manager e ai membri del team.
+
+Coerentemente con il principio dei ruoli definiti, ogni progetto PRINCE2 riconosce tre interessi primari che devono essere rappresentati nel Project Board affinch\'e il progetto abbia successo \cite{prince2course}:
+\begin{itemize}
+    \item l'\textbf{Executive}, che rappresenta gli interessi di business, possiede il Business Case ed \`e responsabile della sua validit\`a economica e strategica per l'intera durata del progetto;
+    \item il \textbf{Senior User}, che rappresenta gli utenti dei prodotti del progetto, specifica i benefici attesi e ne verifica la realizzazione;
+    \item il \textbf{Senior Supplier}, che rappresenta chi fornisce le risorse e le competenze specialistiche necessarie a produrre i prodotti (fornitore interno o esterno all'organizzazione).
+\end{itemize}
+
+Al di sotto del Project Board opera il \textbf{Project Manager}, responsabile della gestione quotidiana del progetto entro le tolleranze fissate dal Board, affiancato da tre ruoli di supporto: il \textbf{Project Assurance}, che garantisce -- in modo indipendente dal Project Manager -- che il progetto proceda secondo quanto pianificato e ne monitora il Business Case rispetto a eventi esterni; il \textbf{Project Support}, che fornisce supporto amministrativo (gestione di registri, documentazione, pianificazione); e la \textbf{Change Authority}, a cui il Project Board pu\`o delegare la valutazione delle richieste di cambiamento entro un budget di modifica (\emph{change budget}) definito. Al livello di consegna, il \textbf{Team Manager} gestisce i membri del team e la produzione dei prodotti specialistici assegnati tramite Work Package, riportando periodicamente al Project Manager tramite Checkpoint Report.
+
+Un aspetto centrale della governance PRINCE2, spesso sottovalutato in una trattazione puramente teorica, \`e che questi ruoli possono essere combinati: il principio di tailoring consente infatti di adattare la struttura organizzativa a progetti di piccole dimensioni, purch\'e restino separati i ruoli in potenziale conflitto di interesse (in particolare, il Project Manager non dovrebbe mai coincidere con un membro del Project Board). Il caso applicativo \emph{CopyWorld365} illustra bene questa flessibilit\`a: trattandosi di un'azienda di 15 dipendenti senza una struttura di programma, il livello Corporate viene di fatto assorbito dall'Executive (il CEO); il Project Manager assume anche i ruoli di Team Manager e di Project Support; il Project Board assume collettivamente il ruolo di Project Assurance; e la Change Authority viene condivisa tra Project Manager, Executive, Senior User e Senior Supplier \cite{penproject}. Questo esempio mostra concretamente come il principio del tailoring, pi\`u che una clausola di stile, sia ci\`o che rende PRINCE2 applicabile anche fuori dai grandi contesti pubblici per cui \`e stato originariamente concepito.
+
+Infine, la responsabilit\`a di far comunicare correttamente questi ruoli tra loro \`e affidata alla Communication Management Strategy, predisposta dal Project Manager durante la fase di inizializzazione e rivista a ogni passaggio di fase: il documento stabilisce quali informazioni devono circolare, tra chi, con quale frequenza e attraverso quali canali, ed \`e quindi lo strumento che tiene insieme, nella pratica, la struttura di governance appena descritta \cite{prince2course}.
 
 \section{Confronto interno tra PMBOK 8 e PRINCE2}
 
