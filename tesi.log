@@ -1,393 +1,596 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.6.9)  13 AUG 2026 12:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.2)  18 AUG 2026 00:05
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**tesi.tex
-(./tesi.tex
-LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-01-21>
-(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
-Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+**c:/Users/giann/Documents/GitHub/TESI/tesi.tex
+(c:/Users/giann/Documents/GitHub/TESI/tesi.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+(C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+Document Class: report 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count185
-\c@chapter=\count186
-\c@section=\count187
-\c@subsection=\count188
-\c@subsubsection=\count189
-\c@paragraph=\count190
-\c@subparagraph=\count191
-\c@figure=\count192
-\c@table=\count193
-\abovecaptionskip=\skip47
-\belowcaptionskip=\skip48
-\bibindent=\dimen138
-)
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2022/01/26 3.70 The Babel package
-\babel@savecnt=\count194
-\U@D=\dimen139
-\l@unhyphenated=\language3
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\c@part=\count275
+\c@chapter=\count276
+\c@section=\count277
+\c@subsection=\count278
+\c@subsubsection=\count279
+\c@paragraph=\count280
+\c@subparagraph=\count281
+\c@figure=\count282
+\c@table=\count283
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2026/02/14 v26.3 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
+\babel@savecnt=\count284
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2078.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2080.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2082.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2083.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2084.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2086.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2111.
+\U@D=\dimen149
+\l@unhyphenated=\language79
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count195
+\bbl@dirlevel=\count285
+Package babel Info: Configuration files are deprecated, as
+(babel)             they can break document portability.
+(babel)             Reported on input line 4206.
 
-
-! Package babel Error: Unknown option 'italian'. Either you misspelled it
-(babel)                or the language definition file italian.ldf was not foun
-d.
-
-See the babel package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4254 \ProcessOptions*
-                       
-Valid options are, among others: shorthands=, KeepShorthandsActive,
-activeacute, activegrave, noconfigs, safe=, main=, math=
-headfoot=, strings=, config=, hyphenmap=, or a language name.
-
-Package babel Info: You haven't specified a language. I'll use 'nil'
-(babel)             as the main language. Reported on input line 4299.
-(/usr/share/texlive/texmf-dist/tex/generic/babel/nil.ldf
-Language: nil 2022/01/26 3.70 Nil language
-\l@nil=\language4
-))
-(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-)
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks16
-\inpenc@posthook=\toks17
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
-File: latin1.def 2021/02/14 v1.3d Input encoding file
-))
-(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
-rs
-\f@nch@headwidth=\skip49
-\f@nch@O@elh=\skip50
-\f@nch@O@erh=\skip51
-\f@nch@O@olh=\skip52
-\f@nch@O@orh=\skip53
-\f@nch@O@elf=\skip54
-\f@nch@O@erf=\skip55
-\f@nch@O@olf=\skip56
-\f@nch@O@orf=\skip57
-)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
-Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks18
-)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/it\babel-italian.tex)
+Package babel Info: Importing font and identification data for italian
+(babel)             from babel-it.ini. Reported on input line 4330.
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/babel-italian\italian.ldf
+Language: italian 2026/01/13 v.1.5.02 Italian support for the babel system
+\it@lettering=\count286
+\it@doublequoteactive=\count287
+\it@ISOcompliance=\count288
+)) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count289
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/base\latin1.def
+File: latin1.def 2024/02/08 v1.3d Input encoding file
+LaTeX Encoding Info:    Ignoring declaration for text command \textdegree (encoding ?) on input line 47.
+LaTeX Encoding Info:    Ignoring declaration for text command \textonehalf (encoding ?) on input line 48.
+LaTeX Encoding Info:    Ignoring declaration for text command \textonequarter (encoding ?) on input line 49.
+LaTeX Encoding Info:    Ignoring declaration for text command \textthreequarters (encoding ?) on input line 50.
+LaTeX Encoding Info:    Ignoring declaration for text command \textcent (encoding ?) on input line 51.
+LaTeX Encoding Info:    Ignoring declaration for text command \textyen (encoding ?) on input line 53.
+LaTeX Encoding Info:    Ignoring declaration for text command \textcurrency (encoding ?) on input line 55.
+LaTeX Encoding Info:    Ignoring declaration for text command \textbrokenbar (encoding ?) on input line 57.
+)) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+\f@nch@headwidth=\skip51
+\f@nch@offset@elh=\skip52
+\f@nch@offset@erh=\skip53
+\f@nch@offset@olh=\skip54
+\f@nch@offset@orh=\skip55
+\f@nch@offset@elf=\skip56
+\f@nch@offset@erf=\skip57
+\f@nch@offset@olf=\skip58
+\f@nch@offset@orf=\skip59
+\f@nch@height=\skip60
+\f@nch@footalignment=\skip61
+\f@nch@widthL=\skip62
+\f@nch@widthC=\skip63
+\f@nch@widthR=\skip64
+\@temptokenb=\toks19
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/tools\indentfirst.sty
+Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks20
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 107.
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+Package graphics Info: Driver file: pdftex.def on input line 106.
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen140
-\Gin@req@width=\dimen141
-)
-(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2022/01/29 v0.5u Insert pages of external PDF documents (AM)
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count196
-\calc@Bcount=\count197
-\calc@Adimen=\dimen142
-\calc@Bdimen=\dimen143
-\calc@Askip=\skip58
-\calc@Bskip=\skip59
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count198
-\calc@Cskip=\skip60
-)
-(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
-\ESO@tempdima=\dimen144
-\ESO@tempdimb=\dimen145
-
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+\Gin@req@height=\dimen150
+\Gin@req@width=\dimen151
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2026/03/30 v0.6h Insert pages of external PDF documents (AM)
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count290
+\calc@Bcount=\count291
+\calc@Adimen=\dimen152
+\calc@Bdimen=\dimen153
+\calc@Askip=\skip65
+\calc@Bskip=\skip66
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count292
+\calc@Cskip=\skip67
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2026/05/31 v3.0e eso-pic (RN)
+\ESO@tempdima=\dimen154
+\ESO@tempdimb=\dimen155
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 227.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
-Package xcolor Info: Model `RGB' extended on input line 1368.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 ))
-\AM@pagewidth=\dimen146
-\AM@pageheight=\dimen147
-\AM@fboxrule=\dimen148
-
-(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2022/01/29 v0.5u Pdfpages driver for pdfTeX (AM)
+\AM@pagewidth=\dimen156
+\AM@pageheight=\dimen157
+\AM@fboxrule=\dimen158
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
+File: pppdftex.def 2026/03/30 v0.6h Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count199
-\AM@pagebox=\box50
-\AM@global@opts=\toks19
-\AM@pagecnt=\count266
-\AM@toc@title=\toks20
-\c@AM@survey=\count267
-\AM@templatesizebox=\box51
+\pdfpages@includegraphics@status=\count293
+\AM@pagebox=\box53
+\AM@global@opts=\toks21
+\AM@pagecnt=\count294
+\AM@toc@title=\toks22
+\AM@lof@heading=\toks23
+\c@AM@survey=\count295
+\AM@templatesizebox=\box54
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks24
+\pgfutil@tempdima=\dimen159
+\pgfutil@tempdimb=\dimen160
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+\pgfutil@abb=\box55
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+))
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks25
+\pgfkeys@temptoks=\toks26
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks27
+))
+\pgf@x=\dimen161
+\pgf@y=\dimen162
+\pgf@xa=\dimen163
+\pgf@ya=\dimen164
+\pgf@xb=\dimen165
+\pgf@yb=\dimen166
+\pgf@xc=\dimen167
+\pgf@yc=\dimen168
+\pgf@xd=\dimen169
+\pgf@yd=\dimen170
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count296
+\c@pgf@countb=\count297
+\c@pgf@countc=\count298
+\c@pgf@countd=\count299
+\t@pgf@toka=\toks28
+\t@pgf@tokb=\toks29
+\t@pgf@tokc=\toks30
+\pgf@sys@id@count=\count300
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/newlfont.sty
+Driver file for pgf: pgfsys-pdftex.def
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+))) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count301
+\pgfsyssoftpath@bigbuffer@items=\count302
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen171
+\pgfmath@count=\count303
+\pgfmath@box=\box56
+\pgfmath@toks=\toks31
+\pgfmath@stack@operand=\toks32
+\pgfmath@stack@operation=\toks33
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count304
+)) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen172
+\pgf@picmaxx=\dimen173
+\pgf@picminy=\dimen174
+\pgf@picmaxy=\dimen175
+\pgf@pathminx=\dimen176
+\pgf@pathmaxx=\dimen177
+\pgf@pathminy=\dimen178
+\pgf@pathmaxy=\dimen179
+\pgf@xx=\dimen180
+\pgf@xy=\dimen181
+\pgf@yx=\dimen182
+\pgf@yy=\dimen183
+\pgf@zx=\dimen184
+\pgf@zy=\dimen185
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen186
+\pgf@path@lasty=\dimen187
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen188
+\pgf@shorten@start@additional=\dimen189
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box57
+\pgf@hbox=\box58
+\pgf@layerbox@main=\box59
+\pgf@picture@serial@count=\count305
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen190
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen191
+\pgf@pt@y=\dimen192
+\pgf@pt@temp=\dimen193
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen194
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen195
+\pgf@sys@shading@range@num=\count306
+\pgf@shadingcount=\count307
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box60
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box61
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen196
+\pgf@nodesepend=\dimen197
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+)) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen198
+\pgffor@skip=\dimen199
+\pgffor@stack=\toks34
+\pgffor@toks=\toks35
+)) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count308
+\pgfplotmarksize=\dimen256
+)
+\tikz@lastx=\dimen257
+\tikz@lasty=\dimen258
+\tikz@lastxsaved=\dimen259
+\tikz@lastysaved=\dimen260
+\tikz@lastmovetox=\dimen261
+\tikz@lastmovetoy=\dimen262
+\tikzleveldistance=\dimen263
+\tikzsiblingdistance=\dimen264
+\tikz@figbox=\box62
+\tikz@figbox@bg=\box63
+\tikz@tempbox=\box64
+\tikz@tempbox@bg=\box65
+\tikztreelevel=\count309
+\tikznumberofchildren=\count310
+\tikznumberofcurrentchild=\count311
+\tikz@fig@count=\count312
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count313
+\pgfmatrixcurrentcolumn=\count314
+\pgf@matrix@numberofcolumns=\count315
+)
+\tikz@expandcount=\count316
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowinset=\dimen265
+\pgfarrowlength=\dimen266
+\pgfarrowwidth=\dimen267
+\pgfarrowlinewidth=\dimen268
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen269
+\lightrulewidth=\dimen270
+\cmidrulewidth=\dimen271
+\belowrulesep=\dimen272
+\belowbottomsep=\dimen273
+\aboverulesep=\dimen274
+\abovetopsep=\dimen275
+\cmidrulesep=\dimen276
+\cmidrulekern=\dimen277
+\defaultaddspace=\dimen278
+\@cmidla=\count317
+\@cmidlb=\count318
+\@aboverulesep=\dimen279
+\@belowrulesep=\dimen280
+\@thisruleclass=\count319
+\@lastruleclass=\count320
+\@thisrulewidth=\dimen281
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen282
+\ar@mcellbox=\box66
+\extrarowheight=\dimen283
+\NC@list=\toks36
+\extratabsurround=\skip68
+\backup@length=\skip69
+\ar@cellbox=\box67
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+\TX@col@width=\dimen284
+\TX@old@table=\dimen285
+\TX@old@col=\dimen286
+\TX@target=\dimen287
+\TX@delta=\dimen288
+\TX@cols=\count321
+\TX@ftn=\toks37
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/base\newlfont.sty
 Package: newlfont 1998/08/17 v2.2m Standard LaTeX package
 LaTeX Info: Redefining \em on input line 57.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/latexsym.sty
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/base\latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
-))
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+)) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks21
+\@emptytoks=\toks38
 \symAMSa=\mathgroup5
 \symAMSb=\mathgroup6
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2021/10/15 v2.17l AMS math features
-\@mathmargin=\skip61
+)) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip70
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2021/08/26 v2.01 AMS text
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+(C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks22
-\ex@=\dimen149
-))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+\@emptytoks=\toks39
+\ex@=\dimen289
+)) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen150
+\pmbraise@=\dimen290
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2021/08/26 v2.02 operator names
-)
-\inf@bad=\count268
-LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count269
-\leftroot@=\count270
-LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count271
-\DOTSCASE@=\count272
-LaTeX Info: Redefining \ldots on input line 496.
-LaTeX Info: Redefining \dots on input line 499.
-LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box52
-\strutbox@=\box53
-\big@size=\dimen151
-LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count273
-\c@MaxMatrixCols=\count274
-\dotsspace@=\muskip16
-\c@parentequation=\count275
-\dspbrk@lvl=\count276
-\tag@help=\toks23
-\row@=\count277
-\column@=\count278
-\maxfields@=\count279
-\andhelp@=\toks24
-\eqnshift@=\dimen152
-\alignsep@=\dimen153
-\tagshift@=\dimen154
-\tagwidth@=\dimen155
-\totwidth@=\dimen156
-\lineht@=\dimen157
-\@envbody=\toks25
-\multlinegap=\skip62
-\multlinetaggap=\skip63
-\mathdisplay@stack=\toks26
-LaTeX Info: Redefining \[ on input line 2938.
-LaTeX Info: Redefining \] on input line 2939.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+\inf@bad=\count322
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count323
+\leftroot@=\count324
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count325
+\DOTSCASE@=\count326
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box68
+\strutbox@=\box69
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen291
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count327
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count328
+\dotsspace@=\muskip17
+\c@parentequation=\count329
+\dspbrk@lvl=\count330
+\tag@help=\toks40
+\row@=\count331
+\column@=\count332
+\maxfields@=\count333
+\andhelp@=\toks41
+\eqnshift@=\dimen292
+\alignsep@=\dimen293
+\tagshift@=\dimen294
+\tagwidth@=\dimen295
+\totwidth@=\dimen296
+\lineht@=\dimen297
+\@envbody=\toks42
+\multlinegap=\skip71
+\multlinetaggap=\skip72
+\mathdisplay@stack=\toks43
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks27
-\thm@bodyfont=\toks28
-\thm@headfont=\toks29
-\thm@notefont=\toks30
-\thm@headpunct=\toks31
-\thm@preskip=\skip64
-\thm@postskip=\skip65
-\thm@headsep=\skip66
-\dth@everypar=\toks32
-)
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count280
-\l__pdf_internal_box=\box54
-)
-(./tesi.aux)
+\thm@style=\toks44
+\thm@bodyfont=\toks45
+\thm@headfont=\toks46
+\thm@notefont=\toks47
+\thm@headpunct=\toks48
+\thm@preskip=\skip73
+\thm@postskip=\skip74
+\thm@headsep=\skip75
+\dth@everypar=\toks49
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count334
+) (tesi.aux)
 \openout1 = `tesi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Info: Redefining \it@ocap on input line 78.
+LaTeX Info: Redefining \it@ccap on input line 78.
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count281
-\scratchdimen=\dimen158
-\scratchbox=\box55
-\nofMPsegments=\count282
-\nofMParguments=\count283
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count284
-\MPscratchDim=\dimen159
-\MPnumerator=\count285
-\makeMPintoPDFobject=\count286
-\everyMPtoPDFconversion=\toks34
-) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+\scratchcounter=\count335
+\scratchdimen=\dimen298
+\scratchbox=\box70
+\nofMPsegments=\count336
+\nofMParguments=\count337
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count338
+\MPscratchDim=\dimen299
+\MPnumerator=\count339
+\makeMPintoPDFobject=\count340
+\everyMPtoPDFconversion=\toks51
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
-(/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
-)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+)) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+) (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-)
-<chapters/frontespizio/frontespizio.pdf, id=1, 597.50829pt x 845.0471pt>
+))
+<chapters/frontespizio/frontespizio.pdf, id=4, 597.50829pt x 845.0471pt>
 File: chapters/frontespizio/frontespizio.pdf Graphic file (type pdf)
 <use chapters/frontespizio/frontespizio.pdf>
-Package pdftex.def Info: chapters/frontespizio/frontespizio.pdf  used on input 
-line 70.
+Package pdftex.def Info: chapters/frontespizio/frontespizio.pdf  used on input line 81.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-File: chapters/frontespizio/frontespizio.pdf Graphic file (type pdf)
-<use chapters/frontespizio/frontespizio.pdf>
-Package pdftex.def Info: chapters/frontespizio/frontespizio.pdf  used on input 
-line 70.
-(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<chapters/frontespizio/frontespizio.pdf, id=4, page=1, 597.50829pt x 845.0471pt
->
+<chapters/frontespizio/frontespizio.pdf, id=6, page=1, 597.50829pt x 845.0471pt>
 File: chapters/frontespizio/frontespizio.pdf Graphic file (type pdf)
 <use chapters/frontespizio/frontespizio.pdf, page 1>
-Package pdftex.def Info: chapters/frontespizio/frontespizio.pdf , page1 used on
- input line 70.
+Package pdftex.def Info: chapters/frontespizio/frontespizio.pdf , page1 used on input line 81.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: chapters/frontespizio/frontespizio.pdf Graphic file (type pdf)
 <use chapters/frontespizio/frontespizio.pdf, page 1>
-Package pdftex.def Info: chapters/frontespizio/frontespizio.pdf , page1 used on
- input line 70.
+Package pdftex.def Info: chapters/frontespizio/frontespizio.pdf , page1 used on input line 81.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: chapters/frontespizio/frontespizio.pdf Graphic file (type pdf)
 <use chapters/frontespizio/frontespizio.pdf, page 1>
-Package pdftex.def Info: chapters/frontespizio/frontespizio.pdf , page1 used on
- input line 70.
+Package pdftex.def Info: chapters/frontespizio/frontespizio.pdf , page1 used on input line 81.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: chapters/frontespizio/frontespizio.pdf Graphic file (type pdf)
 <use chapters/frontespizio/frontespizio.pdf, page 1>
-Package pdftex.def Info: chapters/frontespizio/frontespizio.pdf , page1 used on
- input line 70.
+Package pdftex.def Info: chapters/frontespizio/frontespizio.pdf , page1 used on input line 81.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: chapters/frontespizio/frontespizio.pdf Graphic file (type pdf)
 <use chapters/frontespizio/frontespizio.pdf, page 1>
-Package pdftex.def Info: chapters/frontespizio/frontespizio.pdf , page1 used on
- input line 70.
+Package pdftex.def Info: chapters/frontespizio/frontespizio.pdf , page1 used on input line 81.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [1
 
- <./chapters/frontespizio/frontespizio.pdf{/var/lib/texmf/fonts/map/pdftex/updm
-ap/pdftex.map}>] (./chapters/00-dedica.tex [1] [2
+
+ <./chapters/frontespizio/frontespizio.pdf{C:/Users/giann/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}>] (chapters/00-dedica.tex [1] [2
 
 
-]) (./chapters/01-introduzione.tex
-Overfull \hbox (7.11816pt too wide) in paragraph at lines 18--20
-\T1/cmr/m/n/12 settore) sono stati definiti criteri di selezione basati su: ril
-evanza, autorevolezza
- []
-
-) [1
+]) (chapters/01-introduzione.tex) [1
 
 ] [2
 
 
-] (./tesi.toc
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 3.
-
- (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
+] (tesi.toc
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 4.
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
+ (C:\Users\giann\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [3
 
 ])
-\tf@toc=\write3
-\openout3 = `tesi.toc'.
+\tf@toc=\write4
+\openout4 = `tesi.toc'.
 
- [4] (./tesi.lof)
-\tf@lof=\write4
-\openout4 = `tesi.lof'.
+ [4] (tesi.lof)
+\tf@lof=\write5
+\openout5 = `tesi.lof'.
 
  [5
 
@@ -396,266 +599,146 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ] [6
 
 
-] (./tesi.lot)
-\tf@lot=\write5
-\openout5 = `tesi.lot'.
+] (tesi.lot)
+\tf@lot=\write6
+\openout6 = `tesi.lot'.
 
  [7
 
 ] [8
 
 
-] (./chapters/02-metodi-tradizionali.tex
-Chapter 1.
+] (chapters/02-metodi-tradizionali.tex
+Capitolo 1.
 
-Overfull \hbox (14.74554pt too wide) in paragraph at lines 5--7
-[]\T1/cmr/m/n/12 Cosa si intende per "approccio tradizionale" al project manage
-ment PMBOK
+Underfull \vbox (badness 4048) has occurred while \output is active []
+
+ [1
+
+] [2] [3] [4] [5] [6] [7] [8] [9] [10]
+Underfull \vbox (badness 1231) has occurred while \output is active []
+
+ [11]
+Underfull \vbox (badness 1496) has occurred while \output is active []
+
+ [12] [13] [14] [15]
+Underfull \hbox (badness 1609) in paragraph at lines 182--182
+[]|\T1/cmr/m/n/10.95 Work pac-ka-ge
  []
 
 
-Overfull \hbox (49.10663pt too wide) in paragraph at lines 8--8
-[]\T1/cmr/bx/n/17.28 Cos'è il Project Management: origini e definizioni 
+Underfull \hbox (badness 1609) in paragraph at lines 182--182
+[]|\T1/cmr/m/n/10.95 Work pac-ka-ge
  []
 
 
-Overfull \hbox (9.61911pt too wide) in paragraph at lines 23--24
-[]\T1/cmr/m/n/12 Principi chiave della guida PMBOK 8 e differenza con le versio
-ni precedenti? 
+Underfull \hbox (badness 10000) in paragraph at lines 182--182
+[]|\T1/cmr/m/n/10.95 Project pro-
  []
 
-[1
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--182
+\T1/cmr/m/n/10.95 duct de-scrip-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--182
+[]|\T1/cmr/m/n/10.95 Product de-
+ []
+
+
+Underfull \hbox (badness 1609) in paragraph at lines 182--182
+[]|\T1/cmr/m/n/10.95 Work pac-ka-ge
+ []
+
+
+Underfull \hbox (badness 1609) in paragraph at lines 182--182
+[]|\T1/cmr/m/n/10.95 Work pac-ka-ge
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--182
+[]|\T1/cmr/m/n/10.95 Product de-
+ []
+
+
+Underfull \hbox (badness 1609) in paragraph at lines 182--182
+[]|\T1/cmr/m/n/10.95 Work pac-ka-ge
+ []
+
+[16] [17]
+Underfull \vbox (badness 4752) has occurred while \output is active []
+
+ [18]
+Underfull \vbox (badness 4752) has occurred while \output is active []
+
+ [19] [20]) (chapters/03-approccio-agile.tex [21] [22
 
 ]
-Overfull \hbox (0.80885pt too wide) in paragraph at lines 31--32
-\T1/cmr/m/n/12 della CCTA (\T1/cmr/m/it/12 Central Computer and Telecommunicati
-ons Agency\T1/cmr/m/n/12 ) del governo
- []
-
-
-Overfull \hbox (3.61624pt too wide) in paragraph at lines 31--32
-\T1/cmr/m/n/12 britannico, sulla base di PROMPT, un metodo sviluppato da Simpac
-t Systems
- []
-
-
-Overfull \hbox (17.90863pt too wide) in paragraph at lines 33--34
-[]\T1/cmr/m/n/12 Diversamente dal PMBOK, che assume un'organizzazione interna a
-l progetto,
- []
-
-
-Overfull \hbox (48.8054pt too wide) in paragraph at lines 33--34
-\T1/cmr/m/n/12 PRINCE2 presuppone per definizione un ambiente cliente/fornitore
- (\T1/cmr/m/it/12 customer/supplier
- []
-
-
-Overfull \hbox (1.99312pt too wide) in paragraph at lines 37--38
-\T1/cmr/m/n/12 relativi a Business Case e Organization sono ripresi nella sotto
-sezione seguente
- []
-
-
-Underfull \vbox (badness 1810) has occurred while \output is active []
-
- [2]
-Overfull \hbox (26.80779pt too wide) in paragraph at lines 41--42
-[]\T1/cmr/bx/n/12 Giustificazione commerciale continua \T1/cmr/m/n/12 (\T1/cmr/
-m/it/12 continued business justification\T1/cmr/m/n/12 ):
- []
-
-
-Overfull \hbox (8.23715pt too wide) in paragraph at lines 42--43
-[]\T1/cmr/bx/n/12 Apprendere dall'esperienza\T1/cmr/m/n/12 : le lezioni apprese
- vanno cercate all'inizio
- []
-
-
-Overfull \hbox (2.88321pt too wide) in paragraph at lines 42--43
-\T1/cmr/m/n/12 del progetto, registrate durante il suo svolgimento e trasmesse 
-ai progetti
- []
-
-
-Overfull \hbox (22.19502pt too wide) in paragraph at lines 44--45
-[]\T1/cmr/bx/n/12 Gestione per fasi \T1/cmr/m/n/12 (\T1/cmr/m/it/12 manage by s
-tages\T1/cmr/m/n/12 ): il progetto è pianificato, monitorato
- []
-
-[3]
-Overfull \hbox (35.25287pt too wide) in paragraph at lines 47--48
-\T1/cmr/m/n/12 complessità, importanza, capacità e rischio del progetto specifi
-co, intervenendo
- []
-
-[4]
-Overfull \hbox (12.84885pt too wide) in paragraph at lines 54--55
-\T1/cmr/m/n/12 completo -- il progetto \T1/cmr/m/it/12 CopyWorld365 ``Pen Proje
-ct''\T1/cmr/m/n/12 , un'azienda di 15 dipendenti
- []
-
-
-Overfull \hbox (21.63277pt too wide) in paragraph at lines 58--59
-\T1/cmr/m/n/12 progetto, articolata su quattro livelli [[]]: la Corporate o Pro
-gramme Management,
- []
-
-
-Overfull \hbox (8.63713pt too wide) in paragraph at lines 62--63
-[]\T1/cmr/m/n/12 l'\T1/cmr/bx/n/12 Executive\T1/cmr/m/n/12 , che rappresenta gl
-i interessi di business, possiede il Business
- []
-
-[5]
-Overfull \hbox (9.52179pt too wide) in paragraph at lines 64--65
-[]\T1/cmr/m/n/12 il \T1/cmr/bx/n/12 Senior Supplier\T1/cmr/m/n/12 , che rappres
-enta chi fornisce le risorse e le competenze
- []
-
-
-Overfull \hbox (3.20944pt too wide) in paragraph at lines 64--65
-\T1/cmr/m/n/12 specialistiche necessarie a produrre i prodotti (fornitore inter
-no o esterno
- []
-
-
-Overfull \hbox (3.13733pt too wide) in paragraph at lines 69--70
-\T1/cmr/m/n/12 una trattazione puramente teorica, è che questi ruoli possono es
-sere combinati:
- []
-
-
-Overfull \hbox (13.06909pt too wide) in paragraph at lines 69--70
-\T1/cmr/m/n/12 coincidere con un membro del Project Board). Il caso applicativo
- \T1/cmr/m/it/12 CopyWorld365
- []
-
-[6]
-Overfull \hbox (14.41478pt too wide) in paragraph at lines 73--73
-[]\T1/cmr/bx/n/17.28 Confronto interno tra PMBOK 8 e PRINCE2 
- []
-
-) (./chapters/03-approccio-agile.tex [7] [8
+Capitolo 2.
+) (chapters/04-confronto-approcci.tex [23] [24
 
 ]
-Chapter 2.
-
-Overfull \hbox (14.36218pt too wide) in paragraph at lines 3--4
-[]\T1/cmr/m/n/12 Introduce il cambio di paradigma rispetto al tradizionale: da 
-piano predittivo
- []
-
-) (./chapters/04-confronto-approcci.tex [9] [10
-
-]
-Chapter 3.
-
-Overfull \hbox (2.11949pt too wide) in paragraph at lines 19--21
-\T1/cmr/m/n/12 unitaria del Project Management ricomponendo le definizioni vist
-e nei capitoli
- []
-
+Capitolo 3.
 
 Underfull \vbox (badness 1259) has occurred while \output is active []
 
- [11])
-(./chapters/05-stato-aziende.tex [12]
-Chapter 4.
-) [13
+ [25]) (chapters/05-stato-aziende.tex [26]
+Capitolo 4.
+) [27
 
-] [14
+] [28
 
 
-] (./chapters/06-conclusioni.tex
+] (chapters/06-conclusioni.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-) (./chapters/07-appendice-a.tex [15
+) (chapters/07-appendice-a.tex [29
 
-] [16
-
-]
-Appendix A.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
-.
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-))
-(./chapters/08-appendice-b.tex
-Overfull \hbox (3.10674pt too wide) in paragraph at lines 2--1
-[][]\T1/cmtt/m/n/12 \cleardoublepage[]\T1/cmr/m/n/12 , ed infatti l'ultima pagi
-na 8 ha l'intestazione con il numero
- []
-
-[17] [18
+] [30
 
 ]
-Appendix B.
-) (./chapters/09-bibliografia.tex [19] [20
+Appendice A.
+) (chapters/08-appendice-b.tex [31] [32
 
 ]
-Underfull \hbox (badness 3428) in paragraph at lines 10--11
-[]\T1/cmr/m/n/12 Materiale didattico del corso PRINCE2 Foundation frequentato
+Appendice B.
+) (chapters/09-bibliografia.tex [33] [34
+
+]
+Underfull \hbox (badness 1910) in paragraph at lines 18--19
+[]\T1/cmr/m/n/12 Litten, D. (2017). \T1/cmr/m/it/12 PRIN-CE2 Sam-ple Prac-ti-tio-ner Exam -- Full-
  []
 
 
-Underfull \hbox (badness 1910) in paragraph at lines 16--17
-[]\T1/cmr/m/n/12 Litten, D. (2017). \T1/cmr/m/it/12 PRINCE2 Sample Practitioner
- Exam -- Full-
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+\T1/cmr/m/it/12 strength Pa-per with Que-stions and An-swers\T1/cmr/m/n/12 . Di-spo-ni-bi-le su:
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
-\T1/cmr/m/it/12 strength Paper with Questions and Answers\T1/cmr/m/n/12 . Dispo
-nibile su:
- []
+[35]) [36] (chapters/10-ringraziamenti.tex) [37
 
 
-Underfull \hbox (badness 1325) in paragraph at lines 18--19
-[]\T1/cmr/m/n/12 Office of Government Commerce (a cura di A. Murray) (2009).
- []
 
-) [21] [22
-
-
-] (./chapters/10-ringraziamenti.tex) [23
-
-] (./tesi.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+] (tesi.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+ ***********
  ) 
 Here is how much of TeX's memory you used:
- 5628 strings out of 480247
- 87198 string characters out of 5896152
- 385082 words of memory out of 5000000
- 23429 multiletter control sequences out of 15000+600000
- 482406 words of font info for 61 fonts, out of 8000000 for 9000
- 16 hyphenation exceptions out of 8191
- 61i,17n,75p,1781b,433s stack positions out of 5000i,500n,10000p,200000b,80000s
- </sessions/eloquent-dreamy-knuth/.texlive2021/texmf-var/fonts/pk/ljfour/jkna
-ppen/ec/ectt1200.600pk> </sessions/eloquent-dreamy-knuth/.texlive2021/texmf-var
-/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk> </sessions/eloquent-dreamy-knuth/.
-texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </sessions/el
-oquent-dreamy-knuth/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440
-.600pk> </sessions/eloquent-dreamy-knuth/.texlive2021/texmf-var/fonts/pk/ljfour
-/jknappen/ec/ecbx1200.600pk> </sessions/eloquent-dreamy-knuth/.texlive2021/texm
-f-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </sessions/eloquent-dreamy-kn
-uth/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </sessio
-ns/eloquent-dreamy-knuth/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecb
-x2488.600pk> </sessions/eloquent-dreamy-knuth/.texlive2021/texmf-var/fonts/pk/l
-jfour/jknappen/ec/eccc1440.600pk> </sessions/eloquent-dreamy-knuth/.texlive2021
-/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy10.pfb>
-Output written on tesi.pdf (34 pages, 407079 bytes).
+ 17187 strings out of 467867
+ 341644 string characters out of 5418335
+ 737864 words of memory out of 5000000
+ 45689 multiletter control sequences out of 15000+600000
+ 645527 words of font info for 84 fonts, out of 8000000 for 9000
+ 1143 hyphenation exceptions out of 8191
+ 84i,17n,94p,1659b,822s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk><C:/Users/giann/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/giann/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/giann/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/giann/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on tesi.pdf (48 pages, 517017 bytes).
 PDF statistics:
- 563 PDF objects out of 1000 (max. 8388607)
- 138 compressed objects within 2 object streams
+ 737 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
