@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.2)  18 AUG 2026 00:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.2)  18 AUG 2026 07:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -615,79 +615,98 @@ Underfull \vbox (badness 4048) has occurred while \output is active []
 
  [1
 
-] [2] [3] [4] [5] [6] [7] [8] [9] [10]
+] [2]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3] [4]
+Underfull \hbox (badness 1629) in paragraph at lines 82--82
+[]|\T1/cmr/m/n/10.95 Abbracciare adat-ta-bi-li-tà e re-si-lien-za;
+ []
+
+
+Underfull \hbox (badness 1033) in paragraph at lines 82--82
+[]|\T1/cmr/m/n/10.95 Dimostrare com-por-ta-men-ti di lea-der-
+ []
+
+[5] [6] [7] [8] [9]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10] [11]
+Underfull \vbox (badness 2521) has occurred while \output is active []
+
+ [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23] [24] [25] [26]
 Underfull \vbox (badness 1231) has occurred while \output is active []
 
- [11]
+ [27]
 Underfull \vbox (badness 1496) has occurred while \output is active []
 
- [12] [13] [14] [15]
-Underfull \hbox (badness 1609) in paragraph at lines 182--182
+ [28] [29] [30] [31]
+Underfull \hbox (badness 1609) in paragraph at lines 382--382
 []|\T1/cmr/m/n/10.95 Work pac-ka-ge
  []
 
 
-Underfull \hbox (badness 1609) in paragraph at lines 182--182
+Underfull \hbox (badness 1609) in paragraph at lines 382--382
 []|\T1/cmr/m/n/10.95 Work pac-ka-ge
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--182
+Underfull \hbox (badness 10000) in paragraph at lines 382--382
 []|\T1/cmr/m/n/10.95 Project pro-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--182
+Underfull \hbox (badness 10000) in paragraph at lines 382--382
 \T1/cmr/m/n/10.95 duct de-scrip-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--182
+Underfull \hbox (badness 10000) in paragraph at lines 382--382
 []|\T1/cmr/m/n/10.95 Product de-
  []
 
 
-Underfull \hbox (badness 1609) in paragraph at lines 182--182
+Underfull \hbox (badness 1609) in paragraph at lines 382--382
 []|\T1/cmr/m/n/10.95 Work pac-ka-ge
  []
 
 
-Underfull \hbox (badness 1609) in paragraph at lines 182--182
+Underfull \hbox (badness 1609) in paragraph at lines 382--382
 []|\T1/cmr/m/n/10.95 Work pac-ka-ge
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--182
+Underfull \hbox (badness 10000) in paragraph at lines 382--382
 []|\T1/cmr/m/n/10.95 Product de-
  []
 
 
-Underfull \hbox (badness 1609) in paragraph at lines 182--182
+Underfull \hbox (badness 1609) in paragraph at lines 382--382
 []|\T1/cmr/m/n/10.95 Work pac-ka-ge
  []
 
-[16] [17]
+[32] [33]
 Underfull \vbox (badness 4752) has occurred while \output is active []
 
- [18]
+ [34]
 Underfull \vbox (badness 4752) has occurred while \output is active []
 
- [19] [20]) (chapters/03-approccio-agile.tex [21] [22
+ [35] [36]) (chapters/03-approccio-agile.tex [37] [38
 
 ]
 Capitolo 2.
-) (chapters/04-confronto-approcci.tex [23] [24
+) (chapters/04-confronto-approcci.tex [39] [40
 
 ]
 Capitolo 3.
 
 Underfull \vbox (badness 1259) has occurred while \output is active []
 
- [25]) (chapters/05-stato-aziende.tex [26]
+ [41]) (chapters/05-stato-aziende.tex [42]
 Capitolo 4.
-) [27
+) [43
 
-] [28
+] [44
 
 
 ] (chapters/06-conclusioni.tex
@@ -695,29 +714,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-) (chapters/07-appendice-a.tex [29
+) (chapters/07-appendice-a.tex [45
 
-] [30
+] [46
 
 ]
 Appendice A.
-) (chapters/08-appendice-b.tex [31] [32
+) (chapters/08-appendice-b.tex [47] [48
 
 ]
 Appendice B.
-) (chapters/09-bibliografia.tex [33] [34
+) (chapters/09-bibliografia.tex [49] [50
 
 ]
-Underfull \hbox (badness 1910) in paragraph at lines 18--19
+Underfull \hbox (badness 1910) in paragraph at lines 20--21
 []\T1/cmr/m/n/12 Litten, D. (2017). \T1/cmr/m/it/12 PRIN-CE2 Sam-ple Prac-ti-tio-ner Exam -- Full-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
 \T1/cmr/m/it/12 strength Pa-per with Que-stions and An-swers\T1/cmr/m/n/12 . Di-spo-ni-bi-le su:
  []
 
-[35]) [36] (chapters/10-ringraziamenti.tex) [37
+[51]) [52] (chapters/10-ringraziamenti.tex) [53
 
 
 
@@ -728,17 +747,17 @@ L3 programming layer <2026-01-19>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 17187 strings out of 467867
- 341644 string characters out of 5418335
- 737864 words of memory out of 5000000
- 45689 multiletter control sequences out of 15000+600000
- 645527 words of font info for 84 fonts, out of 8000000 for 9000
+ 17358 strings out of 467867
+ 344257 string characters out of 5418335
+ 738222 words of memory out of 5000000
+ 45853 multiletter control sequences out of 15000+600000
+ 648879 words of font info for 92 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 84i,17n,94p,1659b,822s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk><C:/Users/giann/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/giann/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/giann/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/giann/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on tesi.pdf (48 pages, 517017 bytes).
+ 84i,17n,94p,1659b,841s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti0800.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0800.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\giann\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk><C:/Users/giann/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/giann/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/giann/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/giann/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on tesi.pdf (64 pages, 598321 bytes).
 PDF statistics:
- 737 PDF objects out of 1000 (max. 8388607)
+ 917 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -16,15 +16,215 @@ Accenna in poche righe all'origine storica (Gantt, PERT, CPM) per spiegare perch
 Definizione di riferimento del PMI/PMBOK e quella della norma ISO 21500
 
 \section{PMBOK 8}
-PMBOK \`e lo standard standard del PMI, cos'\`e e come nasce.
 
-\subsection{Principi e framework}
+Il \emph{PMBOK Guide} \`e la pubblicazione di riferimento del Project Management Institute (PMI) e costituisce, insieme a PRINCE2, il principale punto di riferimento dell'approccio tradizionale. Nato nel 1987 come \emph{Project Management Body of Knowledge}, il testo si \`e trasformato gi\`a nel 1996 in ``una guida al corpo di conoscenza'' piuttosto che nel corpo di conoscenza stesso, adottando come criterio di inclusione ci\`o che \`e ``generalmente accettato'', cio\`e applicabile alla maggior parte dei progetti per la maggior parte del tempo e riconosciuto come dotato di valore e utilit\`a da un ampio consenso professionale \cite{pmbok8}. La trattazione che segue assume come unica fonte l'ottava edizione, pubblicata nel 2025.
 
-Principi chiave della guida PMBOK 8 e differenza con le versioni precedenti?
+Questa distinzione di partenza --- guida a un corpo di conoscenza, non metodo --- \`e ci\`o che separa strutturalmente il PMBOK da PRINCE2. Dove PRINCE2 stabilisce quali elementi devono essere presenti perch\'e un progetto possa dirsi gestito secondo il metodo, il PMBOK descrive un insieme di pratiche, processi e strumenti dichiaratamente non prescrittivi, che il professionista seleziona e adatta. L'ottava edizione lo afferma esplicitamente per i propri quaranta processi, definiti ``non prescrittivi'' e offerti come ``descrizione tecnica del project management, non come framework o metodologia prescrittiva'' \cite{pmbok8}.
 
-\subsection{Applicazione pratica}
+Una seconda peculiarit\`a riguarda la natura editoriale del volume, che contiene due documenti distinti: \emph{The Standard for Project Management}, che dalla terza edizione (2004) \`e formalmente separato dalla guida ed \`e uno standard ANSI, e \emph{A Guide to the Project Management Body of Knowledge} vera e propria. Il primo definisce i principi e il quadro concettuale; la seconda ne descrive la meccanica operativa. Tenere presente questa articolazione \`e necessario per orientarsi nella struttura dell'edizione, illustrata nella figura~\ref{fig:pmbok-architettura}.
 
-Esempio concreto di come si applica il PMBOK a un progetto IT reale evidenziando vantaggi e limiti pratici segnalati in letteratura
+L'ottava edizione si presenta come ``la revisione pi\`u \emph{evidence-based} realizzata finora'': \`e stata preceduta da una ricerca condotta nel 2023 in quattro fasi --- discussioni qualitative con professionisti di sette paesi, un'indagine quantitativa inviata a circa 64.000 professionisti con oltre 3.400 risposte complete, una fase di commento pubblico su bozza con quasi 9.000 osservazioni e una revisione ANSI che ha prodotto altri 3.900 commenti --- per un totale di circa 48.000 dati raccolti \cite{pmbok8}. \`E un dato metodologicamente non irrilevante: le scelte strutturali dell'edizione, discusse pi\`u avanti, sono presentate come risposta a una domanda misurata della comunit\`a professionale, non come elaborazione dottrinale.
+
+Le definizioni fondamentali sono state riscritte in questa edizione, e il confronto con quelle di PRINCE2 \`e istruttivo. Un \textbf{progetto} \`e ``un'iniziativa temporanea in un contesto unico, intrapresa per creare valore''; il \textbf{project management} \`e ``l'applicazione di conoscenze, competenze, strumenti e tecniche alle attivit\`a di progetto per raggiungere o superare il valore atteso'' \cite{pmbok8}. Il baricentro, rispetto alle formulazioni storiche del PMI, si sposta dai requisiti al valore: la guida chiarisce che ``raggiungere o superare il valore'' non autorizza n\'e il \emph{gold plating} n\'e lo \emph{scope creep}, ma segnala un processo decisionale orientato al valore. Coerentemente, il \textbf{successo di progetto} non \`e definito in termini di rispetto dei vincoli, bens\`i come ``la visione condivisa fra beneficiari, stakeholder e partecipanti che il progetto abbia consegnato un valore che valeva lo sforzo e la spesa sostenuti''.
+
+La catena concettuale che collega il lavoro al valore \`e articolata in quattro termini. Un \textbf{output} \`e un prodotto, risultato o servizio generato da un processo; un \textbf{esito} (\emph{outcome}) \`e la conseguenza finale di un processo o di un progetto, comprensiva degli effetti di lungo periodo, e pu\`o essere positivo o negativo; un \textbf{beneficio} \`e un guadagno realizzato dall'organizzazione e dagli stakeholder come risultato degli esiti consegnati, mentre gli esiti negativi prendono il nome di \textbf{disbenefici}; il \textbf{valore} \`e infine l'eccedenza dei benefici, finanziari e non finanziari, rispetto all'investimento \cite{pmbok8}. La corrispondenza con la sequenza prodotti--capacit\`a--esiti--benefici di PRINCE2 \`e evidente, ma il PMBOK aggiunge un livello ulteriore, il \textbf{sistema di generazione del valore} (\emph{value delivery system}), cio\`e l'insieme delle attivit\`a strategiche --- portfolio, programmi, progetti, prodotti e operazioni --- attraverso cui l'organizzazione costruisce e sostiene il proprio valore.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[font=\small,
+  doc/.style={draw, rounded corners, align=left, text width=5.9cm, inner sep=6pt, minimum height=3.4cm}]
+  \node[doc, fill=black!5, anchor=north] (std) at (-3.5,0) {%
+    \textbf{The Standard for Project Management}\\[2pt]
+    \emph{standard ANSI, basato sui principi}\\[4pt]
+    $\cdot$ Introduzione e termini chiave\\
+    $\cdot$ Sistema di generazione del valore\\
+    $\cdot$ Sei principi di project management\\
+    $\cdot$ Cicli di vita e cinque \emph{Focus Area}};
+  \node[doc, fill=black!5, anchor=north] (gui) at (3.5,0) {%
+    \textbf{A Guide to the PMBOK}\\[2pt]
+    \emph{guida al corpo di conoscenza}\\[4pt]
+    $\cdot$ Sette domini di performance,\\
+    \hspace*{1.2em}articolati in quaranta processi\\
+    $\cdot$ Tailoring\\
+    $\cdot$ Input e output\\
+    $\cdot$ Strumenti e tecniche};
+\end{tikzpicture}
+\caption{I due documenti che compongono l'ottava edizione del PMBOK. Rielaborazione da \cite{pmbok8}.}
+\label{fig:pmbok-architettura}
+\end{figure}
+
+\subsection{Le novit\`a dell'ottava edizione}
+
+L'ottava edizione raggruppa i propri cambiamenti in quattro categorie: aggiornamento dei termini e concetti chiave, raffinamento dei principi, reintroduzione dei \emph{Process Group} come \emph{Focus Area} e aggiornamento dei domini di performance \cite{pmbok8}. Per comprenderne la portata occorre ricordare le due edizioni immediatamente precedenti, di cui la guida stessa fornisce una sintesi. La sesta edizione (2017) era l'ultima costruita sulle \emph{Knowledge Area} e sull'impianto per processi descritti mediante input, strumenti e tecniche, e output (ITTO); fu anche la prima a incorporare contenuti agili nel testo. La settima edizione (2021) rappresent\`o una rottura: caratterizz\`o per la prima volta il project management come ``sistema di generazione del valore'', elabor\`o dodici principi e sostitu\`i le \emph{Knowledge Area} centrate sui processi con otto domini di performance centrati sui risultati, passando da guida basata sui processi a standard basato sui principi.
+
+L'ottava edizione non prosegue in quella direzione: la corregge. La guida dichiara di ``prendere le parti migliori delle edizioni precedenti'', combinando l'approccio dettagliato e orientato ai processi della sesta con il concetto di dominio di performance della settima, e integrando gli ITTO e le descrizioni dei processi direttamente nella struttura dei domini \cite{pmbok8}. Le motivazioni sono esplicitamente attribuite alla ricerca: l'88\% dei rispondenti sosteneva uno standard basato sui principi, ma chiedeva principi pi\`u azionabili e meno sovrapposti; l'80\% era favorevole alla reintroduzione dei \emph{Process Group}; il 79\% raccomandava che modalit\`a operative e processi fossero reintegrati nella guida. \`E un movimento pendolare significativo per una tesi sullo stato dell'arte: dopo una edizione che aveva spostato il PMBOK verso l'astrazione e verso un lessico affine a quello agile, la comunit\`a professionale ha chiesto il ritorno di una descrizione operativa, e l'ottava edizione la restituisce sotto forma di quaranta processi non prescrittivi incorporati nei domini.
+
+Sul piano dei principi, la riduzione da dodici a sei non \`e una potatura ma una razionalizzazione, di cui la guida documenta puntualmente la logica (tabella~\ref{tab:pmbok-principi-evoluzione}). Alcuni principi sono stati fusi, altri raffinati, altri ancora spostati fuori dall'elenco perch\'e la ricerca indicava che i professionisti preferivano vederli trattati attraverso meccanismi concreti: \`e il caso del \emph{tailoring}, migrato alla sezione dedicata, e dell'ottimizzazione delle risposte al rischio, migrata al dominio di performance corrispondente. Il criterio dichiarato \`e la minimizzazione della sovrapposizione: un tema come il coinvolgimento degli stakeholder non doveva essere formalizzato contemporaneamente come principio e come dominio di performance.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Razionalizzazione dei principi dalla settima all'ottava edizione \cite{pmbok8}.}
+\label{tab:pmbok-principi-evoluzione}
+\begin{tabularx}{\textwidth}{@{}XX@{}}
+\toprule
+\textbf{Principi della settima edizione} & \textbf{Collocazione nell'ottava edizione} \\
+\midrule
+Navigare la complessit\`a; riconoscere e rispondere alle interazioni di sistema & Fusi nel principio \emph{Adottare una visione olistica} \\
+Coinvolgere efficacemente gli stakeholder; concentrarsi sul valore & Fusi nel principio \emph{Concentrarsi sul valore}; il coinvolgimento degli stakeholder diventa un dominio di performance \\
+Abbracciare adattabilit\`a e resilienza; abilitare il cambiamento verso lo stato futuro & Trasferiti ai domini di performance \\
+Integrare la qualit\`a nei processi e nei deliverable & Principio raffinato con lo stesso nome \\
+Creare un team di progetto collaborativo & Raffinato nel principio \emph{Costruire una cultura che d\`a potere} \\
+Dimostrare comportamenti di leadership; essere un amministratore diligente, rispettoso e attento & Fusi nel principio \emph{Essere un leader responsabile} \\
+Adattare in base al contesto & Migrato alla sezione dedicata al tailoring \\
+Ottimizzare le risposte al rischio & Migrato al dominio di performance Rischio \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{I sei principi e la mentalit\`a di project management}
+
+I principi del PMBOK, a differenza di quelli di PRINCE2, non sono obblighi: la guida precisa che ``i principi del project management non sono prescrittivi, ma sono intesi a rafforzare la mentalit\`a e guidare il comportamento delle persone coinvolte nei progetti'' \cite{pmbok8}. Sono inoltre dichiarati complementari e non contraddittori fra loro, pur potendo sovrapporsi nella pratica. La differenza rispetto alla formula PRINCE2 --- se anche un solo principio non \`e applicato, non si tratta di un progetto PRINCE2 --- \`e netta e riassume bene la distanza fra metodo e corpo di conoscenza.
+
+L'ottava edizione inquadra i sei principi entro quella che chiama la \textbf{mentalit\`a di project management} (\emph{project management mindset}), articolata in tre dimensioni: \emph{proattiva}, che integra i principi della visione olistica e della qualit\`a incorporata; \emph{di responsabilit\`a} (\emph{ownership}), che integra la leadership responsabile e la cultura che d\`a potere; e \emph{orientata al valore}, che integra la concentrazione sul valore e la sostenibilit\`a. La guida distingue esplicitamente questa mentalit\`a dalla ``meccanica'' del project management, rappresentata dai domini di performance: i principi guidano mentalit\`a e comportamenti, i domini sono le aree in cui quei comportamenti si manifestano (figura~\ref{fig:pmbok-mindset}). I sei principi sono riassunti nella tabella~\ref{tab:pmbok-principi}.
+
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[font=\small,
+  dim/.style={draw, rounded corners, align=center, minimum height=0.85cm, minimum width=4.4cm, fill=black!12},
+  pri/.style={draw, rounded corners, align=center, text width=3.9cm, minimum height=1.55cm, fill=black!4}]
+  \node[dim] (d1) at (-5.0,4.2) {Proattiva};
+  \node[dim] (d2) at (0,4.2) {Responsabilit\`a};
+  \node[dim] (d3) at (5.0,4.2) {Orientata al valore};
+  \node[pri] (p1) at (-5.0,2.7) {Adottare una visione olistica};
+  \node[pri] (p2) at (0,2.7) {Essere un leader responsabile};
+  \node[pri] (p3) at (5.0,2.7) {Concentrarsi sul valore};
+  \node[pri] (p4) at (-5.0,0.85) {Integrare la qualit\`a nei processi e nei deliverable};
+  \node[pri] (p5) at (0,0.85) {Costruire una cultura che d\`a potere};
+  \node[pri] (p6) at (5.0,0.85) {Integrare la sostenibilit\`a in tutte le aree di progetto};
+  \node[draw, rounded corners, minimum width=14.4cm, minimum height=1.1cm, fill=black!8, align=center] (dom) at (0,-1.05) {Sette domini di performance\\ \emph{(la meccanica del project management)}};
+  \draw[-{Latex[length=2.5mm]}] (p4.south) -- (p4.south|-dom.north);
+  \draw[-{Latex[length=2.5mm]}] (p5.south) -- (p5.south|-dom.north);
+  \draw[-{Latex[length=2.5mm]}] (p6.south) -- (p6.south|-dom.north);
+\end{tikzpicture}}
+\caption{Le tre dimensioni della mentalit\`a di project management, i sei principi che le compongono e il loro rapporto con i domini di performance. Rielaborazione da \cite{pmbok8}.}
+\label{fig:pmbok-mindset}
+\end{figure}
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{I sei principi di project management dell'ottava edizione \cite{pmbok8}.}
+\label{tab:pmbok-principi}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{4.4cm}X@{}}
+\toprule
+\textbf{Principio} & \textbf{Contenuto} \\
+\midrule
+Adottare una visione olistica & Comprendere e gestire il progetto considerando tutte le componenti e le loro interdipendenze come parti di un sistema pi\`u ampio, in linea con il pensiero sistemico \\
+Concentrarsi sul valore & Valutare e correggere con continuit\`a l'allineamento fra progetto, obiettivi di business e benefici attesi; il valore per unit\`a di investimento \`e l'indicatore ultimo di successo \\
+Integrare la qualit\`a nei processi e nei deliverable & Mantenere un'attenzione costante alle soglie di qualit\`a attese, misurate per conformit\`a ai criteri di accettazione, alla \emph{definition of done}, all'idoneit\`a all'uso e all'efficienza complessiva \\
+Essere un leader responsabile & Assumersi la responsabilit\`a degli obiettivi di business del progetto, delle azioni intraprese e delle decisioni prese, con integrit\`a, consapevolezza di s\'e, umilt\`a e adattabilit\`a dello stile di leadership \\
+Integrare la sostenibilit\`a in tutte le aree di progetto & Soddisfare i bisogni presenti senza compromettere la capacit\`a delle generazioni future, considerando persone, pianeta, societ\`a e valore in tutte le fasi del ciclo di vita \\
+Costruire una cultura che d\`a potere & Promuovere fiducia reciproca, chiarezza dei ruoli e collaborazione proattiva fra stakeholder e membri del team, come condizione per la riuscita del progetto \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Due di questi principi meritano un'annotazione. Il principio sulla sostenibilit\`a compare per la prima volta in questa edizione e ricalca la formulazione classica dello sviluppo sostenibile; la guida indica una gerarchia crescente di strategie di risposta alle esternalit\`a prodotte dal progetto: compensare gli stakeholder per gli esiti negativi, minimizzarli, evitarli del tutto \cite{pmbok8}. La convergenza con PRINCE2 7, che ha introdotto la sostenibilit\`a fra i sette aspetti di performance, \`e notevole e suggerisce che si tratti di una pressione esterna comune ai due standard piuttosto che di una scelta autonoma dell'uno o dell'altro. Il principio della leadership responsabile, dal canto suo, giustifica la propria esistenza con un argomento empirico: poich\'e i progetti coinvolgono organizzazioni, funzioni e fornitori che non interagiscono abitualmente, e poich\'e le poste in gioco sono pi\`u alte che nell'operativit\`a corrente, ``comportamenti di leadership efficaci si riscontrano pi\`u frequentemente, e da parte di pi\`u persone, nei progetti ad alte prestazioni che in quelli a basse prestazioni''.
+
+\subsection{Il sistema di generazione del valore e il contesto di progetto}
+
+Lo standard colloca il progetto entro il sistema di generazione del valore dell'organizzazione, in cui portfolio, programmi, progetti, prodotti e operazioni concorrono, individualmente o collettivamente, alla creazione di valore. Il portfolio management \`e presentato come il quadro che collega la strategia all'esecuzione, ottimizzando l'impiego delle risorse; le operazioni sostengono e influenzano gli altri componenti. Il sistema, precisa la guida, funziona al meglio quando informazioni e \emph{feedback} circolano con continuit\`a fra tutti i componenti \cite{pmbok8}.
+
+Il contesto \`e descritto attraverso due categorie di influenze. I \textbf{fattori ambientali dell'impresa} (\emph{enterprise environmental factors}, EEF) sono condizioni non direttamente controllate dal team che vincolano o indirizzano il progetto e possono essere interne all'organizzazione --- cultura, struttura e governance, distribuzione geografica, infrastruttura, sistemi informativi, disponibilit\`a di risorse, competenze del personale, capacit\`a finanziaria --- oppure esterne, come condizioni di mercato, influenze sociali e culturali, vincoli normativi, ricerca accademica, standard governativi o di settore, considerazioni finanziarie, elementi dell'ambiente fisico, tecnologie emergenti e regolamentazione sanitaria. Gli \textbf{asset dei processi organizzativi} (\emph{organizational process assets}, OPA) sono invece interni all'organizzazione e comprendono piani, processi, documenti, modelli e repository di conoscenza dell'organizzazione esecutrice.
+
+Sul piano organizzativo, il PMBOK adotta un'impostazione marcatamente diversa da quella di PRINCE2. Non definisce una struttura di team con ruoli obbligatori, ma elenca sette \textbf{funzioni associate ai progetti} che possono essere svolte da un individuo, da un team o da una combinazione di ruoli: fornire supervisione e coordinamento, sollecitare e gestire il \emph{feedback}, facilitare e supportare, eseguire il lavoro, applicare competenze specialistiche, fornire direzione e visione organizzativa, fornire risorse \cite{pmbok8}. Alla descrizione delle funzioni segue quella dei ruoli --- team di project management, project manager, sponsor, cliente, \emph{product owner}, team di progetto, utenti finali --- ma con l'avvertenza esplicita che, essendo ogni impresa e ogni progetto unici, funzioni, ruoli e responsabilit\`a possono variare di conseguenza.
+
+Questa impostazione consente alla guida un'apertura che PRINCE2, vincolato alla struttura del project board, non pu\`o formulare negli stessi termini: il coordinamento del lavoro pu\`o essere decentralizzato, con team che si auto-organizzano e si auto-gestiscono, come nei progetti agili, oppure centralizzato sotto la guida di un project manager, come nei progetti predittivi, oppure ancora misto. La guida arriva a osservare che in molte organizzazioni il titolo di ``project manager'' pu\`o non designare chi effettivamente gestisce un progetto e che, negli approcci adattivi, funzioni come \emph{product owner}, \emph{scrum master} o \emph{agile coach} possono assorbire parte delle responsabilit\`a di project management: ``l'essenza del project management risiede nelle caratteristiche del progetto stesso piuttosto che nel titolo dell'individuo che lo supervisiona'' \cite{pmbok8}.
+
+Merita infine attenzione il modo in cui la guida tratta la valutazione del successo, che richiede due dimensioni distinte: il successo degli \emph{esiti} del progetto, cio\`e l'effettiva realizzazione del valore atteso, e il successo dei \emph{processi} di project management, misurato dall'aderenza a vincoli di costo, ambito, tempo e qualit\`a. La guida illustra la distinzione con due casi opposti: l'Opera House di Sydney, completata con un costo finale di 102 milioni di dollari australiani contro i 7 preventivati e in quattordici anni anzich\'e quattro --- gestione generalmente considerata fallimentare, risultato che ha superato le attese molte volte --- e un cavalcavia dell'autostrada 15 a Montr\'eal, costruito con successo per circa 11 milioni di dollari canadesi e demolito un anno dopo perch\'e non allineato ai piani di riqualificazione del ponte adiacente \cite{pmbok8}.
+
+\subsection{Cicli di vita, approcci di sviluppo e Focus Area}
+
+Il ciclo di vita del progetto \`e definito come la serie di attivit\`a o fasi che il progetto attraversa dall'avvio alla chiusura, indipendentemente dal lavoro specifico e dall'approccio di sviluppo adottato. Le fasi possono essere sequenziali, di transizione o sovrapposte, e sono spesso separate da \emph{phase gate}, punti di revisione in cui si verifica il raggiungimento dei criteri di uscita prima di procedere. La guida segnala che tali punti di controllo, tradizionalmente collocati al termine di ciascuna fase, possono essere utilmente posti anche all'inizio \cite{pmbok8}.
+
+L'\textbf{approccio di sviluppo} \`e il mezzo con cui si crea e si fa evolvere un prodotto, servizio o risultato durante il ciclo di vita, e va tenuto distinto dalla fase di sviluppo del progetto. Il PMBOK ne riconosce tre, disposti lungo uno spettro (figura~\ref{fig:pmbok-spettro}). L'approccio \textbf{predittivo}, detto anche a cascata, guidato dal piano o tradizionale, \`e adatto quando l'ambito pu\`o essere stabilizzato precocemente e per progetti di grandi dimensioni con investimenti rilevanti o sorveglianza normativa; in esso le baseline di ambito, tempi e costi costituiscono la \emph{baseline integrata}. L'approccio \textbf{adattivo}, detto anche guidato dal cambiamento o agile, \`e utile quando requisiti e soluzione tecnica sono soggetti a incertezza e volatilit\`a elevate: si stabilisce una visione chiara all'inizio e i requisiti noti sono progressivamente elaborati, modificati o sostituiti sulla base del \emph{feedback}. L'approccio \textbf{ibrido} combina i due.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[font=\small]
+  \node[draw, rounded corners, minimum width=3.6cm, minimum height=0.9cm, fill=black!5] (pre) at (-4.2,0) {Predittivo};
+  \node[draw, rounded corners, minimum width=3.6cm, minimum height=0.9cm, fill=black!5] (hyb) at (0,0) {Ibrido};
+  \node[draw, rounded corners, minimum width=3.6cm, minimum height=0.9cm, fill=black!5] (ada) at (4.2,0) {Adattivo};
+  \draw[-{Latex[length=3mm]}] (-6.1,-1.05) -- (6.1,-1.05);
+  \node[font=\footnotesize, anchor=north] at (0,-1.2) {sempre pi\`u iterativo e incrementale};
+\end{tikzpicture}
+\caption{Lo spettro degli approcci di sviluppo secondo il PMBOK 8. Rielaborazione da \cite{pmbok8}.}
+\label{fig:pmbok-spettro}
+\end{figure}
+
+La trattazione degli approcci adattivi \`e notevolmente pi\`u estesa e specifica di quella riservata all'iterativo-incrementale da PRINCE2. La guida distingue la dimensione iterativa, che raffina il prodotto attraverso cicli ripetuti, da quella incrementale, che lo consegna in segmenti utilizzabili; descrive la schedulazione basata sul flusso, richiamando esplicitamente il metodo Kanban e la teoria dei vincoli; e presenta una mappa dei metodi agili classificati per ampiezza di copertura del ciclo di vita e profondit\`a di dettaglio, che colloca Scrum, XP, FDD, Crystal e Kanban fra i metodi di team e SAFe, LeSS, DSDM, Lean, \emph{Scrum of Scrums} e Agile UP fra gli approcci scalati \cite{pmbok8}. Compare inoltre il concetto di \emph{triangolo invertito}: laddove nell'approccio predittivo l'ambito \`e fisso e le variazioni si assorbono su budget o tempi, negli approcci adattivi tipicamente budget e tempi sono fissati e la variabile \`e l'ambito. La guida osserva infine che ``in pratica, la maggior parte dei progetti pu\`o trarre forte beneficio da un approccio ibrido'', poich\'e concentrarsi esclusivamente sull'uno o sull'altro non affronta pienamente la variet\`a delle sfide dei progetti moderni.
+
+Alla scelta dell'approccio si affianca la \textbf{cadenza di consegna}, che pu\`o prevedere una consegna singola, consegne multiple, consegne periodiche a calendario fisso oppure consegna continua, cio\`e il rilascio incrementale e continuativo di valore in produzione.
+
+La struttura di controllo \`e infine fornita dalle cinque \textbf{Project Management Focus Area}: \emph{Initiating}, \emph{Planning}, \emph{Executing}, \emph{Monitoring and Controlling} e \emph{Closing}. Si tratta dei cinque \emph{Process Group} storici, reintrodotti in questa edizione ma reinterpretati: mentre in passato erano categorie logiche di processi formali di project management, la guida osserva che oggi i progetti soddisfano quei cinque concetti anche attraverso pratiche informali e politiche flessibili, e li ripropone quindi come aree di focalizzazione implementabili ``mediante processi formali, pratiche informali o altre politiche, procedure o tecniche'' \cite{pmbok8}. Il testo avverte esplicitamente di non confondere le Focus Area con le fasi del progetto e ricorda che, sebbene presentate in sequenza, esse in pratica si sovrappongono e interagiscono dinamicamente lungo tutto il ciclo di vita. Due terzi dei rispondenti alla ricerca preparatoria hanno indicato questi cinque concetti come indipendenti dall'approccio di sviluppo adottato, ed \`e questa la giustificazione con cui la guida ne rivendica l'universalit\`a.
+
+\subsection{I sette domini di performance e i quaranta processi}
+
+Un \textbf{dominio di performance} \`e definito come ``un gruppo di processi correlati che sono critici per la consegna efficace del valore di progetto''. I sette domini --- Governance, Ambito, Schedulazione, Finanza, Stakeholder, Risorse e Rischio --- sono presentati senza ordine n\'e peso specifico e operano come sistema integrato, in cui ciascuno \`e interdipendente dagli altri. Il testo insiste sul fatto che essi ``corrono in parallelo lungo tutto il ciclo di vita'' e non vanno affrontati come compartimenti stagni \cite{pmbok8}. Ogni dominio \`e articolato in cinque parti: concetti chiave, processi, considerazioni di tailoring, interazioni con gli altri domini e verifica dei risultati (\emph{check results}).
+
+Rispetto agli otto domini della settima edizione, l'insieme \`e stato ridisegnato per riassorbire le \emph{Knowledge Area} storiche: la qualit\`a, che nella sesta edizione era un'area di conoscenza autonoma, \`e ora parte del dominio Ambito, con la formula ``la qualit\`a come caratteristica'' (\emph{quality as a feature}); l'integrazione confluisce nella Governance; le comunicazioni sono assorbite dal dominio Stakeholder. La tabella~\ref{tab:pmbok-processi} riporta la mappatura completa dei quaranta processi sui sette domini e sulle cinque Focus Area, che costituisce la struttura portante dell'edizione.
+
+\begin{table}[htbp]
+\centering
+\scriptsize
+\linespread{1}\selectfont
+\renewcommand{\arraystretch}{1.15}
+\caption{I quaranta processi dell'ottava edizione, per dominio di performance e Focus Area \cite{pmbok8}.}
+\label{tab:pmbok-processi}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.05cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Dominio} & \textbf{Avvio} & \textbf{Pianificazione} & \textbf{Esecuzione} & \textbf{Monitoraggio e controllo, chiusura} \\
+\midrule
+Governance & Avviare il progetto o la fase & Integrare e allineare i piani di progetto; pianificare la strategia di approvvigionamento & Gestire l'esecuzione del progetto; gestire l'assicurazione della qualit\`a; gestire la conoscenza di progetto & Monitorare e controllare le prestazioni; valutare e implementare i cambiamenti; chiudere il progetto o la fase \\
+Ambito & --- & Pianificare la gestione dell'ambito; elicitare e analizzare i requisiti; definire l'ambito; sviluppare la struttura dell'ambito & --- & Monitorare e controllare l'ambito; validare l'ambito \\
+Schedulazione & --- & Pianificare la gestione della schedulazione; sviluppare la schedulazione & --- & Monitorare e controllare la schedulazione \\
+Finanza & --- & Pianificare la gestione finanziaria; stimare i costi; sviluppare il budget & --- & Monitorare e controllare le finanze \\
+Stakeholder & Identificare gli stakeholder & Pianificare il coinvolgimento degli stakeholder; pianificare la gestione delle comunicazioni & Gestire il coinvolgimento degli stakeholder; gestire le comunicazioni & Monitorare il coinvolgimento degli stakeholder; monitorare le comunicazioni \\
+Risorse & --- & Pianificare la gestione delle risorse; stimare le risorse & Acquisire le risorse; guidare il team & Monitorare e controllare l'impiego delle risorse \\
+Rischio & --- & Pianificare la gestione dei rischi; identificare i rischi; eseguire l'analisi dei rischi; pianificare le risposte ai rischi & Implementare le risposte ai rischi & Monitorare i rischi \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\paragraph{Governance.} Il dominio comprende il quadro, le funzioni e i processi che guidano le decisioni di project management per ottimizzare la generazione di valore; \`e definito olistico e integrativo, poich\'e considera tutti gli altri domini. La guida avverte che l'applicazione del modello di governance \`e una decisione delicata, perch\'e ``troppa governance rischia di sprecare risorse, mentre troppo poca pu\`o portare a problemi di allineamento strategico e di prestazioni'', e indica una gradazione: leggera per i metodi adattivi, moderata o mista per i progetti ibridi, completa per portfolio, programmi e progetti predittivi di grandi dimensioni.
+
+\paragraph{Ambito.} L'ambito occupa una posizione centrale, perch\'e il valore di un progetto deriva dall'esito consegnato in coerenza con esso. I concetti chiave includono il \emph{business case}, il requisito, la \emph{scope baseline} --- approvata e modificabile solo tramite controllo formale delle modifiche negli ambienti predittivi, ridefinita all'inizio di ciascuna iterazione in quelli adattivi --- la \emph{work breakdown structure}, il \emph{product backlog} e la \emph{definition of done}. Vi compare anche una struttura meno nota, la \emph{value breakdown structure}, che collega gerarchicamente l'ambito di progetto al valore atteso, associando a ciascun deliverable una stima di valore utilizzabile per prioritizzare il lavoro.
+
+\paragraph{Schedulazione.} Il dominio riguarda la gestione del completamento tempestivo del progetto. La guida riconosce che, con timeline sempre pi\`u compresse, pu\`o essere impossibile sviluppare una schedulazione dettagliata a priori anche in progetti predittivi, e raccomanda l'elaborazione progressiva mediante \emph{rolling wave planning}. I concetti chiave comprendono la schedulazione di progetto, la stima, la \emph{schedule baseline}, la flessibilit\`a, le previsioni e i diagrammi reticolari.
+
+\paragraph{Finanza.} Il dominio tratta l'uso e l'allocazione delle risorse monetarie, coprendo pianificazione, stima, definizione del budget, finanziamento e controllo dei costi. \`E qui che compaiono gli indicatori economici tradizionalmente associati al PMBOK --- ritorno sull'investimento, tasso interno di rendimento, periodo di recupero, ritorno sul capitale medio impiegato --- ma la guida precisa che il valore ``pu\`o essere pi\`u che semplice profitto'' e comprendere valore per le persone e per il pianeta.
+
+\paragraph{Stakeholder.} Il dominio copre l'identificazione, l'analisi e il coinvolgimento degli stakeholder lungo l'intero ciclo di vita, ed \`e strettamente collegato alla gestione delle comunicazioni. La guida sottolinea che le attivit\`a di identificazione, prioritizzazione e coinvolgimento vanno riviste periodicamente, e che le competenze interpersonali e di leadership sono importanti quanto quelle tecniche, se non di pi\`u.
+
+\paragraph{Risorse.} Il dominio riguarda l'efficacia e l'efficienza con cui il team pianifica e impiega le risorse disponibili, umane e fisiche o virtuali. Distingue il ruolo del project manager, responsabile della formazione e del funzionamento del team, da quello del \emph{resource manager}, che ha autorit\`a gestionale su una o pi\`u risorse, e riconosce che il team pu\`o essere guidato dall'alto oppure auto-organizzarsi con decisioni decentralizzate.
+
+\paragraph{Rischio.} Il dominio \`e presentato come ``un approccio complessivo alla creazione di resilienza di progetto''. Il rischio \`e definito come evento o condizione incerta con effetto positivo o negativo sugli obiettivi, con la distinzione fra minacce e opportunit\`a gi\`a nota da PRINCE2. Il PMBOK aggiunge per\`o alcuni strumenti concettuali propri: la distinzione fra rischio e \emph{issue} --- il secondo si \`e gi\`a verificato o \`e in corso, il primo no --- la nozione di \emph{rischio complessivo}, cio\`e l'effetto dell'incertezza sul progetto nel suo insieme, che se troppo elevato pu\`o portare l'organizzazione a cancellare il progetto, e una classificazione quadripartita in noto-noto (fatti e requisiti, gestiti come parte dell'ambito e non come rischio), noto-ignoto (il rischio classico, per cui esiste conoscenza sufficiente a stimare probabilit\`a e impatto), ignoto-noto (conoscenza esistente nella comunit\`a ma non presso chi realizza l'iniziativa) e ignoto-ignoto (rischio emergente) \cite{pmbok8}.
+
+Le due sezioni conclusive della guida, dedicate agli \textbf{input e output} e agli \textbf{strumenti e tecniche}, catalogano gli artefatti utilizzati dai processi e le tecniche disponibili. Anche qui la guida \`e esplicita sul proprio statuto: gli elementi elencati ``non intendono essere esaustivi n\'e sono richiesti per alcun progetto specifico'', ma rappresentano selezioni di uso comune fra le innumerevoli opzioni a disposizione dei team.
+
+\subsection{Il tailoring}
+
+Nell'ottava edizione il tailoring cessa di essere un principio --- come era nella settima --- e diventa una sezione autonoma della guida, per una ragione documentata dalla ricerca: i professionisti preferivano che fosse trattato ``attraverso meccanismi gestionali concreti ed esempi'' piuttosto che come enunciato \cite{pmbok8}. \`E una differenza rilevante rispetto a PRINCE2, dove il tailoring resta uno dei sette principi obbligatori.
+
+Il tailoring \`e definito come ``l'adattamento deliberato dell'approccio di project management, della governance e dei processi per allinearli all'ambiente e agli obiettivi del progetto''. La motivazione \`e formulata in termini di equilibrio: ``troppo pochi processi possono portare a un project management inefficace, mentre impiegarne pi\`u del necessario \`e costoso e dispendioso''. Fra i benefici attesi la guida indica un maggiore impegno dei membri del team che hanno partecipato all'adattamento, un orientamento pi\`u marcato al cliente e un uso pi\`u efficiente delle risorse.
+
+Gli oggetti dell'adattamento sono tre: la scelta del ciclo di vita e dell'approccio di sviluppo, i processi e il coinvolgimento delle persone. Per i processi sono previste cinque operazioni --- aggiungere, per trattare condizioni particolari o aumentare il rigore; modificare, intervenendo su input, output, strumenti e tecniche; rimuovere, per ridurre costi o sforzi non necessari; combinare, per fondere elementi; allineare, per garantire coerenza di definizione e applicazione. Per le persone, l'adattamento riguarda le competenze, il grado di \emph{empowerment}, cio\`e quali responsabilit\`a e decisioni locali delegare al team, e l'integrazione di contributori eterogenei in un unico team di progetto.
+
+Il processo di tailoring si articola in quattro passi: selezionare l'approccio di sviluppo iniziale, adattarlo all'organizzazione, adattarlo al progetto e implementare il miglioramento continuo. Per il primo passo la guida introduce il \emph{suitability filter}, definito non come metodo rigido ma come strumento decisionale che aiuta il team a valutare le proprie circostanze --- cultura, dinamiche di team, fattori di progetto --- per individuare il migliore adattamento fra approccio predittivo, adattivo o ibrido. L'adattamento a livello organizzativo produce tipicamente metodologie differenziate, ad esempio una per i progetti piccoli e una per quelli grandi o critici, dalle quali derivano poi le metodologie dei singoli progetti; in questo passaggio il \emph{project management office}, dove esiste, svolge un ruolo di revisione e approvazione, con l'avvertenza che il tailoring che riguarda solo il team richiede minore supervisione di quello che coinvolge gruppi esterni.
+
+La guida riconosce infine i propri limiti di applicabilit\`a: vi sono situazioni che restringono il grado di adattamento possibile, per esempio quando le politiche organizzative impongono un approccio specifico o quando un contratto lo prescrive.
 
 \section{PRINCE2}
 
