@@ -1,6 +1,488 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CAPITOLO 3 --- APPROCCI AGILE AL PROJECT MANAGEMENT
+%
+% Principio ordinatore: le sezioni procedono per LIVELLO DI PRESCRITTIVITA',
+% cioe' per quanto ciascun testo dice su che cosa fare concretamente.
+%   3.2  valori          (Manifesto: due pagine, nessuna procedura)
+%   3.4  metodi di team  (Scrum, Kanban: ruoli, eventi, artefatti)
+%   3.5  scala           (SAFe, LeSS: strutture organizzative complete)
+% Questo consente di dichiarare un criterio di selezione argomentabile (3.3) e
+% permette al capitolo 4 di confrontare a parita' di livello.
+%
+% Convenzione di questo file: il testo visibile e' l'ossatura argomentativa
+% (spesso riutilizzabile come frase di apertura della sezione); i blocchi
+% commentati con % contengono le indicazioni di stesura e le fonti da usare.
+% Decisioni prese: taglio generico di project management, senza pratiche
+% ingegneristiche di dettaglio; Disciplined Agile rimandato al capitolo 4.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \chapter{Approcci Agile al Project Management}
 
-Introduce il cambio di paradigma rispetto al tradizionale: da piano predittivo ad adattamento continuo
+Il capitolo precedente ha potuto assumere due testi autoritativi come unica
+fonte e derivarne l'intera trattazione. Per l'Agile un equivalente non esiste:
+non c'\`e uno standard, non c'\`e un ente che lo definisca, e i testi
+disponibili vanno da una dichiarazione di valori di due pagine a framework
+proprietari che prescrivono l'intera struttura organizzativa. Il capitolo \`e
+quindi ordinato secondo il \textbf{livello di prescrittivit\`a} dei testi
+esaminati, dal meno al pi\`u vincolante. La scelta non \`e soltanto espositiva:
+gran parte delle incomprensioni nel dibattito fra approcci tradizionali e Agile
+nasce dal confrontare strati diversi, e stabilire gli strati qui consente al
+capitolo~\ref{cap:confronto} di confrontare a parit\`a di livello.
 
-Si parlerà sicuramentr dell' Agile Manifesto, di Scrum, Kanban e altro.
-In pieno stile Agile è ancora da definire concretamente cosa verrà trattato.
+% NOTA: \ref{cap:confronto} richiede \label{cap:confronto} in
+% 04-confronto-approcci.tex, subito dopo il \chapter{}. Se preferisci non
+% introdurre label, sostituisci con "nel capitolo seguente".
+
+\section{Il cambio di paradigma e le sue radici}
+
+% Obiettivo della sezione: impedire due letture sbagliate, quella per cui
+% l'Agile nasce dal nulla nel 2001 e quella per cui il predittivo era una
+% sciocchezza che qualcuno ha finalmente corretto.
+
+\subsection{Il problema a cui l'Agile risponde}
+
+Gli approcci descritti nel capitolo precedente presuppongono che l'esito atteso
+sia specificabile con sufficiente precisione prima dell'inizio del lavoro. Nello
+sviluppo software questa condizione \`e frequentemente disattesa.
+
+% Da sviluppare:
+% - Volatilita' dei requisiti: il committente scopre che cosa vuole usando il
+%   prodotto, non specificandolo. Il costo della specifica anticipata cresce
+%   piu' rapidamente del suo beneficio.
+% - Il software non ha vincoli fisici di produzione: la modifica tardiva costa
+%   in modo diverso rispetto all'edilizia o all'impiantistica, cioe' proprio i
+%   domini da cui provengono CPM e PERT (richiamare la sezione 2.1.1).
+% - Il problema del feedback ritardato: in un ciclo predittivo la verifica di
+%   avere costruito la cosa giusta arriva alla fine, quando correggere e' piu'
+%   costoso.
+% - Contesto storico: la cosiddetta "crisi del software", i tassi di
+%   fallimento riportati dai primi report Standish (usarli con cautela: la
+%   metodologia CHAOS e' stata ampiamente criticata, dichiaralo).
+% Chiudere formulando la domanda a cui l'Agile risponde: come si governa un
+% progetto quando l'oggetto da costruire non e' conoscibile in anticipo?
+
+\subsection{Le radici: lo sviluppo iterativo prima del 2001}
+
+Lo sviluppo iterativo e incrementale non nasce con il Manifesto Agile: lo
+precede di decenni, ed \`e questa anteriorit\`a a spiegare perch\'e nel 2001
+esistessero gi\`a diversi metodi da unificare.
+
+% Da sviluppare, fonte principale: Larman e Basili \cite{larman2003}, che
+% ricostruiscono l'uso di cicli iterativi fino agli anni cinquanta.
+% Punti da toccare:
+% - Il paper di Royce del 1970 \cite{royce1970} e' universalmente citato come
+%   origine del modello a cascata, ma il testo lo presenta come rischioso e
+%   propone di iterarlo. E' un caso interessante di fonte fondativa fraintesa:
+%   il "waterfall" canonico e' una lettura selettiva.
+% - Il modello a spirale di Boehm \cite{boehm1988}: iterazione guidata dal
+%   rischio, gia' del 1988.
+% - I metodi degli anni novanta, tutti precedenti al Manifesto: DSDM (1994),
+%   Scrum presentato a OOPSLA nel 1995 \cite{schwaber1995}, XP fra il 1996 e il
+%   1999 \cite{beck2004}, Crystal, FDD.
+% Tesi della sottosezione: il Manifesto non inventa i metodi, li ratifica e
+% fornisce loro un lessico comune. E' un atto di unificazione, non di
+% fondazione. Serve anche a giustificare l'ordine del capitolo, che non e'
+% cronologico.
+
+\section{Il Manifesto Agile}
+
+\subsection{Genesi e statuto del testo}
+
+Il \emph{Manifesto for Agile Software Development} \`e il risultato di un
+incontro tenutosi dall'11 al 13 febbraio 2001 presso lo Snowbird ski resort, in
+Utah, fra diciassette persone provenienti da metodi gi\`a esistenti ---
+Extreme Programming, Scrum, DSDM, Adaptive Software Development, Crystal,
+Feature-Driven Development, Pragmatic Programming e altri \cite{agilemanifesto}.
+
+% Da sviluppare, con la stessa domanda posta a PMBOK e PRINCE2 nel cap. 2:
+% CHE TIPO DI TESTO E'? Risposta: una dichiarazione di valori, deliberatamente
+% non operativa, di lunghezza inferiore alle due pagine, priva di autorita'
+% istituzionale e priva di meccanismi di aggiornamento. Non e' uno standard
+% (nessun ente lo mantiene), non e' un metodo (non dice che cosa fare), non e'
+% certificabile. E' un testo che non e' mai stato rivisto dal 2001.
+% Da segnalare: l'assenza di un proprietario e' cio' che ha reso possibile sia
+% la diffusione sia l'appropriazione commerciale discussa in 3.7.
+
+\subsection{I quattro valori}
+
+% Riportare i quattro valori (individui e interazioni; software funzionante;
+% collaborazione col cliente; rispondere al cambiamento) e concentrarsi sulla
+% clausola finale, che e' il punto piu' frainteso del testo:
+% "That is, while there is value in the items on the right, we value the items
+% on the left more."
+% Il Manifesto NON nega il termine di destra: non dice di non documentare, di
+% non avere processi, di non negoziare contratti, di non pianificare. Stabilisce
+% una precedenza in caso di conflitto, non una esclusione. Questa lettura
+% erronea e' all'origine di buona parte dell'opposizione con gli approcci
+% tradizionali che il capitolo 4 dovra' ridimensionare.
+% Utile una tabella a due colonne con i quattro accoppiamenti.
+
+\subsection{I dodici principi}
+
+% Non elencarli uno per uno in prosa: raggrupparli. Un raggruppamento che
+% funziona e regge l'argomentazione successiva:
+%   (a) consegna e valore: consegna frequente, software funzionante come misura
+%       primaria del progresso, soddisfazione del cliente;
+%   (b) cambiamento: accogliere i requisiti mutevoli anche a sviluppo avanzato;
+%   (c) persone e organizzazione: individui motivati, conversazione diretta,
+%       team auto-organizzati, sostenibilita' del ritmo;
+%   (d) eccellenza tecnica e semplicita';
+%   (e) riflessione periodica e adattamento (il principio che fonda la
+%       retrospettiva).
+% Da evidenziare il principio sui team auto-organizzati, perche' e' la premessa
+% implicita che rende problematica la scala trattata in 3.5, e il principio
+% sulla conversazione faccia a faccia, che presuppone team piccoli e co-locati.
+% Una tabella con i dodici principi raggruppati per famiglia sarebbe coerente
+% con lo stile del capitolo 2.
+
+\subsection{Che cosa il Manifesto non dice}
+
+Pi\`u istruttivo dell'elenco dei suoi contenuti \`e l'elenco delle sue assenze.
+
+% Da sviluppare, e' la sottosezione che prepara sia 3.3 sia 3.6:
+% - Non nomina ruoli, cerimonie, artefatti, stime, iterazioni, backlog.
+%   Tutto cio' che il senso comune associa all'Agile viene dai metodi, non dal
+%   Manifesto.
+% - Non nomina il PROJECT MANAGEMENT, mai. Parla di "software development".
+%   Non nomina il progetto come organizzazione temporanea, ne' il business case,
+%   ne' la governance, ne' il rischio. Questo va detto esplicitamente qui,
+%   perche' e' la premessa del paragrafo 3.6 e uno dei risultati piu'
+%   significativi del capitolo per la tesi nel suo complesso.
+% - Non dice nulla sulla scala, sui contratti, sugli ambienti regolamentati.
+% Conclusione della sezione: proprio perche' non e' operativo, il Manifesto
+% richiede uno strato che lo traduca in pratica. Cerniera verso 3.3.
+
+\section{Dal valore alla pratica: il problema dell'operativizzazione}
+
+Un testo di valori non \`e applicabile per costruzione: fra l'enunciato ``gli
+individui e le interazioni pi\`u che i processi e gli strumenti'' e una
+decisione operativa esiste una distanza che qualcosa deve colmare. \`E questa
+distanza a spiegare la proliferazione di framework che caratterizza l'Agile e a
+distinguerlo, sul piano della struttura testuale, dagli approcci esaminati nel
+capitolo precedente.
+
+% Sezione breve, di cerniera, ma indispensabile: e' QUI CHE SI DICHIARA IL
+% CRITERIO DI SELEZIONE delle sezioni 3.4 e 3.5, altrimenti la scelta dei
+% framework trattati appare arbitraria.
+%
+% Criterio proposto, ancorato a una fonte esterna e gia' citata nel capitolo 2:
+% il PMBOK 8 \cite{pmbok8} dispone i metodi agili su due assi, ampiezza di
+% copertura del ciclo di vita e profondita' di dettaglio della guida
+% (figura 4-7 della guida, gia' richiamata in 2.2.5). Adottando quella mappa
+% come griglia, si trattano:
+%   - un metodo di team ad ampia adozione e prescrittivita' media (Scrum);
+%   - un metodo di team a prescrittivita' minima, che si applica sopra il
+%     processo esistente invece di sostituirlo (Kanban);
+%   - due approcci scalati agli estremi opposti dello spettro prescrittivo
+%     (SAFe e LeSS).
+% Gli altri vengono richiamati in tabella. Dichiarare anche che cosa si esclude
+% e perche': i framework proprietari con corpo documentale non pubblico e le
+% varianti aziendali non documentate.
+%
+% Utile anche introdurre qui la distinzione, presa dal PMBOK 8, fra METODO
+% (sequenza strutturata di passi) e TOOL KIT (collezione di strumenti fra cui
+% scegliere): serve nel capitolo 4 per collocare Disciplined Agile.
+
+\section{I metodi di team}
+
+% Nota di taglio: la tesi resta su un piano di project management. Le pratiche
+% tecniche vengono nominate per completezza dello strato, non descritte.
+
+\subsection{Scrum}
+
+Scrum \`e il framework agile a maggiore diffusione ed \`e definito da un testo
+breve e a revisione dichiarata, lo \emph{Scrum Guide}, la cui ultima versione
+risale a novembre 2020 \cite{scrumguide2020}.
+
+% Da sviluppare:
+% - Fondamento: il controllo empirico di processo, con i tre pilastri
+%   trasparenza, ispezione, adattamento. E' il corrispettivo funzionale del
+%   controllo per baseline degli approcci predittivi, ed e' su questo che il
+%   capitolo 4 potra' impostare il confronto.
+% - Le tre accountability (Product Owner, Scrum Master, Developers), i cinque
+%   eventi (Sprint, Sprint Planning, Daily Scrum, Sprint Review, Sprint
+%   Retrospective), i tre artefatti con i rispettivi commitment (Product
+%   Backlog / Product Goal, Sprint Backlog / Sprint Goal, Increment /
+%   Definition of Done).
+% - Lo sprint come timebox e come unita' di pianificazione: si pianifica in
+%   dettaglio solo l'iterazione corrente. Da collegare all'orizzonte di
+%   pianificazione di PRINCE2 (2.3.6) e al rolling wave planning del PMBOK
+%   (2.2.6): e' un'affinita' importante, ma il confronto va fatto nel cap. 4.
+%
+% MOSSA DIACRONICA, la stessa che ha funzionato sul PMBOK nel capitolo 2:
+% la revisione 2020 rispetto alla 2017 rende il framework MENO prescrittivo,
+% non piu'. Elimina il "development team" come entita' distinta per evitare
+% dinamiche di delega interna al team; introduce il Product Goal; passa da
+% self-organizing a self-managing (il team decide anche che cosa fare, non solo
+% come); toglie le tre domande obbligatorie dal Daily Scrum; dichiara
+% l'obiettivo di essere "minimally sufficient" e scende sotto le tredici
+% pagine. Un framework che nel tempo rimuove prescrizioni e' un dato in se',
+% e va confrontato con la traiettoria opposta del PMBOK, che nell'ottava
+% edizione reintroduce i processi (di nuovo: osservazione da cap. 4).
+% - Segnalare anche cio' che Scrum NON copre: nessuna pratica tecnica, nessuna
+%   indicazione su architettura, contratti, budget, portfolio. E' il vuoto che
+%   XP occupa (3.4.3) e che la scala deve colmare (3.5).
+
+\subsection{Kanban}
+
+Kanban \`e l'antitesi strutturale di Scrum, e va trattato per questo: non
+prevede iterazioni, ruoli n\'e eventi, e non sostituisce il processo esistente
+ma vi si applica sopra.
+
+% Da sviluppare, fonte: Anderson \cite{anderson2010}, con radici nel Toyota
+% Production System e nel lean \cite{poppendieck2003}.
+% - Le pratiche fondamentali: visualizzare il flusso di lavoro, limitare il
+%   lavoro in corso (WIP), gestire il flusso, rendere esplicite le politiche,
+%   istituire cicli di feedback, migliorare in modo collaborativo ed
+%   evolutivo.
+% - Il principio di partenza: "start with what you do now". Kanban e' un metodo
+%   di cambiamento evolutivo, non un modello organizzativo da adottare. Questa
+%   e' la differenza che conta per la tesi: non richiede di riorganizzare il
+%   lavoro prima di cominciare, il che ne spiega l'adozione in contesti dove
+%   Scrum non e' applicabile (manutenzione, supporto, flussi non progettuali).
+% - La schedulazione a flusso e la teoria dei vincoli: il PMBOK 8 le tratta
+%   esplicitamente \cite{pmbok8}, quindi qui esiste gia' un punto di contatto
+%   documentato fra i due mondi. Segnalarlo senza svilupparlo.
+% - Metriche proprie: lead time, cycle time, throughput, invece di velocity.
+% Conclusione: Kanban dimostra che "agile" non implica "iterativo a timebox",
+% e quindi che l'opposizione predittivo/iterativo non esaurisce la questione.
+
+\subsection{Le pratiche ingegneristiche e il loro statuto}
+
+Scrum e Kanban lasciano deliberatamente vuoto lo strato delle pratiche tecniche
+di realizzazione; Extreme Programming lo occupa \cite{beck2004}.
+
+% Trattazione volutamente breve: la tesi resta sul piano del project
+% management e non entra nel merito delle singole pratiche.
+% Da dire, e basta:
+% - XP prescrive pratiche di realizzazione oltre che di organizzazione del
+%   lavoro, ed e' l'unico dei metodi qui considerati a farlo.
+% - Il punto rilevante per il project management non e' quali siano quelle
+%   pratiche, ma la TESI che XP sostiene: che l'adattabilita' del processo
+%   dipenda da proprieta' tecniche del prodotto, e che nessuna riorganizzazione
+%   del lavoro possa produrre agilita' se il costo della modifica resta alto.
+%   E' un'affermazione forte, perche' colloca fuori dalla portata del project
+%   manager una delle condizioni del successo del progetto.
+% - Da qui una domanda che il capitolo 4 puo' riprendere: se cio' e' vero,
+%   il perimetro tradizionale del project management e' sufficiente?
+% Non introdurre esempi di pratiche specifiche.
+
+\subsection{Gli altri metodi di team}
+
+% Trattazione tabellare, non discorsiva. Una tabella con: metodo, anno,
+% autore/i, elemento distintivo, e una riga ciascuno per Crystal, FDD, DSDM e
+% Adaptive Software Development. Servono a documentare che il campo e' piu'
+% ampio dei due casi trattati e a giustificare, per contrasto, la selezione
+% dichiarata in 3.3. Fonte per la collocazione relativa: la mappa del
+% PMBOK 8 \cite{pmbok8}.
+
+\section{La scala}
+
+\subsection{Perch\'e la scala \`e un problema}
+
+L'estensione dell'Agile a organizzazioni di grandi dimensioni non \`e un
+problema di quantit\`a ma di coerenza interna: alcune delle sue premesse
+cessano di valere all'aumentare del numero di persone coinvolte.
+
+% Da sviluppare, ed e' la sottosezione concettualmente piu' densa di 3.5:
+% - Il Manifesto presuppone team piccoli, co-locati, in comunicazione diretta.
+%   Il principio sulla conversazione faccia a faccia e quello sui team
+%   auto-organizzati non si estendono per semplice moltiplicazione.
+% - Coordinare piu' team richiede sincronizzazione, allineamento
+%   architetturale, gestione delle dipendenze e allocazione di budget: cioe'
+%   esattamente le funzioni che il capitolo 2 ha visto attribuite alla
+%   governance. La scala reintroduce quindi il problema che il livello di team
+%   aveva potuto ignorare.
+% - Da qui l'obiezione ricorrente, da riportare in modo equanime: i framework
+%   di scala reintrodurrebbero cio' che l'Agile aveva rimosso, e sarebbero un
+%   ritorno del predittivo sotto lessico agile. Presentare l'obiezione e la
+%   replica, senza prendere posizione qui (la posizione va nel cap. 4).
+
+\subsection{SAFe}
+
+% Da trattare come l'estremo prescrittivo dello spettro.
+% Fonte: Scaled Agile \cite{safe}. Attenzione: framework proprietario a
+% revisione frequente, quindi CITARE VERSIONE E DATA DI CONSULTAZIONE.
+% - Struttura a livelli (team, programma/ART, portfolio), il Program Increment
+%   e il PI planning come evento di sincronizzazione, i ruoli aggiuntivi.
+% - Il dato interessante per la tesi: SAFe e' il framework agile piu' adottato
+%   nelle grandi organizzazioni ed e' anche il piu' criticato dall'interno del
+%   movimento. Le due cose insieme dicono qualcosa sul rapporto fra
+%   adottabilita' e fedelta' ai principi, che il capitolo 5 potra' verificare
+%   empiricamente.
+% - Non inseguire le versioni: descrivere l'impianto, non il dettaglio
+%   corrente.
+
+\subsection{LeSS}
+
+% L'estremo opposto: fonte Larman e Vodde \cite{larmanvodde2016}.
+% - L'idea di "descaling": non aggiungere strutture di coordinamento ma
+%   rimuovere complessita' organizzativa; un solo Product Backlog, un solo
+%   Product Owner, uno Sprint comune, feature team invece di component team.
+% - Il contrasto con SAFe e' il vero contenuto della sottosezione: due risposte
+%   opposte allo stesso problema. Vale la pena impostarlo come coppia, perche'
+%   mostra che "scalare l'Agile" non e' una questione tecnica ma una scelta
+%   su quanta struttura sia accettabile.
+
+\subsection{Gli altri approcci scalati}
+
+% Breve, e in parte tabellare: Scrum@Scale, Nexus, e il cosiddetto "modello
+% Spotify".
+% Su quest'ultimo una nota metodologica utile: non e' mai stato un modello ne'
+% un framework, ma la descrizione di una situazione aziendale a una certa data,
+% cosa che gli stessi autori hanno successivamente chiarito. E' un buon esempio
+% di come nel campo agile una descrizione diventi prescrizione, e si collega
+% alle critiche di 3.7.
+%
+% NOTA: Disciplined Agile NON va qui. E' trattato nel capitolo 4 come caso di
+% assorbimento dell'Agile da parte del PMI, dove e' piu' interessante come
+% mossa istituzionale che come framework.
+
+\section{Che cosa l'Agile dice del project management}
+
+% SEZIONE CARDINE DEL CAPITOLO. E' quella che lo rende un capitolo di project
+% management e non di ingegneria del software, ed e' l'aggancio diretto al
+% filo conduttore della tesi (l'interpretazione del Project Management dal
+% punto di vista dei diversi approcci).
+
+\subsection{L'assenza del project manager}
+
+Nessuno dei testi esaminati in questo capitolo prevede la figura del project
+manager, e il Manifesto non nomina mai il project management.
+
+% Da sviluppare:
+% - Constatazione documentale: verificarla e dichiararla per ciascuna fonte
+%   (Manifesto, Scrum Guide, Kanban), perche' e' un'osservazione forte e va
+%   sostenuta.
+% - L'assenza non e' una svista ma una conseguenza: se il team e'
+%   auto-gestito, il coordinamento interno non richiede un ruolo dedicato.
+% - Da segnalare che il PMBOK 8 registra questa situazione dal proprio lato,
+%   osservando che negli approcci adattivi funzioni di project management
+%   possono essere assorbite da product owner, scrum master o agile coach, e
+%   che "l'essenza del project management risiede nelle caratteristiche del
+%   progetto stesso piuttosto che nel titolo dell'individuo che lo
+%   supervisiona" \cite{pmbok8}. Qui il richiamo e' legittimo perche' la
+%   sezione parla del rapporto fra Agile e project management in generale.
+
+\subsection{La ridistribuzione delle funzioni di project management}
+
+La domanda corretta non \`e se l'Agile abbia un project manager, ma dove
+finiscano le funzioni che il capitolo precedente ha visto attribuite a quel
+ruolo.
+
+% Da sviluppare, ed e' il contributo analitico piu' originale del capitolo.
+% Metodo suggerito: prendere le funzioni identificate nel capitolo 2 e
+% chiedersi per ciascuna dove si collochi in un impianto agile. Una tabella a
+% due colonne (funzione / collocazione) sarebbe efficace. Funzioni da
+% considerare:
+%   - giustificazione dell'investimento e sua rivalidazione;
+%   - definizione e controllo dell'ambito;
+%   - pianificazione e stima;
+%   - controllo dell'avanzamento e reportistica;
+%   - gestione degli stakeholder;
+%   - gestione del rischio;
+%   - gestione della qualita';
+%   - chiusura e realizzazione dei benefici.
+% Esiti attesi, da verificare fonte alla mano: alcune funzioni si spostano sul
+% Product Owner (valore, priorita', ambito), altre sul team (stima,
+% pianificazione di dettaglio, qualita'), altre risalgono all'organizzazione
+% (finanziamento, benefici), altre ancora NON TROVANO COLLOCAZIONE ESPLICITA
+% in nessuna delle fonti agili esaminate: il rischio e la giustificazione
+% continuativa dell'investimento sono i candidati principali.
+% Quest'ultimo punto e' importante e va detto senza indulgenza: e' una lacuna
+% documentale dei testi agili, non un difetto delle organizzazioni che li
+% adottano, ed e' una delle ragioni per cui nascono gli approcci ibridi.
+
+\subsection{Progetto o prodotto}
+
+% Sottosezione breve ma concettualmente decisiva.
+% - L'Agile ragiona per PRODOTTO: flusso continuo di valore, team stabili nel
+%   tempo, backlog che non si esaurisce. Il progetto e' per definizione
+%   TEMPORANEO, e la temporaneita' e' nella definizione di progetto di tutte le
+%   fonti citate nel capitolo 2, ISO compresa \cite{iso21500-2021}.
+% - Ne segue una tensione concettuale reale e non risolta: un'organizzazione
+%   che adotta pienamente il modello a prodotto smette in un certo senso di
+%   fare progetti, e con essi perde i punti di decisione, la chiusura e la
+%   rendicontazione finale.
+% - Questa tensione va lasciata aperta qui: e' materiale per la sezione
+%   "Verso una definizione sintetica di Project Management" del capitolo 4.
+
+\section{Critiche, limiti ed evidenza empirica}
+
+% Sezione necessaria all'equilibrio della tesi: senza di essa il capitolo 3
+% risulta promozionale accanto a un capitolo 2 descrittivo e distaccato.
+% Fornisce inoltre le ipotesi da sottoporre a verifica nel questionario del
+% capitolo 5.
+
+\subsection{La base empirica}
+
+% Fonti: la revisione sistematica di Dyba' e Dingsoyr \cite{dyba2008} e la
+% rassegna decennale di Dingsoyr e altri \cite{dingsoyr2012}.
+% Da riportare con precisione:
+% - il numero limitato di studi metodologicamente solidi rispetto al volume
+%   della letteratura;
+% - la concentrazione degli studi su XP e su team piccoli, con scarsa
+%   copertura degli altri metodi e della scala;
+% - la difficolta' di definire la variabile indipendente: che cosa significa
+%   "adottare l'Agile" varia da studio a studio (su questo, Conboy
+%   \cite{conboy2009}, che ricostruisce il concetto di agilita' a partire
+%   dalle sue radici teoriche e ne mostra l'uso incoerente in letteratura);
+% - la scarsita' di confronti controllati con approcci predittivi.
+% Conclusione onesta: l'adozione dell'Agile e' largamente superiore alla
+% robustezza dell'evidenza che la sostiene. Dirlo non indebolisce la tesi, la
+% qualifica.
+
+\subsection{Le critiche interne al movimento}
+
+% Le critiche piu' interessanti vengono da dentro, ed e' questo a renderle
+% citabili senza sbilanciare il capitolo.
+% - Diversi firmatari del Manifesto hanno preso pubblicamente le distanze
+%   dalla sua istituzionalizzazione. VERIFICARE le fonti puntuali prima di
+%   citarle: sono in gran parte interventi, conferenze e post, quindi vanno
+%   citati per quello che sono, con data e URL di consultazione.
+% - Il nucleo dell'argomento: la trasformazione di una dichiarazione di valori
+%   in un mercato di certificazioni, strumenti e consulenza produce
+%   un'adozione delle forme senza adozione dei principi (la formula ricorrente
+%   e' "doing agile" contro "being agile").
+% - Il fenomeno dell'adozione rituale: cerimonie eseguite senza le condizioni
+%   che le renderebbero utili. E' verificabile nel capitolo 5, e vale la pena
+%   costruirci una domanda del questionario.
+
+\subsection{Limiti di contesto}
+
+% Dove l'Agile funziona peggio, o richiede adattamenti sostanziali:
+% - contratti a prezzo e ambito fissi, che sono incompatibili con l'ambito
+%   come variabile;
+% - ambienti regolamentati, con obblighi di tracciabilita' e documentazione
+%   probatoria;
+% - progetti con forti dipendenze fisiche o da fornitori esterni, dove
+%   l'iterazione ha un costo marginale alto;
+% - organizzazioni distribuite, dove la comunicazione diretta presupposta dal
+%   Manifesto non e' disponibile.
+% Ognuno di questi e' una ragione documentabile dell'esistenza degli approcci
+% ibridi, che il capitolo 4 trattera'.
+
+\section{Che cosa resta invariante}
+
+Attraversati i tre livelli e i metodi che li rappresentano, conviene chiedersi
+che cosa sia comune a tutti, poich\'e \`e questo nucleo, e non un framework
+particolare, che il capitolo seguente potr\`a mettere a confronto con gli
+approcci tradizionali.
+
+% Corrispettivo della sezione "Confronto interno" del capitolo 2, ma rivolto
+% all'interno dell'Agile. Serve a consegnare al capitolo 4 un oggetto definito
+% invece di un elenco di framework.
+% Candidati a invariante, da argomentare uno per uno mostrando che compaiono
+% in tutte le fonti esaminate:
+%   - cicli di feedback brevi e ricorrenti;
+%   - controllo empirico del processo al posto del controllo per conformita'
+%     a un piano;
+%   - decisioni prese al livello in cui risiede la conoscenza rilevante;
+%   - il prodotto funzionante come misura del progresso, al posto
+%     dell'avanzamento sulle attivita';
+%   - l'ambito come variabile flessibile, con tempi e risorse fissati: il
+%     "triangolo invertito" che il PMBOK 8 stesso nomina \cite{pmbok8}.
+% Da verificare anche la tenuta della lista: se un invariante non regge per
+% Kanban o per LeSS, va tolto o riformulato. Un elenco onesto di quattro voci
+% vale piu' di uno di sei che non reggono.
+% Chiudere annunciando il capitolo 4.
