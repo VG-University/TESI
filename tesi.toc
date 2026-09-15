@@ -22,57 +22,61 @@
 \contentsline {paragraph}{Risorse.}{19}{}%
 \contentsline {paragraph}{Rischio.}{19}{}%
 \contentsline {subsection}{\numberline {1.2.6}Il tailoring}{20}{}%
-\contentsline {section}{\numberline {1.3}PRINCE2}{21}{}%
+\contentsline {section}{\numberline {1.3}PRINCE2}{22}{}%
 \contentsline {subsection}{\numberline {1.3.1}I cinque elementi integrati e il contesto di progetto}{23}{}%
 \contentsline {subsection}{\numberline {1.3.2}I sette principi}{25}{}%
-\contentsline {subsection}{\numberline {1.3.3}Le persone}{26}{}%
+\contentsline {subsection}{\numberline {1.3.3}Le persone}{27}{}%
 \contentsline {subsection}{\numberline {1.3.4}Le sette pratiche}{28}{}%
-\contentsline {paragraph}{Business case.}{29}{}%
-\contentsline {paragraph}{Organizzazione.}{29}{}%
-\contentsline {paragraph}{Piani.}{31}{}%
-\contentsline {paragraph}{Qualit\`a.}{31}{}%
-\contentsline {paragraph}{Rischio.}{32}{}%
-\contentsline {paragraph}{Cambiamenti.}{32}{}%
-\contentsline {paragraph}{Progresso.}{33}{}%
-\contentsline {subsection}{\numberline {1.3.5}I sette processi}{33}{}%
-\contentsline {subsection}{\numberline {1.3.6}Il tailoring e i limiti di adattabilit\`a del metodo}{38}{}%
-\contentsline {section}{\numberline {1.4}Confronto interno tra PMBOK 8 e PRINCE2}{39}{}%
-\contentsline {chapter}{\numberline {2}Approcci Agile al Project Management}{41}{}%
-\contentsline {section}{\numberline {2.1}Il cambio di paradigma e le sue radici}{41}{}%
-\contentsline {subsection}{\numberline {2.1.1}Il problema a cui l'Agile risponde}{41}{}%
-\contentsline {subsection}{\numberline {2.1.2}Le radici: lo sviluppo iterativo prima del 2001}{42}{}%
-\contentsline {section}{\numberline {2.2}Il Manifesto Agile}{42}{}%
-\contentsline {subsection}{\numberline {2.2.1}Genesi e statuto del testo}{42}{}%
-\contentsline {subsection}{\numberline {2.2.2}I quattro valori}{42}{}%
-\contentsline {subsection}{\numberline {2.2.3}I dodici principi}{42}{}%
-\contentsline {subsection}{\numberline {2.2.4}Che cosa il Manifesto non dice}{42}{}%
-\contentsline {section}{\numberline {2.3}Dal valore alla pratica: il problema dell'operativizzazione}{42}{}%
-\contentsline {section}{\numberline {2.4}I metodi di team}{43}{}%
-\contentsline {subsection}{\numberline {2.4.1}Scrum}{43}{}%
-\contentsline {subsection}{\numberline {2.4.2}Kanban}{43}{}%
-\contentsline {subsection}{\numberline {2.4.3}Le pratiche ingegneristiche e il loro statuto}{43}{}%
-\contentsline {subsection}{\numberline {2.4.4}Gli altri metodi di team}{43}{}%
-\contentsline {section}{\numberline {2.5}La scala}{43}{}%
-\contentsline {subsection}{\numberline {2.5.1}Perch\'e la scala \`e un problema}{43}{}%
-\contentsline {subsection}{\numberline {2.5.2}SAFe}{44}{}%
-\contentsline {subsection}{\numberline {2.5.3}LeSS}{44}{}%
-\contentsline {subsection}{\numberline {2.5.4}Gli altri approcci scalati}{44}{}%
-\contentsline {section}{\numberline {2.6}Che cosa l'Agile dice del project management}{44}{}%
-\contentsline {subsection}{\numberline {2.6.1}L'assenza del project manager}{44}{}%
-\contentsline {subsection}{\numberline {2.6.2}La ridistribuzione delle funzioni di project management}{44}{}%
-\contentsline {subsection}{\numberline {2.6.3}Progetto o prodotto}{44}{}%
-\contentsline {section}{\numberline {2.7}Critiche, limiti ed evidenza empirica}{44}{}%
-\contentsline {subsection}{\numberline {2.7.1}La base empirica}{44}{}%
-\contentsline {subsection}{\numberline {2.7.2}Le critiche interne al movimento}{44}{}%
-\contentsline {subsection}{\numberline {2.7.3}Limiti di contesto}{44}{}%
-\contentsline {section}{\numberline {2.8}Che cosa resta invariante}{44}{}%
-\contentsline {chapter}{\numberline {3}Confronto tra approcci tradizionali e Agile}{47}{}%
-\contentsline {section}{\numberline {3.1}Affinit\`a}{47}{}%
-\contentsline {section}{\numberline {3.2}Differenze}{47}{}%
-\contentsline {section}{\numberline {3.3}Scenari di integrazione: approcci ibridi}{47}{}%
-\contentsline {section}{\numberline {3.4}Verso una definizione sintetica di Project Management}{48}{}%
-\contentsline {chapter}{\numberline {4}Stato attuale del Project Management nelle aziende IT}{49}{}%
-\contentsline {chapter}{Conclusioni}{51}{}%
-\contentsline {chapter}{\numberline {A}Prima Appendice}{53}{}%
-\contentsline {chapter}{\numberline {B}Seconda Appendice}{55}{}%
-\contentsline {chapter}{Bibliografia}{57}{}%
+\contentsline {paragraph}{Business case.}{30}{}%
+\contentsline {paragraph}{Organizzazione.}{30}{}%
+\contentsline {paragraph}{Piani.}{32}{}%
+\contentsline {paragraph}{Qualit\`a.}{33}{}%
+\contentsline {paragraph}{Rischio.}{34}{}%
+\contentsline {paragraph}{Cambiamenti.}{34}{}%
+\contentsline {paragraph}{Progresso.}{35}{}%
+\contentsline {subsection}{\numberline {1.3.5}I sette processi}{38}{}%
+\contentsline {subsection}{\numberline {1.3.6}Il tailoring e i limiti di adattabilit\`a del metodo}{40}{}%
+\contentsline {section}{\numberline {1.4}Confronto interno tra PMBOK 8 e PRINCE2}{41}{}%
+\contentsline {paragraph}{Statuto normativo.}{43}{}%
+\contentsline {paragraph}{Catena del valore.}{43}{}%
+\contentsline {paragraph}{Governance e organizzazione.}{43}{}%
+\contentsline {paragraph}{Ambiti di applicazione.}{43}{}%
+\contentsline {chapter}{\numberline {2}Approcci Agile al Project Management}{45}{}%
+\contentsline {section}{\numberline {2.1}Il cambio di paradigma e le sue radici}{45}{}%
+\contentsline {subsection}{\numberline {2.1.1}Il problema a cui l'Agile risponde}{45}{}%
+\contentsline {subsection}{\numberline {2.1.2}Le radici: lo sviluppo iterativo prima del 2001}{46}{}%
+\contentsline {section}{\numberline {2.2}Il Manifesto Agile}{46}{}%
+\contentsline {subsection}{\numberline {2.2.1}Genesi e statuto del testo}{46}{}%
+\contentsline {subsection}{\numberline {2.2.2}I quattro valori}{46}{}%
+\contentsline {subsection}{\numberline {2.2.3}I dodici principi}{46}{}%
+\contentsline {subsection}{\numberline {2.2.4}Che cosa il Manifesto non dice}{46}{}%
+\contentsline {section}{\numberline {2.3}Dal valore alla pratica: il problema dell'operativizzazione}{46}{}%
+\contentsline {section}{\numberline {2.4}I metodi di team}{47}{}%
+\contentsline {subsection}{\numberline {2.4.1}Scrum}{47}{}%
+\contentsline {subsection}{\numberline {2.4.2}Kanban}{47}{}%
+\contentsline {subsection}{\numberline {2.4.3}Le pratiche ingegneristiche e il loro statuto}{47}{}%
+\contentsline {subsection}{\numberline {2.4.4}Gli altri metodi di team}{47}{}%
+\contentsline {section}{\numberline {2.5}La scala}{47}{}%
+\contentsline {subsection}{\numberline {2.5.1}Perch\'e la scala \`e un problema}{47}{}%
+\contentsline {subsection}{\numberline {2.5.2}SAFe}{48}{}%
+\contentsline {subsection}{\numberline {2.5.3}LeSS}{48}{}%
+\contentsline {subsection}{\numberline {2.5.4}Gli altri approcci scalati}{48}{}%
+\contentsline {section}{\numberline {2.6}Che cosa l'Agile dice del project management}{48}{}%
+\contentsline {subsection}{\numberline {2.6.1}L'assenza del project manager}{48}{}%
+\contentsline {subsection}{\numberline {2.6.2}La ridistribuzione delle funzioni di project management}{48}{}%
+\contentsline {subsection}{\numberline {2.6.3}Progetto o prodotto}{48}{}%
+\contentsline {section}{\numberline {2.7}Critiche, limiti ed evidenza empirica}{48}{}%
+\contentsline {subsection}{\numberline {2.7.1}La base empirica}{48}{}%
+\contentsline {subsection}{\numberline {2.7.2}Le critiche interne al movimento}{48}{}%
+\contentsline {subsection}{\numberline {2.7.3}Limiti di contesto}{48}{}%
+\contentsline {section}{\numberline {2.8}Che cosa resta invariante}{48}{}%
+\contentsline {chapter}{\numberline {3}Confronto tra approcci tradizionali e Agile}{51}{}%
+\contentsline {section}{\numberline {3.1}Affinit\`a}{51}{}%
+\contentsline {section}{\numberline {3.2}Differenze}{51}{}%
+\contentsline {section}{\numberline {3.3}Scenari di integrazione: approcci ibridi}{51}{}%
+\contentsline {section}{\numberline {3.4}Verso una definizione sintetica di Project Management}{52}{}%
+\contentsline {chapter}{\numberline {4}Stato attuale del Project Management nelle aziende IT}{53}{}%
+\contentsline {chapter}{Conclusioni}{55}{}%
+\contentsline {chapter}{\numberline {A}Prima Appendice}{57}{}%
+\contentsline {chapter}{\numberline {B}Seconda Appendice}{59}{}%
+\contentsline {chapter}{Bibliografia}{61}{}%

@@ -6,22 +6,6 @@
 %   2.2  PMBOK 8                 fonte unica: \cite{pmbok8}
 %   2.3  PRINCE2 7               fonte unica: \cite{prince27}
 %   2.4  Confronto interno       da scrivere
-%
-% SCELTA REDAZIONALE DA RISPETTARE NELLE MODIFICHE FUTURE: le sezioni 2.2 e 2.3
-% sono autonome e non contengono rimandi incrociati. Ciascuna restituisce lo
-% standard nei termini in cui esso stesso si presenta, prima e indipendentemente
-% da qualunque raffronto. Il materiale comparativo rimosso e' parcheggiato in
-% notes/confronto-spunti.md e va ripreso in 2.4 e nel capitolo 4: se aggiungi
-% testo a 2.2 o a 2.3, evita di reintrodurre confronti fra i due standard.
-%
-% Convenzioni del file:
-%   - prosa mandata a capo a 80 colonne;
-%   - ambienti figure, table, tabularx e tikzpicture lasciati come sono;
-%   - accenti sempre con escape LaTeX (\`e, \`a, \'e, \`i, \`o, \`u) perche' il
-%     preambolo usa inputenc latin1 e i caratteri UTF-8 diretti renderebbero
-%     male;
-%   - ogni sezione e sottosezione e' preceduta da un commento che ne dichiara
-%     scopo e fonte.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Metodi tradizionali di Project Management}
@@ -42,11 +26,7 @@ documentale, assumendo per ciascuna il rispettivo testo ufficiale come unica
 fonte.
 
 % ---------------------------------------------------------------------------
-% 2.1 --- Inquadramento comune ai due standard.
-% Tesi della sezione: le definizioni di project management divergono perche'
-% divergono i soggetti che le producono (associazione professionale, ente
-% normatore, amministrazione committente). La ricostruzione storica serve a
-% rendere ragione di questa pluralita', non a fare storia per se stessa.
+
 % ---------------------------------------------------------------------------
 \section{Cos'\`e il Project Management: origini e definizioni}
 
@@ -59,15 +39,7 @@ diversi. Nel seguente paragrafo ricostruiremo brevemente la storia del Project
 Management ``tradizionale'' in modo da avere il giusto contesto per interpretare
 le definizioni trattate successivamente.
 
-% 2.1.1 --- Genealogia della disciplina.
-% Fonti: \cite{marsh1975} Adamiecki, \cite{gantt1919} Gantt,
-% \cite{kelley1989} CPM (storia in prima persona di Kelley e Walker),
-% \cite{malcolm1959} PERT.
-% Snodo argomentativo: CPM e PERT fissano l'assunto che il progetto sia una
-% rete di attivita' con dipendenze note a priori. Da questo assunto discende
-% l'aggettivo "predittivo", ed e' l'aggancio da richiamare nel capitolo 3
-% quando si spieghera' a quale problema l'Agile risponde.
-% Chiude con la tabella cronologica \ref{tab:cronologia-pm}.
+
 \subsection{Evoluzione storica: da Gantt a PERT/CPM}
 
 Il primo strumento ufficiale riconoscibile come proprio del project management
@@ -156,14 +128,7 @@ conoscenze e competenze, un'amministrazione committente in termini di controllo
 e di giustificazione dell'investimento, un ente normatore in forma astratta, per
 renderlo accettabile a decine di organismi nazionali.
 
-% 2.1.2 --- Le definizioni assunte come riferimento.
-% Fonti: \cite{iso21500-2012}, \cite{iso21502}, \cite{iso21500-2021},
-% \cite{pmbok8}. Sintesi nella tabella \ref{tab:definizioni}.
-% Tre osservazioni portanti: la formulazione ISO e' minimale per genere
-% normativo, quella PMI e' densa perche' incorpora una teoria del valore, ed
-% entrambe convergono sulla catena output-esito-beneficio.
-% La sezione si chiude assumendo la ISO 21500:2021 come definizione di lavoro
-% della tesi: se cambi questa scelta, va aggiornato anche il capitolo 4.
+
 \subsection{Definizioni di riferimento (PMI, ISO 21500)}
 \label{sec:definizioni}
 
@@ -193,7 +158,7 @@ portfolio e la ISO 21505 sulla governance \cite{iso21500-2021}. Le definizioni
 si trasformano: un progetto \`e ``un'iniziativa temporanea per raggiungere uno o
 pi\`u obiettivi definiti'', il project management \`e ``un insieme di attivit\`a
 coordinate per dirigere e controllare il conseguimento di obiettivi
-concordati''. Vengono intronoddi inoltre l'\emph{esito}, ``cambiamento risultante
+concordati''. Vengono introdotti inoltre l'\emph{esito}, ``cambiamento risultante
 dall'uso dell'output di un progetto'', e il \emph{beneficio}, ``vantaggio
 creato, valore o altro effetto positivo''. La tabella~\ref{tab:definizioni}
 raccoglie le formulazioni delle norme citate. \newpage
@@ -214,24 +179,20 @@ PMBOK Guide, 8\textsuperscript{a} ed. (2025) & Iniziativa temporanea in un conte
 \end{tabularx}
 \end{table}
 
-La differenza tra le due famiglie di deifnizioni sta nel fatto che le norme ISO
+La differenza tra le due famiglie di definizioni sta nel fatto che le norme ISO
 creano una formulazione standard utilizzabile da enti con approcci gestionali
-eterogenei senza specificare cosa rende riuscito u progetto. Il PMI invece arricchisce
+eterogenei senza specificare cosa rende riuscito un progetto. Il PMI invece arricchisce
 la formulazione dicendo che il progetto \`e
 intrapreso ``per creare valore'' introducendo un criterio di giudizio.
 
-Entrambe invece hanno introdotto collegano l'\emph{output} all'\emph{esito} e
+Entrambe invece collegano l'\emph{output} all'\emph{esito} e
 l'\emph{esito} al \emph{beneficio}. Il focus si sposta alla realizzazione del beneficio.
 
 \`E importante notare che nessuna delle definizioni introduca o si concentri
 sul \emph{come} debba essere gestito un progetto.
 
 % ===========================================================================
-% 2.2 --- PMBOK 8. Fonte unica: \cite{pmbok8}, ottava edizione, 2025.
-% La sezione e' AUTONOMA: nessun rimando a PRINCE2 (vedi intestazione).
-% Filo conduttore: il PMBOK e' un corpo di conoscenza e non un metodo, e da
-% questo statuto discende tutto il resto, dalla non prescrittivita' dei
-% processi al fatto che i principi non definiscano una soglia di conformita'.
+
 % ===========================================================================
 \section{PMBOK 8}
 
@@ -280,13 +241,7 @@ La figura~\ref{fig:pmbok-architettura} riporta la struttura dell'edizione.
 \label{fig:pmbok-architettura}
 \end{figure}
 
-% 2.2.1 --- Che cosa cambia rispetto alla settima.
-% Argomento centrale: il movimento e' PENDOLARE, non lineare. La settima
-% edizione aveva spostato il PMBOK verso l'astrazione; l'ottava reintroduce i
-% processi su richiesta documentata della comunita' professionale.
-% Da confrontare, nel capitolo 3, con la traiettoria opposta dello Scrum Guide,
-% che nel 2020 rimuove prescrizioni.
-% Tabella \ref{tab:pmbok-principi-evoluzione}: destino dei dodici principi.
+
 \subsection{Le novit\`a dell'ottava edizione}
 
 L'ottava edizione raggruppa i propri cambiamenti in quattro categorie:
@@ -307,7 +262,7 @@ L'ottava edizione inverte la direzione. La guida tenta di ``prendere le parti
 migliori delle edizioni precedenti'' unendo l'approccio orientato ai processi
 della sesta con il dominio di performance della settima e reintegrando ITTO e
 descrizioni dei processi nella struttura dei domini \cite{pmbok8}. Il
-motivo di questa invesrsione sta nella ricerca preliminare (sondaggio mirato ad un
+motivo di questa inversione sta nella ricerca preliminare (sondaggio mirato ad un
 pool di PM per ottenere feedback riguardo alla materia oggetto di discussione):
 l'88\% era a favore di uno standard basato sui principi ma chiedeva principi pi\`u
 azionabili, l'80\% era favorevole alla reintroduzione dei \emph{Process Group},
@@ -338,13 +293,10 @@ Ottimizzare le risposte al rischio & Migrato al dominio di performance Rischio \
 \end{table}
 \newpage
 
-% 2.2.2 --- I principi e il loro statuto.
-% Punto da non perdere in revisione: i principi PMBOK NON sono obblighi, e la
-% loro funzione e' orientare il giudizio, non fissare una soglia.
-% Figura \ref{fig:pmbok-mindset}, tabella \ref{tab:pmbok-principi}.
+
 \subsection{I sei principi e la mentalit\`a di project management}
 
-I principi del PMBOK non sono obblighi, ''sono intesi a rafforzare la
+I principi del PMBOK non sono obblighi, ``sono intesi a rafforzare la
 mentalit\`a e guidare il comportamento delle persone coinvolte nei progetti''
 \cite{pmbok8}.
 
@@ -407,18 +359,14 @@ Il principio sulla sostenibilit\`a compare per la prima volta in questa edizione
 e ricalca la formulazione classica dello sviluppo sostenibile estendendo i confini
 del progetto oltre i propri stakeholder diretti.
 
-Il principio della leadership responsabile poggia invece sulfatto che,
+Il principio della leadership responsabile poggia invece sul fatto che,
 poich\'e i progetti coinvolgono organizzazioni, funzioni e fornitori
 che non interagiscono abitualmente, e poich\'e le poste in gioco sono pi\`u alte
 che nell'operativit\`a corrente, ``comportamenti di leadership efficaci si
 riscontrano pi\`u frequentemente, e da parte di pi\`u persone, nei progetti ad
 alte prestazioni che in quelli a basse prestazioni'' \cite{pmbok8}.
 
-% 2.2.3 --- Value delivery system, EEF/OPA, funzioni e ruoli.
-% Da qui viene l'osservazione che il PMBOK descrive FUNZIONI e non ruoli
-% obbligatori, con la citazione sull'essenza del project management che non
-% risiede nel titolo di chi supervisiona: e' materiale che il capitolo 3
-% richiama nella sezione sull'assenza del project manager.
+
 \subsection{Il sistema di generazione del valore e il contesto di progetto}
 
 Il progetto non \`e un'unit\`a a s\'e stante ma un componente del
@@ -438,7 +386,7 @@ environmental factors}, EEF) sono condizioni che il team non controlla ma che
 vincolano o indirizzano il progetto; possono essere interne, come cultura, governance,
 infrastruttura, disponibilit\`a di risorse e capacit\`a finanziaria, oppure
 esterne, come condizioni di mercato, vincoli normativi, standard di settore e
-tecnologie emergenti. 
+tecnologie emergenti.
 \item Gli \textbf{asset dei processi organizzativi}
 (\emph{organizational process assets}, OPA) sono invece interni e comprendono
 piani, processi, documenti, modelli e repository di conoscenza
@@ -474,12 +422,7 @@ costo, ambito, tempo e qualit\`a.
 Le due dimensioni sono indipendenti, posso ad esempio essere in condizioni di
 processi riusciti, esito mancato o viceversa.
 
-% 2.2.4 --- Predittivo, adattivo, ibrido; le cinque Focus Area.
-% Sezione a maggiore densita' di contenuto agile: spettro degli approcci
-% (figura \ref{fig:pmbok-spettro}), cadenza di consegna, triangolo invertito,
-% mappa dei metodi agili per ampiezza e profondita'.
-% Quella mappa e' la griglia adottata nel capitolo 3 per giustificare la
-% selezione dei framework trattati: se la modifichi qui, aggiorna anche la'.
+
 \subsection{Cicli di vita, approcci di sviluppo e Focus Area}
 
 Il ciclo di vita del progetto \`e la serie di attivit\`a o fasi che il progetto
@@ -531,7 +474,7 @@ variabile \`e l'ambito. Il PMBOK chiama \emph{triangolo invertito} questa
 inversione, e indica l'approccio ibrido come il pi\`u vantaggioso per la
 maggior parte dei progetti \cite{pmbok8}.
 
-Alla scelta dell'approccio si affiancala \textbf{cadenza di consegna}:
+Alla scelta dell'approccio si affianca la \textbf{cadenza di consegna}:
 \begin {itemize}
 \item consegna singola
 \item consegne multiple
@@ -552,11 +495,7 @@ ciclo di vita. Due terzi degli professionisti del settore le hanno
 indicate come indipendenti dall'approccio di sviluppo adottato, ed \`e su questo
 che la guida ne fonda l'universalit\`a.
 
-% 2.2.5 --- I domini e la mappatura dei processi.
-% Tabella \ref{tab:pmbok-processi}: i quaranta processi per dominio e Focus
-% Area. E' la struttura portante dell'edizione, quindi la tabella va tenuta
-% allineata al testo.
-% Seguono i sette domini in blocchi \paragraph, nell'ordine della guida.
+
 \subsection{I sette domini di performance e i quaranta processi}
 
 Un \textbf{dominio di performance} \`e ``un gruppo di processi correlati,
@@ -681,12 +620,7 @@ processi e gli \textbf{strumenti e tecniche} disponibili. Gli elementi elencati
 specifico'': sono selezioni di uso comune fra le opzioni a disposizione dei
 team.
 
-% 2.2.6 --- Il tailoring nel PMBOK.
-% Nell'ottava edizione cessa di essere un principio e diventa sezione
-% autonoma: cambia il registro, da enunciato a procedura descritta.
-% Il confronto con il tailoring di PRINCE2 (2.3.6), dove resta principio
-% obbligatorio, e' annotato in notes/confronto-spunti.md e va sviluppato in
-% 2.4: non reintrodurlo qui.
+
 \subsection{Il tailoring}
 
 Nell'ottava edizione il tailoring smette di essere un principio, come era nella
@@ -716,7 +650,7 @@ processi agiscono cinque operazioni:
 \end {itemize}
 Sulle persone agiscono le competenze, il grado di \emph{empowerment} --- quali
 responsabilit\`a e decisioni locali delegate al team --- e l'integrazione di
-contributor eterogenei in un unico team.
+contributori eterogenei in un unico team.
 
 Il tailoring si articola in quattro passi:
 \begin {itemize}
@@ -726,7 +660,7 @@ Il tailoring si articola in quattro passi:
 \item implementare il miglioramento continuo
 \end {itemize}
 Al primo passo serve il \emph{suitability filter}, non un metodo rigido ma uno
-strumento decisionale con cui il team valuta la propria situazione 
+strumento decisionale con cui il team valuta la propria situazione
 e individua l'adattamento
 migliore fra approccio predittivo, adattivo o ibrido. A livello organizzativo
 l'adattamento produce metodologie differenziate, per esempio una per i progetti
@@ -738,46 +672,35 @@ L'adattamento per\'o ha dei limiti: le politiche organizzative possono imporre u
 approccio specifico, e un contratto pu\`o prescriverlo.
 
 % ===========================================================================
-% 2.3 --- PRINCE2 7. Fonte unica: \cite{prince27}, settima edizione, 2023.
-% La sezione e' AUTONOMA: nessun rimando al PMBOK (vedi intestazione).
-% Filo conduttore: PRINCE2 e' un METODO, quindi esiste una soglia di
-% conformita' (i sette principi) sotto la quale il progetto non e' un progetto
-% PRINCE2. Tutta la trattazione va letta come tensione fra l'universalita'
-% dichiarata e questo nucleo non negoziabile.
+
 % ===========================================================================
+\newpage
 \section{PRINCE2}
 
 PRINCE2 (\emph{PRojects IN Controlled Environments}) \`e un metodo strutturato
 di gestione dei progetti, giunto alla settima edizione, pubblicata nel 2023 da
-PeopleCert International \cite{prince27}. La prima edizione \`e del 1996,
-seguita dalle revisioni del 1998, 2002, 2005, 2009 e 2017: un corpo normativo
-periodicamente riallineato alle pratiche correnti. La trattazione che segue
-assume come unica fonte il manuale ufficiale della settima edizione,
+PeopleCert International \cite{prince27}. La trattazione che
+segue assume come unica fonte il manuale ufficiale della settima edizione,
 \emph{Managing Successful Projects with PRINCE2}.
 
 PRINCE2 si presenta come un \emph{metodo}: non una raccolta di buone pratiche
 fra cui scegliere, ma un insieme di elementi che devono essere presenti in un
-progetto perch\'e questo possa dirsi gestito secondo PRINCE2. Il manuale afferma
-che, se anche uno solo dei sette principi non viene applicato, il progetto non
-\`e un progetto PRINCE2 \cite{prince27}. Esiste quindi una soglia di
-conformit\`a, e l'adattamento che il metodo prescrive opera al di sopra di un
-nucleo non negoziabile.
+progetto perch\'e questo possa dirsi gestito secondo PRINCE2. Se anche uno solo
+dei sette principi non viene applicato, il progetto non \`e un progetto PRINCE2
+\cite{prince27}.
 
 Il metodo dichiara di essere applicabile a qualunque progetto, indipendentemente
 da scopo, scala, tipologia, organizzazione, area geografica o cultura. Tre
 scelte di progettazione rendono possibile questa pretesa \cite{prince27}:
-\begin{itemize}
-    \item la \textbf{separazione fra la gestione del progetto e le attivit\`a
-          specialistiche} di sviluppo (progettazione, costruzione, codifica),
-          cosicch\'e qualunque attivit\`a specialistica possa essere integrata
-          in un ambiente controllato;
-    \item la concentrazione su \textbf{che cosa deve essere fatto per gestire}
-          il progetto, piuttosto che sulla prescrizione di \textbf{come} il
-          lavoro debba essere svolto;
-    \item la richiesta che il metodo venga \textbf{stabilito specificamente per
-          le necessit\`a e il contesto} del singolo progetto, attraverso il modo
-          in cui viene applicato e adattato.
-\end{itemize}
+\begin {itemize}
+\item la \textbf{separazione fra la gestione del progetto e le attivit\`a
+specialistiche} di sviluppo, cos\`i che qualunque attivit\`a specialistica possa
+essere integrata in un ambiente controllato
+\item la concentrazione su \textbf{che cosa deve essere fatto per gestire} il
+progetto, invece che su \textbf{come} il lavoro debba essere svolto
+\item la richiesta che il metodo venga \textbf{stabilito per le necessit\`a e il
+contesto} del singolo progetto
+\end {itemize}
 
 Due temi restano fuori dall'ambito del manuale: gli aspetti specialistici del
 lavoro di progetto e le tecniche dettagliate di project management. Queste
@@ -785,17 +708,16 @@ ultime --- pianificazione dei rilasci, \emph{user story}, Kanban,
 \emph{timeboxing}, retrospettive, analisi del cammino critico, \emph{earned
 value management} --- sono citate come strumenti a supporto del metodo, ma
 descritte in dettaglio solo quando PRINCE2 raccomanda quell'approccio o quando
-la tecnica \`e propria del metodo, come la pianificazione basata sui prodotti
-\cite{prince27}.
+la tecnica \`e propria del metodo \cite{prince27}.
 
 Un progetto \`e ``un'organizzazione temporanea creata allo scopo di consegnare
-uno o pi\`u prodotti di business secondo un \emph{business case} concordato'':
-una definizione insieme organizzativa ed economica. Cinque caratteristiche lo
-distinguono dall'operativit\`a corrente (\emph{business as usual}):
-\textbf{introduce un cambiamento}, \`e \textbf{temporaneo}, \`e
-\textbf{trasversale} alle funzioni aziendali, \`e \textbf{unico} e comporta un
-grado di \textbf{incertezza} superiore a quello delle attivit\`a operative. Il
-project management \`e ``l'applicazione di metodi, strumenti, tecniche e
+uno o pi\`u prodotti di business secondo un \emph{business case} concordato''.
+Una definizione organizzativa ed economica con delle caratteristiche che lo
+contraddistinguono: introduce un
+cambiamento, \`e temporaneo, \`e trasversale alle funzioni aziendali, \`e unico
+e comporta un grado di incertezza superiore a quello delle attivit\`a operative.
+
+Il project management \`e ``l'applicazione di metodi, strumenti, tecniche e
 competenze che consentono al progetto di raggiungere i propri obiettivi'', e il
 suo scopo \`e la \textbf{riduzione e gestione dell'ambiguit\`a}: sulle
 responsabilit\`a, su ci\`o che il progetto consegner\`a, sui costi e sui tempi,
@@ -804,21 +726,15 @@ sulla disponibilit\`a delle risorse e sul controllo del cambiamento
 
 Sette \textbf{aspetti di performance} costituiscono il riferimento rispetto al
 quale il progetto viene giudicato e sui quali vengono fissate le tolleranze:
-benefici, costi, tempi, qualit\`a, ambito (\emph{scope}),
-\textbf{sostenibilit\`a} e rischio. La sostenibilit\`a, riferita ai diciassette
-obiettivi di sviluppo sostenibile delle Nazioni Unite, \`e l'innovazione pi\`u
-visibile della settima edizione e attraversa l'intero metodo: ruoli,
-documentazione, pratiche e attivit\`a dei processi \cite{prince27}. Assegnare a
-ciascun aspetto un intervallo di tolleranza pi\`u o meno ampio ne definisce le
-priorit\`a, ed \`e il prerequisito per esplorare le opzioni e determinare
-l'approccio di progetto.
+benefici, costi, tempi, qualit\`a, ambito (\emph{scope}), sostenibilit\`a e
+rischio.
 
-% 2.3.1 --- Principi, persone, pratiche, processi, contesto.
-% Figura \ref{fig:p2-elementi}.
-% Elemento chiave per i capitoli successivi: i tre METODI DI CONSEGNA
-% (lineare-sequenziale, iterativo-incrementale, ibrido) e la neutralita'
-% dichiarata del metodo rispetto a essi. E' la premessa di PRINCE2 Agile e va
-% richiamata nel capitolo 4.
+L'innovazione pi\`u visibile della settima edizione riguarda la sostenibilit\`a,
+riferita ai diciassette obiettivi di sviluppo sostenibile delle Nazioni Unite,
+e impatta l'intero metodo: ruoli, documentazione, pratiche e attivit\`a dei processi
+\cite{prince27}.
+
+
 \subsection{I cinque elementi integrati e il contesto di progetto}
 
 PRINCE2 7 \`e composto da cinque elementi integrati: principi, persone,
@@ -837,55 +753,54 @@ pratiche, processi e contesto di progetto (figura~\ref{fig:p2-elementi}).
 \caption{I cinque elementi integrati del metodo PRINCE2. Rielaborazione da \cite{prince27}.}
 \label{fig:p2-elementi}
 \end{figure}
+\newpage
 
-I \textbf{principi} sono gli obblighi guida che determinano se il progetto sia
-gestito con PRINCE2. Le \textbf{persone} sono l'elemento che la settima edizione
-tratta in modo autonomo: bisogni, capacit\`a e motivazioni di chi lavora al
-progetto e di chi ne \`e impattato, insieme alle relazioni fra loro. Le
-\textbf{pratiche} sono gli aspetti della gestione da trattare con continuit\`a
-lungo tutto il ciclo di vita. I \textbf{processi} descrivono il ciclo di vita
-del progetto, dalle attivit\`a precedenti l'avvio fino alla chiusura. Il
-\textbf{contesto di progetto} \`e ci\`o rispetto a cui i quattro elementi
-precedenti vengono applicati e calibrati. I cinque elementi funzionano insieme:
-sono le pratiche a garantire che i principi vengano applicati con continuit\`a
-durante i processi, in un modo specifico al contesto \cite{prince27}.
+I cinque elementi sono:
+\begin {itemize}
+\item i \textbf{principi}, gli obblighi guida che determinano se il progetto sia
+gestito con PRINCE2
+\item le \textbf{persone}, cio\`e bisogni, capacit\`a e motivazioni di chi
+lavora al progetto e di chi ne \`e impattato, insieme alle relazioni fra loro
+\item le \textbf{pratiche}, gli aspetti della gestione da trattare con
+continuit\`a lungo tutto il ciclo di vita
+\item i \textbf{processi}, che descrivono il ciclo di vita del progetto dalle
+attivit\`a precedenti l'avvio fino alla chiusura
+\item il \textbf{contesto di progetto}, ci\`o rispetto a cui i quattro elementi
+precedenti vengono applicati e calibrati
+\end {itemize}
+Gli elementi funzionano insieme: sono le pratiche a garantire che i principi
+vengano applicati con continuit\`a durante i processi, in un modo specifico al
+contesto.
 
-Il contesto ha cinque dimensioni. Il \textbf{contesto organizzativo} non
-presuppone alcuna configurazione particolare. PRINCE2 distingue il
-\emph{business} (chi commissiona il progetto e ne fornisce la struttura di
-governo), gli \emph{utenti} (chi user\`a i prodotti per ottenere i benefici
-attesi) e i \emph{fornitori} (chi mette a disposizione competenze, persone e
-risorse), senza richiedere alcuna relazione organizzativa predefinita fra loro:
-possono appartenere alla stessa organizzazione o a organizzazioni distinte
-legate da accordi commerciali. Il termine \emph{cliente} vale solo quando esiste
-una relazione commerciale fra business e fornitore. Il progetto pu\`o essere
-autonomo oppure inserito in un programma o in un portfolio. Il \textbf{contesto
-commerciale} riguarda l'articolazione contrattuale, che pu\`o arrivare a
-gerarchie di rapporti fra pi\`u fornitori e subfornitori.
+Il contesto ha a sua volta cinque dimensioni:
+\begin {itemize}
+\item il \textbf{contesto organizzativo}, che non presuppone alcuna
+configurazione particolare. PRINCE2 distingue il \emph{business} (chi
+commissiona il progetto e ne fornisce la struttura di governo), gli
+\emph{utenti} (chi user\`a i prodotti per ottenere i benefici attesi) e i
+\emph{fornitori} (chi mette a disposizione competenze, persone e risorse), senza
+richiedere alcuna relazione predefinita fra loro. Il termine \emph{cliente} vale
+solo quando esiste una relazione commerciale fra business e fornitore
+\item il \textbf{contesto commerciale}, cio\`e l'articolazione contrattuale, che
+pu\`o arrivare a gerarchie di rapporti fra pi\`u fornitori e subfornitori
+\item il \textbf{metodo di consegna}, il modo in cui il
+lavoro viene realizzato: \emph{lineare-sequenziale}, con i passi di
+realizzazione in sequenza; \emph{iterativo-incrementale}, con raccolta dei
+requisiti, progettazione, sviluppo e test che avvengono iterativamente lungo il
+ciclo di vita, ``spesso indicato come approccio agile''; \emph{ibrido}, con
+alcune parti del progetto sul primo modello e altre sul secondo
+\item il \textbf{contesto di sostenibilit\`a}
+\item la \textbf{scala}, non assoluta ma relativa all'organizzazione: il manuale
+suggerisce di ragionare in termini di semplicit\`a e complessit\`a pi\`u che di
+dimensione
+\end {itemize}
 
-Il \textbf{metodo di consegna} (\emph{delivery method}) \`e il modo in cui il
-lavoro del progetto viene realizzato. Il manuale ne riconosce tre:
-\textbf{lineare-sequenziale}, con i passi di realizzazione in sequenza;
-\textbf{iterativo-incrementale}, con raccolta dei requisiti, progettazione,
-sviluppo e test che avvengono iterativamente lungo il ciclo di vita, ``spesso
-indicato come approccio agile''; \textbf{ibrido}, con alcune parti del progetto
-sul primo modello e altre sul secondo \cite{prince27}. PRINCE2 fornisce
-l'ambiente controllato entro cui operano i metodi di consegna specialistici e
-non richiede alcun metodo particolare: \`e la separazione fra gestione del
-progetto e lavoro specialistico a rendere possibile questa neutralit\`a.
+PRINCE2 fornisce l'ambiente controllato entro cui operano i metodi di consegna
+specialistici e non ne richiede alcuno in particolare. \`E la separazione fra
+gestione del progetto e lavoro specialistico a rendere possibile questa
+neutralit\`a.
 
-Completano il quadro il \textbf{contesto di sostenibilit\`a} e la
-\textbf{scala}. La scala non \`e assoluta ma relativa all'organizzazione, e il
-manuale suggerisce di ragionare in termini di semplicit\`a e complessit\`a pi\`u
-che di dimensione. Le leve per adattare il metodo sono gli accordi di
-governance, l'assegnazione dei ruoli, la formalit\`a e il dettaglio della
-documentazione, la formalit\`a dei controlli, il numero di fasi e di \emph{work
-package} e l'ampiezza delle tolleranze.
 
-% 2.3.2 --- I sette principi come obblighi guida.
-% Da tenere presente in revisione: qui i principi sono universali e non
-% negoziabili, il contrario dello statuto che hanno nel PMBOK. La differenza
-% va argomentata in 2.4, non in questa sezione.
 \subsection{I sette principi}
 
 I principi sono ``gli obblighi guida che determinano se il progetto sia
@@ -894,74 +809,64 @@ l'adattamento efficaci a qualunque progetto''. Sono sette, universali e non
 negoziabili \cite{prince27}.
 
 \begin{enumerate}
-    \item \textbf{Assicurare una giustificazione di business continuativa}
-          (\emph{ensure continued business justification}). Un progetto PRINCE2
-          deve avere una giustificazione che motivi l'investimento iniziale e la
-          sua prosecuzione; se viene meno, il progetto va fermato. La
-          giustificazione non \`e stabilita una volta per tutte ma rivalidata
-          lungo l'intero ciclo di vita. Anche i progetti obbligatori, imposti da
-          leggi o regolamenti, richiedono una giustificazione dell'approccio
-          scelto. Chiudere un progetto che ha perso giustificazione \`e un
-          contributo positivo al business, perch\'e libera fondi e risorse.
-    \item \textbf{Imparare dall'esperienza} (\emph{learn from experience}). Le
-          lezioni vanno cercate all'avvio, registrate durante lo svolgimento e
-          condivise alla chiusura. Le lezioni che non vengono utilizzate per
-          migliorare il progetto o i progetti futuri restano ``lezioni
-          identificate'' e non diventano ``lezioni apprese''.
-    \item \textbf{Definire ruoli, responsabilit\`a e relazioni} (\emph{define
-          roles, responsibilities, and relationships}). Ogni progetto PRINCE2 ha
-          ruoli e responsabilit\`a definiti e concordati entro una struttura
-          organizzativa che coinvolge gli interessi di business, utente e
-          fornitore. Il team di gestione avvia e costruisce attivamente
-          relazioni con e fra gli stakeholder interni ed esterni.
-    \item \textbf{Gestire per eccezione} (\emph{manage by exception}). A ciascun
-          livello di delega vengono assegnate tolleranze sui sette aspetti di
-          performance; il controllo risale al livello superiore solo quando si
-          prevede che le tolleranze vengano superate. Servono tre condizioni
-          congiunte: delega dell'autorit\`a mediante tolleranze, controlli che
-          segnalino tempestivamente l'eccezione, un meccanismo di
-          \emph{assurance} che dia a ciascun livello fiducia nell'efficacia dei
-          controlli. Il risultato \`e un uso efficiente del tempo del management
-          senza perdita di controllo.
-    \item \textbf{Gestire per fasi} (\emph{manage by stages}). Il progetto \`e
-          pianificato, monitorato e controllato fase per fase, con un minimo di
-          due fasi: una di inizializzazione e almeno una successiva. Le fasi
-          forniscono punti di revisione e decisione, consentono di adattarsi ai
-          cambiamenti di contesto, permettono di prendere le decisioni chiave
-          prima del lavoro di dettaglio che le implementa e rendono operativa la
-          gestione per eccezione.
-    \item \textbf{Concentrarsi sui prodotti} (\emph{focus on products}). PRINCE2
-          richiede progetti orientati all'output e non all'attivit\`a. I tipi di
-          prodotto sono quattro: i \emph{prodotti di gestione} (documenti o
-          informazioni a supporto della gestione, come il business case o un
-          piano), i \emph{prodotti specialistici} (ci\`o che serve all'utente
-          per realizzare i benefici), il \emph{prodotto di progetto} (l'output
-          complessivo) e i \emph{prodotti esterni}, sviluppati fuori dal
-          controllo del progetto ma da cui il progetto dipende. L'insieme dei
-          prodotti concordati definisce l'ambito ed \`e la base per la
-          pianificazione e il controllo.
-    \item \textbf{Adattare il metodo al progetto} (\emph{tailor to suit the
-          project}). PRINCE2 va applicato e adattato all'ambiente, alla
-          dimensione, alla complessit\`a, all'importanza, al metodo di consegna,
-          alla capacit\`a del team e al livello di rischio del progetto
-          specifico.
+\item \textbf{Assicurare una giustificazione di business continuativa}
+(\emph{ensure continued business justification}). Un progetto PRINCE2 deve avere
+una giustificazione che motivi l'investimento iniziale e la sua prosecuzione; se
+viene meno, il progetto va fermato. La giustificazione non \`e stabilita una
+volta per tutte ma rivalidata lungo l'intero ciclo di vita.
+Chiudere un progetto che ha perso giustificazione \`e un
+contributo positivo, poich\'e libera fondi e risorse.
+\item \textbf{Imparare dall'esperienza} (\emph{learn from experience}). Le
+lezioni vanno cercate all'avvio, registrate durante lo svolgimento e condivise
+alla chiusura. Le lezioni che non vengono utilizzate per migliorare il progetto
+o i progetti futuri restano ``lezioni identificate'' e non diventano ``lezioni
+apprese''.
+\item \textbf{Definire ruoli, responsabilit\`a e relazioni} (\emph{define roles,
+responsibilities, and relationships}). Ogni progetto PRINCE2 ha ruoli e
+responsabilit\`a definiti e concordati entro una struttura organizzativa che
+coinvolge gli interessi di business, utente e fornitore. Il team di gestione
+avvia e costruisce attivamente relazioni con e fra gli stakeholder interni ed
+esterni.
+\item \textbf{Gestire per eccezione} (\emph{manage by exception}). A ciascun
+livello di delega vengono assegnate tolleranze sui sette aspetti di performance;
+il controllo risale al livello superiore solo quando si prevede che le
+tolleranze vengano superate. Il risultato \`e un uso efficiente del tempo del
+management senza perdita di controllo.
+\item \textbf{Gestire per fasi} (\emph{manage by stages}). Il progetto \`e
+pianificato, monitorato e controllato fase per fase, con un minimo di due fasi:
+una di inizializzazione e almeno una successiva. Le fasi forniscono punti di
+revisione e decisione, consentono di adattarsi ai cambiamenti di contesto,
+permettono di prendere le decisioni chiave prima del lavoro di dettaglio che le
+implementa e rendono operativa la gestione per eccezione.
+\item \textbf{Concentrarsi sui prodotti} (\emph{focus on products}). PRINCE2
+richiede progetti orientati all'output e non all'attivit\`a. I tipi di prodotto
+sono quattro: i \emph{prodotti di gestione} (documenti o informazioni a supporto
+della gestione, come il business case o un piano), i \emph{prodotti
+specialistici} (ci\`o che serve all'utente per realizzare i benefici), il
+\emph{prodotto di progetto} (l'output complessivo) e i \emph{prodotti esterni},
+sviluppati fuori dal controllo del progetto ma da cui il progetto dipende.
+L'insieme dei prodotti concordati definisce l'ambito ed \`e la base per la
+pianificazione e il controllo.
+\item \textbf{Adattare il metodo al progetto} (\emph{tailor to suit the
+project}). PRINCE2 va applicato e adattato all'ambiente, alla dimensione, alla
+complessit\`a, all'importanza, al metodo di consegna, alla capacit\`a del team e
+al livello di rischio del progetto specifico.
 \end{enumerate}
 
-% 2.3.3 --- L'elemento introdotto dalla settima edizione.
-% Contiene temi ordinariamente associati alla letteratura agile: sicurezza
-% psicologica, auto-organizzazione, co-creazione delle modalita' di lavoro.
-% E' un punto di convergenza notevole e vale la pena segnalarlo nel capitolo 4.
+
 \subsection{Le persone}
 
 L'elemento ``persone'' \`e trasversale agli altri quattro e si articola in tre
 attivit\`a: guidare il cambiamento, guidare i team, comunicare \cite{prince27}.
 
 Lo scopo di un progetto \`e consegnare un cambiamento, che ricadr\`a sulle
-persone nelle loro attivit\`a, routine e responsabilit\`a correnti. Servono
-allora due nozioni: l'\textbf{ecosistema organizzativo}, cio\`e gli elementi
+persone bisogna quindi tenere a mente due concetti:
+l'\textbf{ecosistema organizzativo}, cio\`e gli elementi
 interni dell'organizzazione insieme alle sue relazioni esterne, e
 l'\textbf{ecosistema di progetto}, cio\`e le parti del business coinvolte o
-impattate dal progetto, con i relativi utenti e fornitori. Il cambiamento \`e il
+impattate dal progetto (con i relativi utenti e fornitori).
+
+Il cambiamento \`e il
 modo in cui un'organizzazione transita da uno stato corrente a uno stato
 obiettivo, e si gestisce con un \emph{change management approach} che descrive
 stati, caratteristiche, attivit\`a abilitanti, risorse e responsabilit\`a della
@@ -969,34 +874,30 @@ transizione. Le decisioni vanno prese al livello pi\`u vicino a quello in cui
 risiede la conoscenza rilevante, ed escalate solo quando occorra valutarne
 l'impatto su altre parti dell'ecosistema.
 
-Il lavoro di progetto ha condizioni peculiari: i team sono temporanei, le
-persone hanno spesso linee di riporto multiple, i ruoli PRINCE2 possono non
-coincidere con la posizione aziendale, i membri del team possono essere
-gerarchicamente pi\`u alti del project manager, e leve motivazionali come
-retribuzione e avanzamento di carriera stanno fuori dal perimetro di chi
-gestisce il progetto. Il project manager, pur avendo autorit\`a formale entro le
-tolleranze fissate dal project board, deve quindi fare affidamento sulla
-capacit\`a di influenzare e motivare. Il manuale distingue la \emph{leadership}
---- motivare le persone verso gli obiettivi del progetto, con collaborazione,
-persuasione, co-creazione e \emph{feedback} regolare --- dal \emph{management},
-cio\`e l'indirizzo dell'esecuzione dei compiti secondo modalit\`a di lavoro
-concordate, e osserva che co-creare quelle modalit\`a con il team ne aumenta
-l'accettazione. Compaiono qui temi associati alla letteratura agile: sicurezza
-psicologica, spazio per sperimentare, ispezionare, adattarsi e
-auto-organizzarsi, coesione sociale nei team distribuiti o ibridi.
+Il lavoro di progetto ha condizioni peculiari:
+\begin {itemize}
+\item i team sono temporanei
+\item le persone hanno spesso linee di riporto multiple
+\item i ruoli PRINCE2 possono non coincidere con la posizione aziendale
+\item i membri del team possono essere gerarchicamente pi\`u alti del project
+manager
+\item leve motivazionali come retribuzione e avanzamento di carriera stanno
+fuori dal perimetro di chi gestisce il progetto
+\end {itemize}
+Il project manager, pur avendo autorit\`a formale entro le tolleranze fissate
+dal project board, deve quindi fare affidamento sulla capacit\`a di influenzare
+e motivare. Il manuale distingue la \emph{leadership} --- motivare le persone
+verso gli obiettivi del progetto, con collaborazione, persuasione
+e \emph{feedback} regolare --- dal \emph{management}, cio\`e l'indirizzo
+dell'esecuzione dei compiti secondo modalit\`a di lavoro concordate.
 
 La comunicazione \`e bidirezionale e formalizzata in un \emph{communication
 management approach} che copre analisi degli stakeholder, calendario e procedure
 di comunicazione, responsabilit\`a, risorse, strumenti e standard applicabili.
 La sola reportistica periodica non basta, perch\'e i report possono essere
-distorti; le sacche di resistenza al progetto indicano dove concentrare la
-comunicazione.
+distorti.
 
-% 2.3.4 --- Le pratiche e le domande a cui rispondono.
-% Tabella \ref{tab:p2-pratiche} come quadro d'insieme, poi una pratica per
-% blocco \paragraph. Tabelle di supporto: \ref{tab:p2-tolleranze} (le sette
-% tolleranze per livello) e \ref{tab:p2-report} (la reportistica).
-% La figura \ref{fig:p2-org} sta dentro il blocco Organizzazione.
+
 \subsection{Le sette pratiche}
 
 Una pratica \`e ``un aspetto del project management che deve essere applicato in
@@ -1024,40 +925,37 @@ Progresso & Monitoraggio delle prestazioni, previsione ed \emph{escalation} dell
 \bottomrule
 \end{tabularx}
 \end{table}
+\newpage
 
 \paragraph{Business case.} Stabilire i meccanismi per giudicare se il progetto
-sia e resti \emph{desiderabile} (per l'equilibrio fra costi, benefici e rischi),
-\emph{fattibile} (in grado di consegnare i prodotti) e \emph{realizzabile}
-(l'uso dei prodotti produrr\`a verosimilmente gli esiti e i benefici previsti).
-La pratica poggia su una catena precisa: i \emph{prodotti} consegnati abilitano
-\emph{capacit\`a}, che una volta radicate generano \emph{esiti}
-(\emph{outcome}), da cui derivano i \emph{benefici}, cio\`e miglioramenti
-misurabili percepiti come vantaggiosi dall'organizzazione che investe. Gli esiti
-percepiti negativamente sono \emph{dis-benefici} e vanno incorporati nella
-valutazione dell'investimento. Il problema ricorrente \`e che molti progetti
-riescono dal punto di vista della consegna e falliscono da quello
-dell'investimento: esiti e benefici si manifestano dopo la chiusura, e il team
-tende a concentrarsi sulla produzione degli output.
-
-Il business case ha un proprio ciclo di vita: nasce come \emph{outline business
-case} nel \emph{project brief}, diventa \emph{full business case} durante
-l'inizializzazione, viene mantenuto lungo le fasi. La tecnica associata ha
-quattro passi --- \emph{sviluppare, verificare, mantenere, confermare} --- e la
-conferma dei benefici avviene in larga parte dopo la chiusura. In fase di
-sviluppo vanno confrontate almeno tre opzioni: \emph{non fare nulla di diverso},
-\emph{fare il minimo}, \emph{fare pi\`u del minimo}. La prima \`e sempre la base
-rispetto a cui quantificare le altre.
+sia e resti:
+\begin {itemize}
+\item \emph{desiderabile}, per l'equilibrio fra costi, benefici e rischi
+\item \emph{fattibile}, cio\`e in grado di consegnare i prodotti
+\item \emph{realizzabile}, nel senso che l'uso dei prodotti produrr\`a
+verosimilmente gli esiti e i benefici previsti
+\end {itemize}
+La pratica segue un flusso preciso: i \emph{prodotti} consegnati abilitano
+\emph{capacit\`a}, che generano \emph{esiti}, da cui derivano
+i \emph{benefici}; gli esiti percepiti negativamente sono \emph{dis-benefici}.
+Esiti e benefici si manifestano dopo la chiusura, ed \`e per questo che molti
+progetti riescono dal punto di vista della consegna e falliscono da quello
+dell'investimento.
 
 \paragraph{Organizzazione.} Definire e stabilire la struttura di
 \emph{accountability} e responsabilit\`a del progetto. PRINCE2 riconosce tre
 categorie di stakeholder --- business, utente e fornitore --- e le rappresenta
 nel \textbf{project board}, che risponde al business del successo del progetto.
-I livelli organizzativi sono quattro: \emph{commissioning} (il \emph{business
-layer}, esterno al team di progetto, che fornisce il mandato, individua
-l'executive e fissa le tolleranze di progetto), \emph{direzione} (il project
-board), \emph{gestione} (il project manager), \emph{consegna} (i team manager e
-i membri del team). La figura~\ref{fig:p2-org} riporta la struttura del team di
-gestione.
+I livelli organizzativi sono quattro:
+\begin {itemize}
+\item \emph{commissioning}, il \emph{business layer} esterno al team di
+progetto, che fornisce il mandato, individua l'executive e fissa le tolleranze
+di progetto
+\item \emph{direzione}, il project board
+\item \emph{gestione}, il project manager
+\item \emph{consegna}, i team manager e i membri del team
+\end {itemize}
+La figura~\ref{fig:p2-org} riporta la struttura del team di gestione.
 
 \begin{figure}[htbp]
 \centering
@@ -1081,76 +979,88 @@ gestione.
 \caption{Struttura del team di gestione del progetto in PRINCE2: le linee continue indicano l'autorit\`a, quelle tratteggiate il supporto e l'\emph{assurance}. Rielaborazione da \cite{prince27}.}
 \label{fig:p2-org}
 \end{figure}
+\newpage
 
-Il \textbf{project executive} \`e nominato dal business come unico punto di
-\emph{accountability} del progetto: possiede il business case, ne garantisce la
+I ruoli previsti sono sette:
+\begin {itemize}
+\item il \textbf{project executive}, nominato dal business come unico punto di
+\emph{accountability}: possiede il business case, ne garantisce la
 giustificazione continuativa e non pu\`o delegare tale responsabilit\`a. Non
-pu\`o esistere pi\`u di un executive e il ruolo non pu\`o essere combinato con
-quello di project manager. Il \textbf{senior user} rappresenta la comunit\`a
-degli utenti ed \`e responsabile dell'approccio con cui vengono raccolti i
-requisiti e specificati i benefici, del monitoraggio dei prodotti rispetto ai
-requisiti e della loro adozione dopo la chiusura del progetto. Il \textbf{senior
-supplier} rappresenta chi fornisce risorse e competenze ed \`e responsabile
-della qualit\`a dei prodotti consegnati e dell'integrit\`a tecnica del progetto.
-Il \textbf{project manager} gestisce il progetto quotidianamente entro le
-tolleranze concordate; essendo un punto di responsabilit\`a unico, il ruolo non
-dovrebbe essere condiviso o combinato con altri. Il \textbf{team manager}
-consegna il lavoro assegnato entro le tolleranze del \emph{work package}. Il
-\textbf{project assurance} verifica, in modo indipendente dal project manager,
-gli aspetti di competenza dei membri del board e non pu\`o essere assegnato al
-project manager, ai team manager, ai membri del team o al project support; il
-\textbf{project support} fornisce servizi amministrativi e di supporto e deve
-restare separato dall'assurance.
+pu\`o esistere pi\`u di un executive, e il ruolo non pu\`o essere combinato con
+quello di project manager
+\item il \textbf{senior user}, che rappresenta gli utenti ed \`e
+responsabile dell'approccio con cui vengono raccolti i requisiti e specificati i
+benefici, del monitoraggio dei prodotti rispetto ai requisiti e della loro
+adozione dopo la chiusura
+\item il \textbf{senior supplier}, che rappresenta chi fornisce risorse e
+competenze ed \`e responsabile della qualit\`a dei prodotti consegnati e
+dell'integrit\`a tecnica del progetto
+\item il \textbf{project manager}, che gestisce il progetto quotidianamente
+entro le tolleranze concordate; essendo un punto di responsabilit\`a unico, il
+ruolo non dovrebbe essere condiviso o combinato con altri
+\item il \textbf{team manager}, che consegna il lavoro assegnato entro le
+tolleranze del \emph{work package}
+\item il \textbf{project assurance}, che verifica in modo indipendente dal
+project manager gli aspetti di competenza dei membri del board, e non pu\`o
+essere assegnato al project manager, ai team manager, ai membri del team o al
+project support
+\item il \textbf{project support}, che fornisce servizi amministrativi e deve
+restare separato dall'assurance
+\end {itemize}
 
 PRINCE2 definisce ruoli, non compiti assegnati a singole persone: i ruoli
 possono essere condivisi o combinati entro certi limiti, purch\'e le
 responsabilit\`a restino integralmente allocate. In progetti semplici \`e
-ammesso combinare l'executive con il senior user o con il senior supplier, ma
-non senior user e senior supplier fra loro, per evitare conflitti di interesse
+ammesso combinare ruoli diversi, ma ad esempio, non si possono mai combinare
+senior user e senior supplier fra loro, per evitare conflitti di interesse
 nel processo decisionale.
 
 \paragraph{Piani.} Facilitare comunicazione e controllo definendo i prodotti da
-consegnare e i mezzi per consegnarli. I tipi di piano sono quattro. Il
-\emph{project plan} copre l'intero ciclo di vita e fornisce la \emph{baseline}
-rispetto a cui monitorare il progetto. Lo \emph{stage plan} \`e dettagliato e
-viene preparato per ciascuna fase in prossimit\`a della fase stessa. Il
-\emph{team plan}, opzionale, \`e prodotto dal team manager per l'esecuzione di
-uno o pi\`u work package. L'\emph{exception plan} segue un \emph{exception
-report} e descrive come rispondere all'eccezione. L'articolazione dipende
-dall'\textbf{orizzonte di pianificazione}: poich\'e i piani si basano su stime,
-devono coprire solo il periodo per cui \`e possibile pianificare con ragionevole
-confidenza, e il piano di progetto risulta quindi meno dettagliato del piano di
-fase.
+consegnare e i mezzi per consegnarli. I tipi di piano sono quattro:
+\begin {itemize}
+\item il \emph{project plan}, che copre l'intero ciclo di vita e fornisce la
+\emph{baseline} rispetto a cui monitorare il progetto
+\item lo \emph{stage plan}, dettagliato, preparato per ciascuna fase in
+prossimit\`a della fase stessa
+\item il \emph{team plan}, opzionale, prodotto dal team manager per l'esecuzione
+di uno o pi\`u work package
+\item l'\emph{exception plan}, che segue un \emph{exception report} e descrive
+come rispondere all'eccezione
+\end {itemize}
+L'articolazione dipende dall'\textbf{orizzonte di pianificazione}: poich\'e i
+piani si basano su stime, devono coprire solo il periodo per cui \`e possibile
+pianificare con ragionevole confidenza, e il piano di progetto risulta quindi
+meno dettagliato del piano di fase.
 
 La tecnica propria del metodo \`e la \textbf{pianificazione basata sui prodotti}
-(\emph{product-based planning}), applicazione diretta del principio di
-concentrazione sui prodotti. Definisce e analizza prima i prodotti --- scrittura
+(\emph{product-based planning}): definisce e analizza prima i prodotti --- scrittura
 della \emph{project product description}, costruzione della \emph{product
 breakdown structure}, redazione delle \emph{product description}, costruzione
 del \emph{product flow diagram} --- e solo dopo deriva gli elementi di supporto:
 organizzazione dei work package, stime, analisi dei rischi, schedulazione,
 budget, documentazione del piano. La \emph{work breakdown structure} collega la
-\emph{product breakdown structure} ai work package. Vanno evitati i work package
-che attraversano un confine di fase, e nei piani subordinati non vanno
-introdotti requisiti o attivit\`a non tracciabili al piano di progetto
-approvato: \`e una via tipica di ingresso dello \emph{scope creep}.
+\emph{product breakdown structure} ai work package.
 
 \paragraph{Qualit\`a.} Documentare i requisiti dell'utente relativi ai prodotti
-e stabilire i mezzi con cui saranno soddisfatti. La terminologia \`e specifica.
-Le \emph{user's quality expectations} sono le attese qualitative espresse nella
-\emph{project product description}. Un \emph{requirement} \`e un bisogno o
-un'attesa documentata in un prodotto di gestione approvato, e solo in quanto
-documentata entra nell'ambito del progetto. Gli \emph{acceptance criteria} sono
-l'elenco prioritizzato dei criteri che il prodotto di progetto deve soddisfare
-perch\'e l'utente lo accetti. Le \emph{quality specifications} sono le misure di
-qualit\`a applicate in sede di controllo, riportate nelle singole \emph{product
-description}. La gestione della qualit\`a si articola in pianificazione,
-controllo e \emph{assurance}; le responsabilit\`a sui singoli prodotti sono
-distinte in \emph{producer}, \emph{reviewer} --- sempre indipendente dal
-produttore --- e \emph{acceptance authority}. La qualit\`a va costruita nel
-prodotto, non collaudata alla fine. Nei progetti iterativo-incrementali le
-\emph{product description} evolvono in parallelo allo sviluppo, e le specifiche
-si raffinano con il \emph{feedback} su prototipi o versioni preliminari.
+e stabilire i mezzi con cui saranno soddisfatti. La terminologia \`e specifica:
+\begin {itemize}
+\item le \emph{user's quality expectations} sono le attese qualitative espresse
+nella \emph{project product description}
+\item un \emph{requirement} \`e un bisogno o un'attesa documentata in un
+prodotto di gestione approvato, e solo in quanto documentata entra nell'ambito
+del progetto
+\item gli \emph{acceptance criteria} sono l'elenco prioritizzato dei criteri che
+il prodotto di progetto deve soddisfare perch\'e l'utente lo accetti
+\item le \emph{quality specifications} sono le misure di qualit\`a applicate in
+sede di controllo, riportate nelle singole \emph{product description}
+\end {itemize}
+La gestione della qualit\`a si articola in pianificazione, controllo e
+\emph{assurance}; le responsabilit\`a sui singoli prodotti sono distinte in
+\emph{producer}, \emph{reviewer} --- sempre indipendente dal produttore --- e
+\emph{acceptance authority}. La qualit\`a va costruita nel prodotto, non
+collaudata alla fine. Nei progetti iterativo-incrementali le \emph{product
+description} evolvono in parallelo allo sviluppo, e le specifiche si raffinano
+con il \emph{feedback} su prototipi o versioni preliminari.
 
 \paragraph{Rischio.} Identificare, valutare e controllare le incertezze che
 potrebbero influenzare gli obiettivi del progetto. Un rischio \`e ``un evento o
@@ -1160,13 +1070,19 @@ impatto; gli eventi a impatto negativo sono \emph{minacce}, quelli a impatto
 positivo \emph{opportunit\`a}. L'approccio dichiara l'allineamento con la norma
 ISO 31000. La tecnica ha cinque passi --- \emph{identificare}, \emph{valutare},
 \emph{pianificare}, \emph{implementare}, \emph{comunicare} --- e l'ultimo opera
-trasversalmente agli altri. Le risposte previste sono: evitare una minaccia o
-sfruttare un'opportunit\`a; ridurre una minaccia o potenziare un'opportunit\`a;
-trasferire il rischio; condividerlo; accettarlo; predisporre piani di
-contingenza. Il \emph{risk owner} \`e responsabile della risposta a un rischio,
-il \emph{risk action owner} esegue le azioni concordate. Completano il quadro il
-\emph{risk appetite} dell'organizzazione, la \emph{risk tolerance} fissata dal
-project board e il \emph{risk budget}.
+trasversalmente agli altri. Le risposte previste sono:
+\begin {itemize}
+\item evitare una minaccia o sfruttare un'opportunit\`a
+\item ridurre una minaccia o potenziare un'opportunit\`a
+\item trasferire il rischio
+\item condividerlo
+\item accettarlo
+\item predisporre piani di contingenza
+\end {itemize}
+Il \emph{risk owner} \`e responsabile della risposta a un rischio, il \emph{risk
+action owner} esegue le azioni concordate. Completano il quadro il \emph{risk
+appetite} dell'organizzazione, la \emph{risk tolerance} fissata dal project
+board e il \emph{risk budget}.
 
 \paragraph{Cambiamenti.} La pratica, denominata \emph{issues} nel manuale,
 raccoglie e valuta gli \emph{issue} e controlla le modifiche alla
@@ -1174,23 +1090,25 @@ raccoglie e valuta gli \emph{issue} e controlla le modifiche alla
 modifiche. Un \emph{issue} \`e ``un evento rilevante per il progetto che
 richiede la considerazione del project management''; un \emph{cambiamento} \`e
 una modifica a uno qualsiasi dei prodotti approvati che costituiscono la
-\emph{baseline}. Le categorie di issue sono cinque: problema o preoccupazione,
-evento esterno al progetto, opportunit\`a di business, richiesta di modifica
-(\emph{request for change}) e \emph{off-specification}, cio\`e prodotto che non
-soddisfer\`a le proprie specifiche di qualit\`a. Un'\emph{off-specification}
-accettata dal project board senza azione correttiva diventa una
-\emph{concession}. In sede di classificazione va verificato se l'issue non sia
-in realt\`a un rischio, e viceversa: la distinzione sta nell'incertezza. Un
-progetto non pu\`o essere reattivo al proprio contesto se qualcuno nel team di
-gestione filtra o censura gli issue.
+\emph{baseline}. Le categorie di issue sono cinque:
+\begin {itemize}
+\item problema o preoccupazione
+\item evento esterno al progetto
+\item opportunit\`a di business
+\item richiesta di modifica (\emph{request for change})
+\item \emph{off-specification}, cio\`e prodotto che non soddisfer\`a le proprie
+specifiche di qualit\`a, che, se accettata dal project board senza azione correttiva
+diventa una \emph{concession}
+\end {itemize}
 
 \paragraph{Progresso.} Stabilire i meccanismi per confrontare i risultati
 effettivi con quelli pianificati, fornire previsioni sulla continuata
 sostenibilit\`a del progetto e controllare le deviazioni che generano
-un'eccezione. Un'\emph{eccezione} \`e la situazione in cui si prevede una
+un'eccezione, ovvero una
 deviazione oltre i livelli di tolleranza concordati: l'enfasi \`e sulla
 previsione, perch\'e attendere che la deviazione si verifichi \`e inutile e
-dannoso. La pratica poggia su un ciclo \emph{plan-do-check-act} e
+dannoso.
+La pratica si basa su un ciclo \emph{plan-do-check-act} e
 sull'articolazione delle tolleranze fra i quattro livelli di gestione
 (tabella~\ref{tab:p2-tolleranze}). I controlli sono di due tipi:
 \emph{event-driven}, che scattano al verificarsi di un evento come la fine di
@@ -1237,10 +1155,9 @@ End project report & \emph{event-driven} & Rendicontazione del progetto e richie
 \bottomrule
 \end{tabularx}
 \end{table}
+\newpage
 
-% 2.3.5 --- Il ciclo di vita, dal project mandate alla chiusura.
-% Figura \ref{fig:p2-processi}: processi per livello di gestione e fase.
-% Chiude con i prodotti di gestione (baseline, report, record).
+
 \subsection{I sette processi}
 
 Un processo \`e ``un insieme strutturato di attivit\`a che definisce la sequenza
@@ -1252,29 +1169,55 @@ quattro livelli di gestione (figura~\ref{fig:p2-processi}) \cite{prince27}.
 \centering
 \resizebox{\textwidth}{!}{%
 \begin{tikzpicture}[font=\small,
-  box/.style={draw, rounded corners, align=center, minimum height=0.85cm, fill=black!5}]
-  \draw[dashed, black!45] (-4.65,-1.7) -- (-4.65,4.0);
-  \draw[dashed, black!45] (-1.70,-1.7) -- (-1.70,4.0);
-  \draw[dashed, black!45] (3.70,-1.7) -- (3.70,4.0);
-  \node at (-6.0,3.7) {Pre-progetto};
-  \node at (-3.2,3.7) {Inizializzazione};
-  \node at (1.0,3.7) {Fasi successive};
-  \node at (5.8,3.7) {Fase finale};
-  \node[anchor=west] at (-9.5,2.8) {\textbf{Direzione}};
-  \node[anchor=west] at (-9.5,1.1) {\textbf{Gestione}};
-  \node[anchor=west] at (-9.5,-1.0) {\textbf{Consegna}};
-  \node[box, minimum width=12.3cm] at (1.6,2.8) {Dirigere un progetto (DP)};
-  \node[box, minimum width=2.4cm] at (-6.0,1.7) {Avviare\\un progetto (SU)};
-  \node[box, minimum width=2.6cm] at (-3.2,1.7) {Inizializzare\\un progetto (IP)};
-  \node[box, minimum width=4.8cm] at (1.0,1.7) {Controllare una fase (CS)};
-  \node[box, minimum width=3.4cm] at (5.6,1.7) {Controllare una fase (CS)};
-  \node[box, minimum width=2.9cm] at (-1.70,0.2) {Gestire un\\confine di fase (SB)};
-  \node[box, minimum width=2.9cm] at (3.70,0.2) {Gestire un\\confine di fase (SB)};
-  \node[box, minimum width=2.6cm] at (6.9,0.2) {Chiudere\\un progetto (CP)};
-  \node[box, minimum width=4.8cm] at (1.0,-1.0) {Gestire la consegna\\dei prodotti (MP)};
-  \node[box, minimum width=3.4cm] at (5.6,-1.0) {Gestire la consegna\\dei prodotti (MP)};
+  proc/.style={draw, rounded corners=2pt, align=center, minimum height=1.0cm,
+               fill=black!8, inner xsep=3pt},
+  trig/.style={draw, dashed, rounded corners=2pt, align=center,
+               minimum height=1.0cm, inner xsep=3pt},
+  lvl/.style={font=\small\bfseries, anchor=east},
+  ph/.style={font=\footnotesize\itshape, anchor=south}]
+
+  % bande orizzontali dei quattro livelli di gestione:
+  % disegnate per prime, cosi' restano sullo sfondo
+  \fill[black!3] (-0.25,5.05) rectangle (16.45,6.35);
+  \fill[black!3] (-0.25,3.35) rectangle (16.45,4.65);
+  \fill[black!3] (-0.25,0.25) rectangle (16.45,2.95);
+  \fill[black!3] (-0.25,-1.55) rectangle (16.45,-0.25);
+
+  % confini fra le fasi del ciclo di vita
+  \foreach \x in {3.0,6.2,11.2}
+    \draw[dashed, black!40] (\x,-1.75) -- (\x,6.65);
+
+  \node[ph] at (1.5,6.45)  {Pre-progetto};
+  \node[ph] at (4.6,6.45)  {Inizializzazione};
+  \node[ph] at (8.7,6.45)  {Fasi successive};
+  \node[ph] at (13.7,6.45) {Fase finale};
+
+  \node[lvl] at (-0.5,5.7)  {Commissioning};
+  \node[lvl] at (-0.5,4.0)  {Direzione};
+  \node[lvl] at (-0.5,1.6)  {Gestione};
+  \node[lvl] at (-0.5,-0.9) {Consegna};
+
+  % il mandato non e' un processo: tratteggiato per distinguerlo 
+  \node[trig, minimum width=2.7cm] (mandate) at (1.5,5.7) {Project mandate};
+
+  \node[proc, minimum width=13.0cm] at (9.6,4.0) {Dirigere un progetto (DP)};
+
+  \node[proc, minimum width=2.7cm] (su) at (1.5,2.35)  {Avviare un\\progetto (SU)};
+  \node[proc, minimum width=2.9cm] at (4.6,2.35)  {Inizializzare un\\progetto (IP)};
+  \node[proc, minimum width=4.7cm] at (8.7,2.35)  {Controllare una fase (CS)};
+  \node[proc, minimum width=4.7cm] at (13.7,2.35) {Controllare una fase (CS)};
+
+  \draw[-{Latex[length=2mm]}, black!55] (mandate.south) -- (su.north);
+
+  % i confini di fase sono centrati sulla linea di confine
+  \node[proc, minimum width=2.9cm] at (6.2,0.85)  {Gestire un confine\\di fase (SB)};
+  \node[proc, minimum width=2.9cm] at (11.2,0.85) {Gestire un confine\\di fase (SB)};
+  \node[proc, minimum width=2.9cm] at (14.7,0.85) {Chiudere un\\progetto (CP)};
+
+  \node[proc, minimum width=4.7cm] at (8.7,-0.9)  {Gestire la consegna\\dei prodotti (MP)};
+  \node[proc, minimum width=4.7cm] at (13.7,-0.9) {Gestire la consegna\\dei prodotti (MP)};
 \end{tikzpicture}}
-\caption{I sette processi PRINCE2 lungo il ciclo di vita del progetto e i livelli di gestione. Rielaborazione da \cite{prince27}.}
+\caption{I sette processi PRINCE2 lungo il ciclo di vita del progetto e i quattro livelli di gestione. Il \emph{project mandate}, in tratteggio, non \`e un processo ma l'innesco fornito dal livello di commissioning. Rielaborazione da \cite{prince27}.}
 \label{fig:p2-processi}
 \end{figure}
 
@@ -1287,8 +1230,8 @@ e giustificata.
 esistano i prerequisiti per l'inizializzazione, rispondendo alla domanda
 ``abbiamo un progetto valido e utile?''. \`E volutamente leggero: fa il minimo
 necessario per decidere se valga la pena inizializzare il progetto, e serve
-tanto a far procedere i progetti validi quanto a impedire che idee mal concepite
-vengano avviate. Le attivit\`a sono la nomina dell'executive e del project
+tanto a far procedere i progetti validi quanto bloccare quelli non validi.
+Le attivit\`a sono la nomina dell'executive e del project
 manager, la raccolta delle lezioni precedenti, la stesura dell'\emph{outline
 business case}, la nomina del resto del team di gestione, la scelta
 dell'approccio di progetto, l'assemblaggio del \emph{project brief} e la
@@ -1301,8 +1244,7 @@ project manager. Le attivit\`a sono l'autorizzazione dell'inizializzazione,
 l'autorizzazione del progetto, l'autorizzazione di una fase o di un exception
 plan, la direzione continuativa e l'autorizzazione della chiusura. Il board
 gestisce per eccezione, monitora tramite report e controlla attraverso un numero
-ridotto di punti di decisione: ulteriori riunioni di avanzamento non dovrebbero
-rendersi necessarie.
+ridotto di punti di decisione.
 
 \textbf{Inizializzare un progetto} (\emph{initiating a project}, IP) stabilisce
 fondamenta solide e consente al business di comprendere il lavoro necessario
@@ -1317,9 +1259,7 @@ lavoro, lo monitora, gestisce gli issue, riporta al project board e intraprende
 azioni correttive perch\'e la fase resti entro le tolleranze. Le attivit\`a sono
 l'autorizzazione, la valutazione e la ricezione dei work package, la valutazione
 dello stato della fase, la registrazione di issue e rischi, l'azione correttiva,
-l'escalation e la produzione degli \emph{highlight report}. Ai team manager va
-lasciata la massima libert\`a compatibile con le tolleranze, cos\`i che il
-project manager agisca ``da facilitatore pi\`u che da controllore''.
+l'escalation e la produzione degli \emph{highlight report}.
 
 \textbf{Gestire la consegna dei prodotti} (\emph{managing product delivery}, MP)
 controlla il collegamento fra project manager e team manager, concordando i
@@ -1345,38 +1285,38 @@ sostenere i prodotti dopo la chiusura e aggiorna il \emph{benefits management
 approach} per includere le revisioni dei benefici successive al progetto.
 
 I \textbf{prodotti di gestione} organizzano l'informazione che alimenta questi
-processi, e sono di tre tipi. Le \emph{baseline} definiscono aspetti del
-progetto e, una volta approvate, sono soggette a controllo delle modifiche:
-business case, piani, product description, project brief, project initiation
-documentation, project product description, work package description. I
-\emph{report} forniscono un'istantanea dello stato. I \emph{record} sono
-prodotti dinamici raccolti nel \emph{project log}, che comprende \emph{daily
-log}, registro degli issue, registro delle lezioni, registro dei prodotti,
-registro della qualit\`a e registro dei rischi. I prodotti di gestione non
-devono essere documenti testuali: possono essere presentazioni, fogli di calcolo
-o dati residenti in sistemi informativi, e i report possono essere messaggi di
-posta elettronica, note di riunione o \emph{dashboard} elettroniche.
+processi, e sono di tre tipi:
+\begin {itemize}
+\item le \emph{baseline}--- business case, piani, product description, project
+brief, project initiation documentation, project product description, work
+package description --- che fissano aspetti del progetto: una volta approvate si
+modificano solo attraverso il controllo delle modifiche
+\item i \emph{report}, che forniscono un'istantanea dello stato
+\item i \emph{record}, prodotti dinamici raccolti nel \emph{project log}, che
+comprende \emph{daily log}, registro degli issue, registro delle lezioni,
+registro dei prodotti, registro della qualit\`a e registro dei rischi
+\end {itemize}
 
-% 2.3.6 --- Il tailoring e il suo limite.
-% Sezione importante per la tesi: l'adattabilita' di PRINCE2 non e' illimitata,
-% opera sopra un nucleo non negoziabile. E' l'argomento da riprendere nel
-% capitolo 4 quando si discutera' fino a che punto PRINCE2 possa accogliere un
-% metodo di consegna iterativo-incrementale.
+
 \subsection{Il tailoring e i limiti di adattabilit\`a del metodo}
 
-Il \emph{tailoring} \`e insieme uno dei sette principi e la chiave di lettura
-dell'intero metodo. Ha un duplice scopo: assicurare che il metodo di gestione
+Il \emph{tailoring} serve ad assicurare che il metodo di gestione
 sia appropriato al progetto e che i controlli siano proporzionati a scala,
 complessit\`a, importanza, metodo di consegna, capacit\`a del team e rischio
-\cite{prince27}. L'adattamento pu\`o riguardare la terminologia, la sostituzione
-di alcune tecniche PRINCE2 con procedure gi\`a in uso nell'organizzazione, il
-numero di fasi e di work package, l'assegnazione e la combinazione dei ruoli, il
-livello di formalit\`a della documentazione e dei controlli, l'ampiezza delle
-tolleranze.
+\cite{prince27}. L'adattamento pu\`o riguardare:
+\begin {itemize}
+\item la terminologia
+\item la sostituzione di alcune tecniche PRINCE2 con procedure gi\`a in uso
+nell'organizzazione
+\item il numero di fasi e di work package
+\item l'assegnazione e la combinazione dei ruoli
+\item il livello di formalit\`a della documentazione e dei controlli
+\item l'ampiezza delle tolleranze
+\end {itemize}
 
 La responsabilit\`a \`e distribuita. Il project manager \`e responsabile del
-tailoring e ne formula le proposte dopo aver consultato lezioni e standard
-applicabili; il project board ne risponde e deve approvarle al termine della
+tailoring e ne formula le proposte; il project board ne risponde e deve approvarle
+al termine della
 fase di inizializzazione e ogni volta che si proponga una modifica agli approcci
 di gestione. Le scelte di adattamento sono documentate nella \emph{project
 initiation documentation}, cos\`i che chiunque si unisca all'organizzazione
@@ -1388,20 +1328,88 @@ Senza tailoring un progetto pu\`o fallire in due modi opposti: per gestione
 esplicito: il tailoring deve restare coerente con i sette principi e il metodo
 risultante deve conservare la propria integrit\`a. L'adattabilit\`a di PRINCE2,
 compresa quella verso i metodi di consegna iterativo-incrementali discussa nei
-capitoli seguenti, non \`e quindi illimitata: opera all'interno di un nucleo non
-negoziabile. Una formula del manuale ne sintetizza l'orientamento: una gestione
-efficace del progetto ``richiede informazioni, ma non necessariamente documenti,
-e decisioni, ma non necessariamente riunioni''.
-
+capitoli seguenti, non \`e quindi illimitata: opera all'interno di un framework
+``intransigente''.
 % ===========================================================================
-% 2.4 --- DA SCRIVERE.
-% Il materiale c'e' gia': notes/confronto-spunti.md raccoglie gli otto spunti
-% comparativi rimossi da 2.2 e 2.3, con le formulazioni originali e una
-% proposta di assi (statuto e vincolativita'; architettura concettuale e
-% catena del valore; governance e organizzazione; copertura dichiarata;
-% convergenze recenti e loro spiegazione; punti di forza e debolezza).
+
 % ===========================================================================
 \section{Confronto interno tra PMBOK 8 e PRINCE2}
 
-Confronto tra le 2 strutture, filosofia e ambiti di applicazione dei due
-standard Punti di forza e debolezza reciproci.
+Le due sezioni precedenti hanno restituito ciascuno standard nei propri termini.
+In questa sezione verrà dunque fatto un confronto sul loro statuto e le loro formulazioni
+poich\`e da l\`i discendono le differenze di architettura, organizzazione e di
+adattabilit\`a. La tabella~\ref{tab:confronto-interno} riassume gli aspetti
+principali.
+
+\begin{table}[htbp]
+\centering
+\footnotesize
+\linespread{1}\selectfont
+\renewcommand{\arraystretch}{1.2}
+\caption{Assi di confronto fra PMBOK 8 e PRINCE2 7 \cite{pmbok8,prince27}.}
+\label{tab:confronto-interno}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.4cm}XX@{}}
+\toprule
+\textbf{Aspetto} & \textbf{PMBOK 8} & \textbf{PRINCE2 7} \\
+\midrule
+Statuto & Guida a un corpo di conoscenza; processi dichiarati non prescrittivi & Metodo, con una soglia di conformit\`a esplicita \\
+Principi & Sei; orientano il giudizio, non vincolano & Sette; obblighi guida, se uno manca non \`e un progetto PRINCE2 \\
+Architettura & Sette domini di performance, quaranta processi, cinque Focus Area & Cinque elementi integrati, sette pratiche, sette processi \\
+Catena del valore & Output, esito, beneficio, valore; inscritta nel sistema di generazione del valore & Prodotti, capacit\`a, esiti, benefici; esiti negativi come dis-benefici \\
+Organizzazione & Sette funzioni assegnabili liberamente; nessun ruolo obbligatorio & Quattro livelli, project board obbligatorio, sette ruoli con vincoli di combinazione \\
+Tailoring & Sezione autonoma, procedura in quattro passi & Settimo principio, quindi obbligatorio, ma limitato dal nucleo non negoziabile \\
+Approcci di consegna & Spettro predittivo, ibrido, adattivo, con trattazione estesa dell'adattivo & Tre metodi di consegna riconosciuti, verso cui il metodo si dichiara neutrale \\
+Sostenibilit\`a & Principio introdotto nell'ottava edizione & Settimo aspetto di performance, introdotto nella settima edizione \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\paragraph{Statuto normativo.} Il PMBOK raccoglie ci\`o che \`e ``generalmente
+accettato'' e dichiara i propri quaranta processi non prescrittivi
+\cite{pmbok8}; PRINCE2 stabilisce che un progetto in cui anche uno solo dei
+sette principi non venga applicato non \`e un progetto PRINCE2 \cite{prince27}.
+I due testi non sono quindi alternative sullo stesso piano. Da
+questa differenza discendono le altre. I principi PMBOK orientano il giudizio
+perch\'e non esiste una soglia da superare, quelli di PRINCE2 vincolano perch\'e
+la soglia \`e il metodo stesso. Il tailoring \`e una procedura descritta nel
+primo caso e un obbligo con un limite nel secondo, dove l'adattamento non pu\`o
+intaccare i sette principi.
+
+\paragraph{Catena del valore.} Sul modo di collegare il lavoro al beneficio i
+due testi convergono. Entrambe le catene hanno quattro anelli e la stessa
+direzione, entrambe nominano gli esiti negativi e entrambe collocano la
+realizzazione dei benefici dopo la chiusura del progetto, quando
+l'organizzazione temporanea non esiste pi\`u. La differenza sta nel punto di
+arrivo: il PMBOK aggiunge il valore come quarto termine e inscrive il progetto
+nel sistema di generazione del valore dell'organizzazione, mentre PRINCE2 si
+ferma ai benefici e affida il seguito al \emph{benefits management approach}. La
+convergenza \`e notevole perch\'e i due testi sono indipendenti questo \`e
+indice di un ``consenso'' diffuso sulla disciplina pi\`u che un'influenza
+reciproca.
+
+\paragraph{Governance e organizzazione.} \`E l'asse di massima divergenza. Il
+PMBOK elenca funzioni e non ruoli, non impone alcuna struttura di team e ammette
+che il coordinamento sia centralizzato, decentralizzato o misto. PRINCE2
+prescrive quattro livelli di gestione, un project board che rappresenta gli
+interessi di business, utente e fornitore, e sette ruoli con vincoli espliciti
+su quali possano essere combinati. \`E la differenza con pi\`u conseguenze
+pratiche: determina quanto ciascuno dei due possa essere adottato in
+organizzazioni che non hanno, o non vogliono, una struttura di responsabilit\`a
+formalizzata.
+
+\paragraph{Ambiti di applicazione.} Gli ambiti si ricavano da ci\`o che i due
+testi dichiarano di s\'e. PRINCE2 \`e costruito attorno al problema della
+responsabilit\`a: definisce chi decide, entro quali tolleranze e con quale
+giustificazione, e risulta quindi adatto dove business, utente e fornitore sono
+soggetti distinti, dove esiste una catena contrattuale e dove servono punti di
+decisione formali. Il PMBOK \`e costruito attorno al problema della competenza:
+descrive strumenti, tecniche e processi fra cui scegliere, e risulta adatto dove
+un'organizzazione gestisce progetti eterogenei e lascia al team la scelta
+dell'approccio di sviluppo.
+
+Ciascuno dei due tace su ci\`o che l'altro tratta. PRINCE2 dichiara fuori dal
+proprio ambito le tecniche dettagliate di project management, che nomina senza
+descrivere; il PMBOK non prescrive alcuna struttura di
+governance, e sul punto si limita a elencare funzioni possibili.
+Sono i rispettivi limiti dichiarati, e vanno tenuti presenti nel confronto con
+gli approcci Agile sviluppato nei capitoli seguenti.
