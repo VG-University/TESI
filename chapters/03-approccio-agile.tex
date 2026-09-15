@@ -24,20 +24,16 @@ non c'\`e uno standard, non c'\`e un ente che lo definisca, e i testi
 disponibili vanno da una dichiarazione di valori di due pagine a framework
 proprietari che prescrivono l'intera struttura organizzativa. Il capitolo \`e
 quindi ordinato secondo il \textbf{livello di prescrittivit\`a} dei testi
-esaminati, dal meno al pi\`u vincolante. La scelta non \`e soltanto espositiva:
-gran parte delle incomprensioni nel dibattito fra approcci tradizionali e Agile
-nasce dal confrontare strati diversi, e stabilire gli strati qui consente al
-capitolo~\ref{cap:confronto} di confrontare a parit\`a di livello.
+esaminati, dal meno al pi\`u vincolante.
 
-% NOTA: \ref{cap:confronto} richiede \label{cap:confronto} in
-% 04-confronto-approcci.tex, subito dopo il \chapter{}. Se preferisci non
-% introdurre label, sostituisci con "nel capitolo seguente".
+% ===========================================================================
 
+% ===========================================================================
 \section{Il cambio di paradigma e le sue radici}
 
-% Obiettivo della sezione: impedire due letture sbagliate, quella per cui
-% l'Agile nasce dal nulla nel 2001 e quella per cui il predittivo era una
-% sciocchezza che qualcuno ha finalmente corretto.
+Gli approcci Agile rispondono a una classe di problemi per cui i metodi
+``Tradizionali'' definiti precedentemente non sono stati costruiti, e lo fanno con
+pratiche in uso da anni (prima del 2001).
 
 \subsection{Il problema a cui l'Agile risponde}
 
@@ -45,21 +41,35 @@ Gli approcci descritti nel capitolo precedente presuppongono che l'esito atteso
 sia specificabile con sufficiente precisione prima dell'inizio del lavoro. Nello
 sviluppo software questa condizione \`e frequentemente disattesa.
 
-% Da sviluppare:
-% - Volatilita' dei requisiti: il committente scopre che cosa vuole usando il
-%   prodotto, non specificandolo. Il costo della specifica anticipata cresce
-%   piu' rapidamente del suo beneficio.
-% - Il software non ha vincoli fisici di produzione: la modifica tardiva costa
-%   in modo diverso rispetto all'edilizia o all'impiantistica, cioe' proprio i
-%   domini da cui provengono CPM e PERT (richiamare la sezione 2.1.1).
-% - Il problema del feedback ritardato: in un ciclo predittivo la verifica di
-%   avere costruito la cosa giusta arriva alla fine, quando correggere e' piu'
-%   costoso.
-% - Contesto storico: la cosiddetta "crisi del software", i tassi di
-%   fallimento riportati dai primi report Standish (usarli con cautela: la
-%   metodologia CHAOS e' stata ampiamente criticata, dichiaralo).
-% Chiudere formulando la domanda a cui l'Agile risponde: come si governa un
-% progetto quando l'oggetto da costruire non e' conoscibile in anticipo?
+L'\emph{Agile Practice Guide} del PMI nomina la distinzione sottostante: il
+lavoro di progetto si colloca lungo un intervallo che va dal \emph{definable
+work} al lavoro a elevata incertezza, o \emph{high-uncertainty work}. Il primo
+\`e caratterizzato da procedure gi\`a rivelatesi efficaci su progetti simili,
+con dominio e processi produttivi noti e livelli bassi di incertezza e di
+rischio in esecuzione; il secondo comporta progettazione inedita e
+soluzione di problemi, e richiede la collaborazione di specialisti
+\cite{agilepracticeguide2}.
+
+Il lavoro a elevata incertezza presenta tassi di cambiamento, complessit\`a e
+rischio alti, e questo mette in difficolt\`a gli approcci predittivi, che
+determinano in anticipo la maggior parte dei requisiti e governano le variazioni
+attraverso un processo di richiesta di modifica.
+
+Nel software concorrono due fattori. Il primo \`e l'assenza di vincoli fisici di
+produzione: la modifica tardiva non impone di demolire quanto gi\`a realizzato,
+e il suo costo dipende da come il prodotto \`e costruito pi\`u che da quanto
+lavoro \`e stato svolto.
+Il secondo \`e il momento in cui arriva la verifica: in un ciclo predittivo la conferma di
+avere costruito la cosa giusta si ottiene alla consegna, cio\`e nel punto in cui
+correggere costa di pi\`u.
+
+La stessa guida del PMI registra l'esito di questa condizione: lo sviluppo
+software commerciale degli anni novanta e dei primi anni duemila era gravato da
+metodologie rigide, e i progetti venivano consegnati spesso fuori budget,
+in ritardo e senza soddisfare le esigenze del committente.
+
+Da qui la domanda a cui gli approcci Agile rispondono: come si governa un
+progetto quando l'oggetto da costruire non \`e conoscibile in anticipo?
 
 \subsection{Le radici: lo sviluppo iterativo prima del 2001}
 
@@ -67,22 +77,22 @@ Lo sviluppo iterativo e incrementale non nasce con il Manifesto Agile: lo
 precede di decenni, ed \`e questa anteriorit\`a a spiegare perch\'e nel 2001
 esistessero gi\`a diversi metodi da unificare.
 
-% Da sviluppare, fonte principale: Larman e Basili \cite{larman2003}, che
-% ricostruiscono l'uso di cicli iterativi fino agli anni cinquanta.
-% Punti da toccare:
-% - Il paper di Royce del 1970 \cite{royce1970} e' universalmente citato come
-%   origine del modello a cascata, ma il testo lo presenta come rischioso e
-%   propone di iterarlo. E' un caso interessante di fonte fondativa fraintesa:
-%   il "waterfall" canonico e' una lettura selettiva.
-% - Il modello a spirale di Boehm \cite{boehm1988}: iterazione guidata dal
-%   rischio, gia' del 1988.
-% - I metodi degli anni novanta, tutti precedenti al Manifesto: DSDM (1994),
-%   Scrum presentato a OOPSLA nel 1995 \cite{schwaber1995}, XP fra il 1996 e il
-%   1999 \cite{beck2004}, Crystal, FDD.
-% Tesi della sottosezione: il Manifesto non inventa i metodi, li ratifica e
-% fornisce loro un lessico comune. E' un atto di unificazione, non di
-% fondazione. Serve anche a giustificare l'ordine del capitolo, che non e'
-% cronologico.
+Larman e Basili ne ricostruiscono l'uso a partire dagli anni cinquanta.
+Il programma aeronautico X-15 gi\`a sfrutta principi assimilabili all'agile, e
+parte del personale che lavorava al progetto passa poi al Project Mercury, che all'inizio
+degli anni sessanta lavora per iterazioni di mezza giornata a durata fissata,
+scrivendo le prove prima del codice. E fra il 1977 e il 1980 il software
+dello Space Shuttle arriva alla delivery attraverso 17 iterazioni su 31 mesi.
+
+I metodi che il Manifesto unificher\`a esistono tutti prima del 2001: Scrum
+nasce all'inizio degli anni novanta alla Easel Corporation con iterazioni di
+trenta giorni, DSDM viene definito nel gennaio 1994 da un gruppo di sedici
+professionisti britannici, il \emph{Rational Unified Process} a met\`a decennio,
+Extreme Programming dal 1996 sul progetto Chrysler C3 e Feature-Driven
+Development nel 1997 \cite{larman2003}.
+
+Il Manifesto non fonda dunque i metodi agili: li ratifica e fornisce loro un
+lessico comune.
 
 \section{Il Manifesto Agile}
 
@@ -94,94 +104,231 @@ Utah, fra diciassette persone provenienti da metodi gi\`a esistenti ---
 Extreme Programming, Scrum, DSDM, Adaptive Software Development, Crystal,
 Feature-Driven Development, Pragmatic Programming e altri \cite{agilemanifesto}.
 
-% Da sviluppare, con la stessa domanda posta a PMBOK e PRINCE2 nel cap. 2:
-% CHE TIPO DI TESTO E'? Risposta: una dichiarazione di valori, deliberatamente
-% non operativa, di lunghezza inferiore alle due pagine, priva di autorita'
-% istituzionale e priva di meccanismi di aggiornamento. Non e' uno standard
-% (nessun ente lo mantiene), non e' un metodo (non dice che cosa fare), non e'
-% certificabile. E' un testo che non e' mai stato rivisto dal 2001.
-% Da segnalare: l'assenza di un proprietario e' cio' che ha reso possibile sia
-% la diffusione sia l'appropriazione commerciale discussa in 3.7.
+Il testo si compone di una dichiarazione di meno di settanta parole, seguita da
+dodici principi.
+Non \`e uno standard: nessun organismo ne rivendica la manutenzione e il testo
+non ha subito revisioni dal 2001. Non \`e un metodo: non nomina attivit\`a,
+ruoli o documenti, e non consente quindi di derivare che cosa fare. Non \`e
+certificabile, non essendovi un ente che ne attesti la conformit\`a.
+
+I due testi del capitolo precedente ricavano la propria autorit\`a da un
+soggetto che li pubblica, li aggiorna e ne certifica l'applicazione. Il
+Manifesto \`e firmato da diciassette persone a titolo individuale, e la sua
+autorit\`a deriva unicamente dall'adesione successiva di chi lo ha assunto come
+riferimento. L'assenza di un proprietario spiega tanto la rapidit\`a della
+diffusione quanto l'appropriazione commerciale del termine, di cui si dir\`a
+nella sezione~\ref{sec:critiche}.
 
 \subsection{I quattro valori}
 
-% Riportare i quattro valori (individui e interazioni; software funzionante;
-% collaborazione col cliente; rispondere al cambiamento) e concentrarsi sulla
-% clausola finale, che e' il punto piu' frainteso del testo:
-% "That is, while there is value in the items on the right, we value the items
-% on the left more."
-% Il Manifesto NON nega il termine di destra: non dice di non documentare, di
-% non avere processi, di non negoziare contratti, di non pianificare. Stabilisce
-% una precedenza in caso di conflitto, non una esclusione. Questa lettura
-% erronea e' all'origine di buona parte dell'opposizione con gli approcci
-% tradizionali che il capitolo 4 dovra' ridimensionare.
-% Utile una tabella a due colonne con i quattro accoppiamenti.
+I quattro valori sono formulati come confronti fra coppie di termini, riportati
+nella tabella~\ref{tab:valori-manifesto}.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{I quattro valori del Manifesto Agile, nella traduzione italiana
+ufficiale.}
+\label{tab:valori-manifesto}
+\begin{tabularx}{\textwidth}{@{}XX@{}}
+\toprule
+\textbf{Si valorizza} & \textbf{pi\`u di} \\
+\midrule
+Gli individui e le interazioni & i processi e gli strumenti \\
+Il software funzionante & la documentazione esaustiva \\
+La collaborazione col cliente & la negoziazione dei contratti \\
+Rispondere al cambiamento & seguire un piano \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+La clausola che chiude l'elenco \`e la parte del testo pi\`u frequentemente
+omessa: ``fermo restando il valore delle voci a destra, consideriamo pi\`u
+importanti le voci a sinistra'' \cite{agilemanifesto}.
+Il Manifesto non prescrive di non documentare, di non adottare
+processi, di non negoziare contratti o di non pianificare: stabilisce una
+precedenza in caso di conflitto fra i termini.
 
 \subsection{I dodici principi}
 
-% Non elencarli uno per uno in prosa: raggrupparli. Un raggruppamento che
-% funziona e regge l'argomentazione successiva:
-%   (a) consegna e valore: consegna frequente, software funzionante come misura
-%       primaria del progresso, soddisfazione del cliente;
-%   (b) cambiamento: accogliere i requisiti mutevoli anche a sviluppo avanzato;
-%   (c) persone e organizzazione: individui motivati, conversazione diretta,
-%       team auto-organizzati, sostenibilita' del ritmo;
-%   (d) eccellenza tecnica e semplicita';
-%   (e) riflessione periodica e adattamento (il principio che fonda la
-%       retrospettiva).
-% Da evidenziare il principio sui team auto-organizzati, perche' e' la premessa
-% implicita che rende problematica la scala trattata in 3.5, e il principio
-% sulla conversazione faccia a faccia, che presuppone team piccoli e co-locati.
-% Una tabella con i dodici principi raggruppati per famiglia sarebbe coerente
-% con lo stile del capitolo 2.
+I dodici principi esplicitano i valori senza raggiungere il livello della
+procedura. La tabella~\ref{tab:principi-manifesto} li raggruppa per famiglia,
+indicando la numerazione originale.
+
+\begin{table}[!htb]
+\centering
+\small
+\caption{I dodici principi del Manifesto raggruppati per famiglia
+\cite{agilemanifesto}.}
+\label{tab:principi-manifesto}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.8cm}%
+                             >{\raggedright\arraybackslash}p{1.8cm}X@{}}
+\toprule
+\textbf{Famiglia} & \textbf{Principi} & \textbf{Contenuto} \\
+\midrule
+Consegna e valore & 1, 3, 7 &
+La soddisfazione del committente si persegue con rilasci frequenti e continui di
+software funzionante, che costituisce anche la misura primaria
+dell'avanzamento \\
+\addlinespace
+Cambiamento & 2 &
+I requisiti mutevoli vanno accolti anche a sviluppo avanzato e trattati come
+vantaggio competitivo per il committente \\
+\addlinespace
+Persone e organizzazione & 4, 5, 6, 8, 11 &
+Collaborazione quotidiana fra committente e realizzatori; team costruiti attorno
+a persone motivate, dotate dell'ambiente e della fiducia necessari;
+conversazione diretta come mezzo di comunicazione pi\`u efficace; ritmo di
+lavoro sostenibile a tempo indefinito; architetture e requisiti come esito di
+team auto-organizzati \\
+\addlinespace
+Eccellenza tecnica & 9, 10 &
+Attenzione continua alla qualit\`a tecnica e alla progettazione; semplicit\`a
+intesa come arte di massimizzare il lavoro non svolto \\
+\addlinespace
+Riflessione e adattamento & 12 &
+A intervalli regolari il team esamina il proprio funzionamento e corregge di
+conseguenza il proprio comportamento \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\newpage
+
+Due principi meritano attenzione perch\'e vincolanti: il
+sesto trova nella conversazione diretta il mezzo pi\`u efficace di trasmettere
+informazione, e presuppone quindi team di dimensione ridotta e collocati nello
+stesso luogo; l'undicesimo attribuisce a team auto-organizzati l'origine delle
+architetture e dei requisiti, e sottrae dunque quelle decisioni a un livello
+gerarchico superiore. Entrambi per\`o valgono solo per il singolo team: nessuno
+dei dodici principi dice come gestire la pluralit\`a dei team, ed \`e su questa
+omissione che nasce il problema della scala.
 
 \subsection{Che cosa il Manifesto non dice}
 
-Pi\`u istruttivo dell'elenco dei suoi contenuti \`e l'elenco delle sue assenze.
+Essendo una trattazione limitata, molti temi non vengono trattati e l'elenco delle
+assenza risulta pi\`u istruttivo rispetto all'elenco dei suoi contenuti.
 
-% Da sviluppare, e' la sottosezione che prepara sia 3.3 sia 3.6:
-% - Non nomina ruoli, cerimonie, artefatti, stime, iterazioni, backlog.
-%   Tutto cio' che il senso comune associa all'Agile viene dai metodi, non dal
-%   Manifesto.
-% - Non nomina il PROJECT MANAGEMENT, mai. Parla di "software development".
-%   Non nomina il progetto come organizzazione temporanea, ne' il business case,
-%   ne' la governance, ne' il rischio. Questo va detto esplicitamente qui,
-%   perche' e' la premessa del paragrafo 3.6 e uno dei risultati piu'
-%   significativi del capitolo per la tesi nel suo complesso.
-% - Non dice nulla sulla scala, sui contratti, sugli ambienti regolamentati.
-% Conclusione della sezione: proprio perche' non e' operativo, il Manifesto
-% richiede uno strato che lo traduca in pratica. Cerniera verso 3.3.
+Il testo non nomina ruoli, riunioni ricorrenti, artefatti, stime, iterazioni
+n\'e liste di lavoro arretrato. Tutto ci\`o che il senso comune associa
+all'Agile proviene dai metodi, non dal Manifesto.
+
+Il testo non nomina mai il project management. Parla di \emph{software
+development}, e il termine \emph{project} vi compare solo come contenitore del
+lavoro, nei principi quattro e cinque. Non si trova il progetto come
+organizzazione temporanea, la giustificazione economica dell'investimento, la
+governance, il rischio: cio\`e gli oggetti su cui sono costruiti per intero i
+due testi precedenti. Il Manifesto e gli standard tradizionali non
+sono quindi due risposte alternative alla stessa domanda, ma due testi che
+parlano di cose diverse.
+
+Il testo non dice infine nulla sulla scala, sui rapporti contrattuali e sugli
+ambienti soggetti a vincoli normativi.
+
+Proprio perch\'e non \`e operativo, il Manifesto richiede uno strato che lo
+traduca in pratica. \`E la funzione che i metodi esaminati nel seguito
+assolvono, ed \`e anche la ragione per cui sono molti.
 
 \section{Dal valore alla pratica: il problema dell'operativizzazione}
 
-Un testo di valori non \`e applicabile per costruzione: fra l'enunciato ``gli
-individui e le interazioni pi\`u che i processi e gli strumenti'' e una
-decisione operativa esiste una distanza che qualcosa deve colmare. \`E questa
-distanza a spiegare la proliferazione di framework che caratterizza l'Agile e a
-distinguerlo, sul piano della struttura testuale, dagli approcci esaminati nel
-capitolo precedente.
+Fra l'enunciato ``gliindividui e le interazioni pi\`u che i processi e gli strumenti''
+e una decisione operativa esiste una distanza da colmare. \`E questa
+distanza a spiegare la nascita di framework che caratterizza l'Agile e a
+distinguerlo dagli approcci tradizionali.
 
-% Sezione breve, di cerniera, ma indispensabile: e' QUI CHE SI DICHIARA IL
-% CRITERIO DI SELEZIONE delle sezioni 3.4 e 3.5, altrimenti la scelta dei
-% framework trattati appare arbitraria.
-%
-% Criterio proposto, ancorato a una fonte esterna e gia' citata nel capitolo 2:
-% il PMBOK 8 \cite{pmbok8} dispone i metodi agili su due assi, ampiezza di
-% copertura del ciclo di vita e profondita' di dettaglio della guida
-% (figura 4-7 della guida, gia' richiamata in 2.2.5). Adottando quella mappa
-% come griglia, si trattano:
-%   - un metodo di team ad ampia adozione e prescrittivita' media (Scrum);
-%   - un metodo di team a prescrittivita' minima, che si applica sopra il
-%     processo esistente invece di sostituirlo (Kanban);
-%   - due approcci scalati agli estremi opposti dello spettro prescrittivo
-%     (SAFe e LeSS).
-% Gli altri vengono richiamati in tabella. Dichiarare anche che cosa si esclude
-% e perche': i framework proprietari con corpo documentale non pubblico e le
-% varianti aziendali non documentate.
-%
-% Utile anche introdurre qui la distinzione, presa dal PMBOK 8, fra METODO
-% (sequenza strutturata di passi) e TOOL KIT (collezione di strumenti fra cui
-% scegliere): serve nel capitolo 4 per collocare Disciplined Agile.
+L'\emph{Agile Practice Guide} descrive la distanza come una struttura a strati:
+una mentalit\`a definita da quattro valori, guidata da dodici principi e resa
+operativa da pratiche, fra le quali chi lavora sceglie in base alle proprie
+necessit\`a \cite{agilepracticeguide2}.
+
+Non \`e necessario adottare
+alcuno degli approcci esistenti, perch\'e un approccio agile pu\`o essere
+costruito da zero purch\'e aderisca alla mentalit\`a, ai valori e ai principi
+del Manifesto.
+
+A questo punto della trattazione è necessario definire alcuni termini:
+\begin {itemize}
+\item \emph{framework}: un sistema o una struttura di base di idee o
+di fatti a sostegno di un approccio
+\item  \emph{approccio agile} un approccio di sviluppo che applica mentalit\`a,
+valori e principi del Manifesto attraverso pratiche
+\end{itemize}
+A questi si aggiunge la distinzione fra
+metodo (che prescrive una sequenza di passi) e \emph{tool kit} (che raccoglie
+opzioni fra cui scegliere senza prescriverne una).
+
+Non essendo possibile raccogliere tutti gli approcci esistenti in un'unica trattazione,
+la guida ne seleziona alcuni attraverso i seguenti criteri:
+\begin {itemize}
+\item concepiti per un uso olistico, cio\`e destinati a guidare un insieme ampio
+di attivit\`a di progetto e non una singola attivit\`a
+\item formalizzati per un uso comune, cio\`e non proprietari di una singola
+organizzazione o di un singolo contesto
+\item diffusi nell'uso corrente, secondo un insieme di indagini di settore
+recenti
+\end {itemize}
+
+Gli approcci cos\`i selezionati sono raffigurati dalla mappa seguente dove
+si distinguono i metodi di team dagli approcci scalati.
+
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[font=\footnotesize,
+  team/.style={draw, rounded corners=3pt, align=center, minimum height=0.6cm,
+               inner xsep=4pt, fill=white},
+  scal/.style={draw, rounded corners=3pt, align=center, minimum height=0.6cm,
+               inner xsep=4pt, fill=black!12},
+  sel/.style={line width=1.1pt}]
+
+  % assi
+  \draw[-{Latex[length=2.5mm]}] (-0.3,0) -- (12.2,0);
+  \draw[-{Latex[length=2.5mm]}] (-0.3,0) -- (-0.3,7.6);
+  \node[font=\small, anchor=north] at (6,-0.45)
+    {Profondit\`a del dettaglio prescrittivo};
+  \node[font=\small, rotate=90, anchor=south] at (-0.95,3.8)
+    {Ampiezza della copertura del ciclo di vita};
+
+  % approcci scalati
+  \node[scal]      at (2.24,6.08) {Lean};
+  \node[scal, sel] at (10.24,6.55) {SAFe};
+  \node[scal, sel] at (3.34,5.03) {LeSS};
+  \node[scal]      at (2.11,3.93) {Scrum of\\Scrums};
+
+  % metodi di team
+  \node[team]      at (5.76,5.54) {DSDM};
+  \node[team]      at (7.83,4.11) {Agile UP};
+  \node[team]      at (5.20,3.44) {Crystal\\Methods};
+  \node[team]      at (5.20,2.40) {XP};
+  \node[team, sel] at (1.73,2.21) {Kanban};
+  \node[team]      at (1.79,1.30) {FDD};
+  \node[team, sel] at (2.75,0.50) {Scrum};
+
+  % legenda
+  \node[team] (lt) at (10.4,2.3) {Metodo di team};
+  \node[scal] (ls) at (10.4,1.5) {Approccio scalato};
+  \node[draw, dashed, fit=(lt)(ls), inner sep=5pt] {};
+\end{tikzpicture}}
+\caption{Gli approcci agili disposti per ampiezza di copertura del ciclo di vita
+e profondit\`a del dettaglio prescrittivo. Il bordo spesso segnala i quattro
+approcci trattati per esteso nel seguito. Rielaborazione da
+\cite{agilepracticeguide2}.}
+\label{fig:mappa-approcci}
+\end{figure}
+\newpage
+
+Assunta tale mappa come griglia, le due sezioni seguenti trattano per esteso
+quattro casi, scelti per posizione e non per diffusione:
+\begin {itemize}
+\item Scrum, metodo di team a prescrittivit\`a media e ampiamente adottato
+\item Kanban, metodo di team a prescrittivit\`a minima, che si applica sopra il
+processo esistente invece di sostituirlo
+\item SAFe e LeSS, due approcci scalati collocati agli estremi opposti dello
+spettro prescrittivo
+\end {itemize}
+
+Gli altri sono richiamati in forma tabellare al termine di ciascuna sezione.
+
+\newpage
 
 \section{I metodi di team}
 
@@ -189,10 +336,6 @@ capitolo precedente.
 % tecniche vengono nominate per completezza dello strato, non descritte.
 
 \subsection{Scrum}
-
-Scrum \`e il framework agile a maggiore diffusione ed \`e definito da un testo
-breve e a revisione dichiarata, lo \emph{Scrum Guide}, la cui ultima versione
-risale a novembre 2020 \cite{scrumguide2020}.
 
 % Da sviluppare:
 % - Fondamento: il controllo empirico di processo, con i tre pilastri
@@ -225,12 +368,9 @@ risale a novembre 2020 \cite{scrumguide2020}.
 
 \subsection{Kanban}
 
-Kanban \`e l'antitesi strutturale di Scrum, e va trattato per questo: non
-prevede iterazioni, ruoli n\'e eventi, e non sostituisce il processo esistente
-ma vi si applica sopra.
-
-% Da sviluppare, fonte: Anderson \cite{anderson2010}, con radici nel Toyota
-% Production System e nel lean \cite{poppendieck2003}.
+% Da sviluppare, fonte: l'annex A3.4 dell'Agile Practice Guide
+% \cite{agilepracticeguide2} per il metodo, e il par. 2.3 della stessa guida
+% per i concetti lean da cui discende.
 % - Le pratiche fondamentali: visualizzare il flusso di lavoro, limitare il
 %   lavoro in corso (WIP), gestire il flusso, rendere esplicite le politiche,
 %   istituire cicli di feedback, migliorare in modo collaborativo ed
@@ -248,9 +388,6 @@ ma vi si applica sopra.
 % e quindi che l'opposizione predittivo/iterativo non esaurisce la questione.
 
 \subsection{Le pratiche ingegneristiche e il loro statuto}
-
-Scrum e Kanban lasciano deliberatamente vuoto lo strato delle pratiche tecniche
-di realizzazione; Extreme Programming lo occupa \cite{beck2004}.
 
 % Trattazione volutamente breve: la tesi resta sul piano del project
 % management e non entra nel merito delle singole pratiche.
@@ -280,10 +417,6 @@ di realizzazione; Extreme Programming lo occupa \cite{beck2004}.
 
 \subsection{Perch\'e la scala \`e un problema}
 
-L'estensione dell'Agile a organizzazioni di grandi dimensioni non \`e un
-problema di quantit\`a ma di coerenza interna: alcune delle sue premesse
-cessano di valere all'aumentare del numero di persone coinvolte.
-
 % Da sviluppare, ed e' la sottosezione concettualmente piu' densa di 3.5:
 % - Il Manifesto presuppone team piccoli, co-locati, in comunicazione diretta.
 %   Il principio sulla conversazione faccia a faccia e quello sui team
@@ -301,8 +434,9 @@ cessano di valere all'aumentare del numero di persone coinvolte.
 \subsection{SAFe}
 
 % Da trattare come l'estremo prescrittivo dello spettro.
-% Fonte: Scaled Agile \cite{safe}. Attenzione: framework proprietario a
-% revisione frequente, quindi CITARE VERSIONE E DATA DI CONSULTAZIONE.
+% Fonte: l'annex A3.8.2 dell'Agile Practice Guide \cite{agilepracticeguide2}.
+% Il framework e' proprietario e a revisione frequente: descriverlo attraverso
+% la guida evita di doverne inseguire le versioni.
 % - Struttura a livelli (team, programma/ART, portfolio), il Program Increment
 %   e il PI planning come evento di sincronizzazione, i ruoli aggiuntivi.
 % - Il dato interessante per la tesi: SAFe e' il framework agile piu' adottato
@@ -315,7 +449,8 @@ cessano di valere all'aumentare del numero di persone coinvolte.
 
 \subsection{LeSS}
 
-% L'estremo opposto: fonte Larman e Vodde \cite{larmanvodde2016}.
+% L'estremo opposto: fonte l'annex A3.8.3 dell'Agile Practice Guide
+% \cite{agilepracticeguide2}.
 % - L'idea di "descaling": non aggiungere strutture di coordinamento ma
 %   rimuovere complessita' organizzativa; un solo Product Backlog, un solo
 %   Product Owner, uno Sprint comune, feature team invece di component team.
@@ -326,17 +461,7 @@ cessano di valere all'aumentare del numero di persone coinvolte.
 
 \subsection{Gli altri approcci scalati}
 
-% Breve, e in parte tabellare: Scrum@Scale, Nexus, e il cosiddetto "modello
-% Spotify".
-% Su quest'ultimo una nota metodologica utile: non e' mai stato un modello ne'
-% un framework, ma la descrizione di una situazione aziendale a una certa data,
-% cosa che gli stessi autori hanno successivamente chiarito. E' un buon esempio
-% di come nel campo agile una descrizione diventi prescrizione, e si collega
-% alle critiche di 3.7.
-%
-% NOTA: Disciplined Agile NON va qui. E' trattato nel capitolo 4 come caso di
-% assorbimento dell'Agile da parte del PMI, dove e' piu' interessante come
-% mossa istituzionale che come framework.
+% Solo citati, breve tabellare
 
 \section{Che cosa l'Agile dice del project management}
 
@@ -346,9 +471,6 @@ cessano di valere all'aumentare del numero di persone coinvolte.
 % punto di vista dei diversi approcci).
 
 \subsection{L'assenza del project manager}
-
-Nessuno dei testi esaminati in questo capitolo prevede la figura del project
-manager, e il Manifesto non nomina mai il project management.
 
 % Da sviluppare:
 % - Constatazione documentale: verificarla e dichiararla per ciascuna fonte
@@ -408,81 +530,5 @@ ruolo.
 %   "Verso una definizione sintetica di Project Management" del capitolo 4.
 
 \section{Critiche, limiti ed evidenza empirica}
+\label{sec:critiche}
 
-% Sezione necessaria all'equilibrio della tesi: senza di essa il capitolo 3
-% risulta promozionale accanto a un capitolo 2 descrittivo e distaccato.
-% Fornisce inoltre le ipotesi da sottoporre a verifica nel questionario del
-% capitolo 5.
-
-\subsection{La base empirica}
-
-% Fonti: la revisione sistematica di Dyba' e Dingsoyr \cite{dyba2008} e la
-% rassegna decennale di Dingsoyr e altri \cite{dingsoyr2012}.
-% Da riportare con precisione:
-% - il numero limitato di studi metodologicamente solidi rispetto al volume
-%   della letteratura;
-% - la concentrazione degli studi su XP e su team piccoli, con scarsa
-%   copertura degli altri metodi e della scala;
-% - la difficolta' di definire la variabile indipendente: che cosa significa
-%   "adottare l'Agile" varia da studio a studio (su questo, Conboy
-%   \cite{conboy2009}, che ricostruisce il concetto di agilita' a partire
-%   dalle sue radici teoriche e ne mostra l'uso incoerente in letteratura);
-% - la scarsita' di confronti controllati con approcci predittivi.
-% Conclusione onesta: l'adozione dell'Agile e' largamente superiore alla
-% robustezza dell'evidenza che la sostiene. Dirlo non indebolisce la tesi, la
-% qualifica.
-
-\subsection{Le critiche interne al movimento}
-
-% Le critiche piu' interessanti vengono da dentro, ed e' questo a renderle
-% citabili senza sbilanciare il capitolo.
-% - Diversi firmatari del Manifesto hanno preso pubblicamente le distanze
-%   dalla sua istituzionalizzazione. VERIFICARE le fonti puntuali prima di
-%   citarle: sono in gran parte interventi, conferenze e post, quindi vanno
-%   citati per quello che sono, con data e URL di consultazione.
-% - Il nucleo dell'argomento: la trasformazione di una dichiarazione di valori
-%   in un mercato di certificazioni, strumenti e consulenza produce
-%   un'adozione delle forme senza adozione dei principi (la formula ricorrente
-%   e' "doing agile" contro "being agile").
-% - Il fenomeno dell'adozione rituale: cerimonie eseguite senza le condizioni
-%   che le renderebbero utili. E' verificabile nel capitolo 5, e vale la pena
-%   costruirci una domanda del questionario.
-
-\subsection{Limiti di contesto}
-
-% Dove l'Agile funziona peggio, o richiede adattamenti sostanziali:
-% - contratti a prezzo e ambito fissi, che sono incompatibili con l'ambito
-%   come variabile;
-% - ambienti regolamentati, con obblighi di tracciabilita' e documentazione
-%   probatoria;
-% - progetti con forti dipendenze fisiche o da fornitori esterni, dove
-%   l'iterazione ha un costo marginale alto;
-% - organizzazioni distribuite, dove la comunicazione diretta presupposta dal
-%   Manifesto non e' disponibile.
-% Ognuno di questi e' una ragione documentabile dell'esistenza degli approcci
-% ibridi, che il capitolo 4 trattera'.
-
-\section{Che cosa resta invariante}
-
-Attraversati i tre livelli e i metodi che li rappresentano, conviene chiedersi
-che cosa sia comune a tutti, poich\'e \`e questo nucleo, e non un framework
-particolare, che il capitolo seguente potr\`a mettere a confronto con gli
-approcci tradizionali.
-
-% Corrispettivo della sezione "Confronto interno" del capitolo 2, ma rivolto
-% all'interno dell'Agile. Serve a consegnare al capitolo 4 un oggetto definito
-% invece di un elenco di framework.
-% Candidati a invariante, da argomentare uno per uno mostrando che compaiono
-% in tutte le fonti esaminate:
-%   - cicli di feedback brevi e ricorrenti;
-%   - controllo empirico del processo al posto del controllo per conformita'
-%     a un piano;
-%   - decisioni prese al livello in cui risiede la conoscenza rilevante;
-%   - il prodotto funzionante come misura del progresso, al posto
-%     dell'avanzamento sulle attivita';
-%   - l'ambito come variabile flessibile, con tempi e risorse fissati: il
-%     "triangolo invertito" che il PMBOK 8 stesso nomina \cite{pmbok8}.
-% Da verificare anche la tenuta della lista: se un invariante non regge per
-% Kanban o per LeSS, va tolto o riformulato. Un elenco onesto di quattro voci
-% vale piu' di uno di sei che non reggono.
-% Chiudere annunciando il capitolo 4.
