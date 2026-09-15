@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1789323650.04804 "c:/Users/giann/Documents/GitHub/TESI/tesi.tex" "tesi.pdf" "tesi" 1789323652.21083 0
+["pdflatex"] 1789492970.52767 "c:/Users/giann/Documents/GitHub/TESI/tesi.tex" "tesi.pdf" "tesi" 1789492972.06342 0
   "C:/Users/giann/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1784307986 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/giann/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx0800.pk" 1782821801 19872 0f9ca11b5ce825726b1879e7e2b320ee ""
   "C:/Users/giann/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk" 1783543669 28976 654a581910e67cf7bf4f69392d3eeacb ""
@@ -196,7 +196,7 @@
   "c:/Users/giann/Documents/GitHub/TESI/tesi.tex" 1786999753 4623 000d7b7d4ddd060e7cc02d86b037f162 ""
   "chapters/00-dedica.tex" 1783543250 242 8ba0d0b23445bb20e0f7fe4cdffd723a ""
   "chapters/01-introduzione.tex" 1785266282 1042 8cea40f1cb211bf754062a986d7d82f9 ""
-  "chapters/02-metodi-tradizionali.tex" 1789323643 90645 c0d068a1dd705e385c1bbcd32b274f75 ""
+  "chapters/02-metodi-tradizionali.tex" 1789492969 85037 95ef5df5c22d043e305afcfec1164374 ""
   "chapters/03-approccio-agile.tex" 1789294449 27029 0cf75e3224fca7cd77024f41bc12b509 ""
   "chapters/04-confronto-approcci.tex" 1789294449 778 11b73a2f0505b60acdf8d21165ff0d85 ""
   "chapters/05-stato-aziende.tex" 1785270163 407 4004e6f428c1ac148db2d946923cb1b6 ""
@@ -206,11 +206,11 @@
   "chapters/09-bibliografia.tex" 1789294449 9319 69b49d8128c8cb40b724e039eb57602f ""
   "chapters/10-ringraziamenti.tex" 1783543447 153 3180ac3cdf4c858ce9d141cfd65de799 ""
   "chapters/frontespizio/frontespizio.pdf" 1785265387 257784 aab43ae277569d0150c3fee37ad7979a ""
-  "tesi.aux" 1789323651 15524 f4aaba087c0273ae31c30cbbbcafcc4f "pdflatex"
-  "tesi.lof" 1789323651 1317 49cc506f018dd118a80a3706a5699143 "pdflatex"
-  "tesi.lot" 1789323651 1351 1c40ee3eab8af31a3ba443d15110b480 "pdflatex"
+  "tesi.aux" 1789492971 15414 b6a844e10fbbd9e8f6d5c0b65c98af8e "pdflatex"
+  "tesi.lof" 1789492971 1317 a5d7275d51ae2dec949f011bbba3c6e1 "pdflatex"
+  "tesi.lot" 1789492971 1350 45789d81322fcd6767c0fdb073fa9ec2 "pdflatex"
   "tesi.tex" 1786999753 4623 000d7b7d4ddd060e7cc02d86b037f162 ""
-  "tesi.toc" 1789323651 5659 0258355dd07fc09ffc4b7ada900d6a24 "pdflatex"
+  "tesi.toc" 1789492971 5659 bd3a23623caeeece48d842c6a4303982 "pdflatex"
   (generated)
   "tesi.aux"
   "tesi.lof"

@@ -328,8 +328,8 @@ INPUT C:\Users\giann\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\giann\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\giann\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1095.tfm
 INPUT C:\Users\giann\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecti1095.tfm
-INPUT C:\Users\giann\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx0800.tfm
 INPUT C:\Users\giann\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
+INPUT C:\Users\giann\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx0800.tfm
 INPUT .\chapters\03-approccio-agile.tex
 INPUT .\chapters\03-approccio-agile.tex
 INPUT .\chapters\03-approccio-agile.tex
@@ -380,10 +380,10 @@ INPUT C:\Users\giann\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tct
 INPUT C:\Users\giann\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcti0800.pk
 INPUT C:\Users\giann\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
 INPUT C:\Users\giann\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
-INPUT C:\Users\giann\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
-INPUT C:\Users\giann\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\giann\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx0800.pk
 INPUT C:\Users\giann\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx0800.pk
+INPUT C:\Users\giann\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
+INPUT C:\Users\giann\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\giann\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk
 INPUT C:\Users\giann\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk
 INPUT C:\Users\giann\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk
