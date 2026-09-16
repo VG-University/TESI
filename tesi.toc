@@ -53,26 +53,29 @@
 \contentsline {section}{\numberline {2.3}Dal valore alla pratica: il problema dell'operativizzazione}{50}{}%
 \contentsline {section}{\numberline {2.4}I metodi di team}{54}{}%
 \contentsline {subsection}{\numberline {2.4.1}Scrum}{54}{}%
-\contentsline {subsection}{\numberline {2.4.2}Kanban}{54}{}%
-\contentsline {subsection}{\numberline {2.4.3}Le pratiche ingegneristiche e il loro statuto}{54}{}%
-\contentsline {subsection}{\numberline {2.4.4}Gli altri metodi di team}{54}{}%
-\contentsline {section}{\numberline {2.5}La scala}{54}{}%
-\contentsline {subsection}{\numberline {2.5.1}Perch\'e la scala \`e un problema}{54}{}%
-\contentsline {subsection}{\numberline {2.5.2}SAFe}{54}{}%
-\contentsline {subsection}{\numberline {2.5.3}LeSS}{54}{}%
-\contentsline {subsection}{\numberline {2.5.4}Gli altri approcci scalati}{54}{}%
-\contentsline {section}{\numberline {2.6}Che cosa l'Agile dice del project management}{54}{}%
-\contentsline {subsection}{\numberline {2.6.1}L'assenza del project manager}{54}{}%
-\contentsline {subsection}{\numberline {2.6.2}La ridistribuzione delle funzioni di project management}{54}{}%
-\contentsline {subsection}{\numberline {2.6.3}Progetto o prodotto}{55}{}%
-\contentsline {section}{\numberline {2.7}Critiche, limiti ed evidenza empirica}{55}{}%
-\contentsline {chapter}{\numberline {3}Confronto tra approcci tradizionali e Agile}{57}{}%
-\contentsline {section}{\numberline {3.1}Affinit\`a}{57}{}%
-\contentsline {section}{\numberline {3.2}Differenze}{57}{}%
-\contentsline {section}{\numberline {3.3}Scenari di integrazione: approcci ibridi}{57}{}%
-\contentsline {section}{\numberline {3.4}Verso una definizione sintetica di Project Management}{58}{}%
-\contentsline {chapter}{\numberline {4}Stato attuale del Project Management nelle aziende IT}{59}{}%
-\contentsline {chapter}{Conclusioni}{61}{}%
-\contentsline {chapter}{\numberline {A}Prima Appendice}{63}{}%
-\contentsline {chapter}{\numberline {B}Seconda Appendice}{65}{}%
-\contentsline {chapter}{Bibliografia}{67}{}%
+\contentsline {subsection}{\numberline {2.4.2}Kanban}{56}{}%
+\contentsline {subsection}{\numberline {2.4.3}Le pratiche ingegneristiche e il loro statuto}{57}{}%
+\contentsline {subsection}{\numberline {2.4.4}Gli altri metodi di team}{57}{}%
+\contentsline {section}{\numberline {2.5}La scala}{59}{}%
+\contentsline {subsection}{\numberline {2.5.1}Perch\'e la scala \`e un problema}{59}{}%
+\contentsline {subsection}{\numberline {2.5.2}SAFe}{60}{}%
+\contentsline {subsection}{\numberline {2.5.3}LeSS}{61}{}%
+\contentsline {subsection}{\numberline {2.5.4}Gli altri approcci scalati}{62}{}%
+\contentsline {section}{\numberline {2.6}Che cosa l'Agile dice del project management}{63}{}%
+\contentsline {subsection}{\numberline {2.6.1}Il project manager nei testi agili}{63}{}%
+\contentsline {subsection}{\numberline {2.6.2}La ridistribuzione delle funzioni di project management}{64}{}%
+\contentsline {subsection}{\numberline {2.6.3}Progetto o prodotto}{66}{}%
+\contentsline {section}{\numberline {2.7}Critiche, limiti ed evidenza empirica}{67}{}%
+\contentsline {subsection}{\numberline {2.7.1}La base empirica}{67}{}%
+\contentsline {subsection}{\numberline {2.7.2}Le critiche interne}{68}{}%
+\contentsline {subsection}{\numberline {2.7.3}Limiti di contesto}{69}{}%
+\contentsline {chapter}{\numberline {3}Confronto tra approcci tradizionali e Agile}{71}{}%
+\contentsline {section}{\numberline {3.1}Affinit\`a}{71}{}%
+\contentsline {section}{\numberline {3.2}Differenze}{71}{}%
+\contentsline {section}{\numberline {3.3}Scenari di integrazione: approcci ibridi}{71}{}%
+\contentsline {section}{\numberline {3.4}Verso una definizione sintetica di Project Management}{72}{}%
+\contentsline {chapter}{\numberline {4}Stato attuale del Project Management nelle aziende IT}{73}{}%
+\contentsline {chapter}{Conclusioni}{75}{}%
+\contentsline {chapter}{\numberline {A}Prima Appendice}{77}{}%
+\contentsline {chapter}{\numberline {B}Seconda Appendice}{79}{}%
+\contentsline {chapter}{Bibliografia}{81}{}%

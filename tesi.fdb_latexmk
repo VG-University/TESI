@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1789511839.28251 "c:/Users/giann/Documents/GitHub/TESI/tesi.tex" "tesi.pdf" "tesi" 1789511840.94637 0
+["pdflatex"] 1789596621.75727 "c:/Users/giann/Documents/GitHub/TESI/tesi.tex" "tesi.pdf" "tesi" 1789596623.58382 0
   "C:/Users/giann/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1784307986 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/giann/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx0800.pk" 1782821801 19872 0f9ca11b5ce825726b1879e7e2b320ee ""
   "C:/Users/giann/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk" 1782821802 25420 c9d9ca448f3047ceded825704b2becef ""
@@ -198,7 +198,7 @@
   "chapters/00-dedica.tex" 1783543250 242 8ba0d0b23445bb20e0f7fe4cdffd723a ""
   "chapters/01-introduzione.tex" 1785266282 1042 8cea40f1cb211bf754062a986d7d82f9 ""
   "chapters/02-metodi-tradizionali.tex" 1789504761 79369 aedb39b5784ff9d34a969e7dcf7b375a ""
-  "chapters/03-approccio-agile.tex" 1789511838 26937 4bd43f65201cfb25de8169fea7b4e86f ""
+  "chapters/03-approccio-agile.tex" 1789596621 46241 5f0c2567feaebd80037cec7dbe8723fe ""
   "chapters/04-confronto-approcci.tex" 1789294449 778 11b73a2f0505b60acdf8d21165ff0d85 ""
   "chapters/05-stato-aziende.tex" 1785270163 407 4004e6f428c1ac148db2d946923cb1b6 ""
   "chapters/06-conclusioni.tex" 1789507357 258 c5e9c6d673b3d52b85a60ec1c9e43356 ""
@@ -206,12 +206,12 @@
   "chapters/08-appendice-b.tex" 1783543447 128 2290df272e0b649823e9945d9db2dc99 ""
   "chapters/09-bibliografia.tex" 1789507388 3574 927301304870bda5997680a431229296 ""
   "chapters/10-ringraziamenti.tex" 1783543447 153 3180ac3cdf4c858ce9d141cfd65de799 ""
-  "chapters/frontespizio/frontespizio.pdf" 1789493116 261131 436c80044952570c4eb508248cdd7844 ""
-  "tesi.aux" 1789511840 16556 2f0ab322eb120f56e4ba7d18cb83199c "pdflatex"
-  "tesi.lof" 1789511840 1741 dc89bc716913710058bd88c619dfe67f "pdflatex"
-  "tesi.lot" 1789511840 1762 f7f6a4b9b3cb649d57b8fc987b051f26 "pdflatex"
+  "chapters/frontespizio/frontespizio.pdf" 1789511981 261130 55fdc559c158bea9c4545d204f09546b ""
+  "tesi.aux" 1789596623 19288 6e595ea765b1ed66f3ff369ffeb8c66f "pdflatex"
+  "tesi.lof" 1789596623 1741 dc89bc716913710058bd88c619dfe67f "pdflatex"
+  "tesi.lot" 1789596623 2508 d71e6e1875473a6676a4f080723bfd1f "pdflatex"
   "tesi.tex" 1786999753 4623 000d7b7d4ddd060e7cc02d86b037f162 ""
-  "tesi.toc" 1789511840 5580 06b9355b4302ff7b573b8b09768c1d0f "pdflatex"
+  "tesi.toc" 1789596623 5803 d7efb841505493e39ebe2d96c2ef0b91 "pdflatex"
   (generated)
   "tesi.aux"
   "tesi.lof"

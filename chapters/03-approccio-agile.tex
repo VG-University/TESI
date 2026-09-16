@@ -6,14 +6,6 @@
 %   3.2  valori          (Manifesto: due pagine, nessuna procedura)
 %   3.4  metodi di team  (Scrum, Kanban: ruoli, eventi, artefatti)
 %   3.5  scala           (SAFe, LeSS: strutture organizzative complete)
-% Questo consente di dichiarare un criterio di selezione argomentabile (3.3) e
-% permette al capitolo 4 di confrontare a parita' di livello.
-%
-% Convenzione di questo file: il testo visibile e' l'ossatura argomentativa
-% (spesso riutilizzabile come frase di apertura della sezione); i blocchi
-% commentati con % contengono le indicazioni di stesura e le fonti da usare.
-% Decisioni prese: taglio generico di project management, senza pratiche
-% ingegneristiche di dettaglio; Disciplined Agile rimandato al capitolo 4.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Approcci Agile al Project Management}
@@ -95,6 +87,7 @@ Il Manifesto non fonda dunque i metodi agili: li ratifica e fornisce loro un
 lessico comune.
 
 \section{Il Manifesto Agile}
+\label{sec:manifesto}
 
 \subsection{Genesi e statuto del testo}
 
@@ -245,7 +238,7 @@ alcuno degli approcci esistenti, perch\'e un approccio agile pu\`o essere
 costruito da zero purch\'e aderisca alla mentalit\`a, ai valori e ai principi
 del Manifesto.
 
-A questo punto della trattazione è necessario definire alcuni termini:
+A questo punto della trattazione \`e necessario definire alcuni termini:
 \begin {itemize}
 \item \emph{framework}: un sistema o una struttura di base di idee o
 di fatti a sostegno di un approccio
@@ -330,205 +323,642 @@ Gli altri sono richiamati in forma tabellare al termine di ciascuna sezione.
 
 \newpage
 
+% ===========================================================================
+
+% ===========================================================================
 \section{I metodi di team}
 
-% Nota di taglio: la tesi resta su un piano di project management. Le pratiche
-% tecniche vengono nominate per completezza dello strato, non descritte.
+I metodi trattati qui operano sul singolo team e ne definiscono
+l'organizzazione del lavoro. Sono lo strato in cui i valori del Manifesto
+diventano decisioni, ed \`e anche lo strato in cui l'Agile viene pi\`u spesso
+identificato con uno solo dei suoi esiti possibili.
 
 \subsection{Scrum}
 
-% Da sviluppare:
-% - Fondamento: il controllo empirico di processo, con i tre pilastri
-%   trasparenza, ispezione, adattamento. E' il corrispettivo funzionale del
-%   controllo per baseline degli approcci predittivi, ed e' su questo che il
-%   capitolo 4 potra' impostare il confronto.
-% - Le tre accountability (Product Owner, Scrum Master, Developers), i cinque
-%   eventi (Sprint, Sprint Planning, Daily Scrum, Sprint Review, Sprint
-%   Retrospective), i tre artefatti con i rispettivi commitment (Product
-%   Backlog / Product Goal, Sprint Backlog / Sprint Goal, Increment /
-%   Definition of Done).
-% - Lo sprint come timebox e come unita' di pianificazione: si pianifica in
-%   dettaglio solo l'iterazione corrente. Da collegare all'orizzonte di
-%   pianificazione di PRINCE2 (2.3.6) e al rolling wave planning del PMBOK
-%   (2.2.6): e' un'affinita' importante, ma il confronto va fatto nel cap. 4.
-%
-% MOSSA DIACRONICA, la stessa che ha funzionato sul PMBOK nel capitolo 2:
-% la revisione 2020 rispetto alla 2017 rende il framework MENO prescrittivo,
-% non piu'. Elimina il "development team" come entita' distinta per evitare
-% dinamiche di delega interna al team; introduce il Product Goal; passa da
-% self-organizing a self-managing (il team decide anche che cosa fare, non solo
-% come); toglie le tre domande obbligatorie dal Daily Scrum; dichiara
-% l'obiettivo di essere "minimally sufficient" e scende sotto le tredici
-% pagine. Un framework che nel tempo rimuove prescrizioni e' un dato in se',
-% e va confrontato con la traiettoria opposta del PMBOK, che nell'ottava
-% edizione reintroduce i processi (di nuovo: osservazione da cap. 4).
-% - Segnalare anche cio' che Scrum NON copre: nessuna pratica tecnica, nessuna
-%   indicazione su architettura, contratti, budget, portfolio. E' il vuoto che
-%   XP occupa (3.4.3) e che la scala deve colmare (3.5).
+Scrum \`e un framework di processo per un singolo team, descritto da una guida
+ufficiale che si dichiara \emph{lightweight} e \emph{purposefully incomplete},
+cio\`e deliberatamente incompleta, in quanto definisce le sole parti necessarie
+a realizzare la teoria su cui si fonda \cite{scrumguide2020}. L'incompletezza
+non \`e una lacuna ma una scelta.
+
+La teoria in questione \`e il controllo empirico di processo. La conoscenza
+arriva dall'esperienza e le decisioni si prendono su ci\`o che si osserva, non
+su ci\`o che si \`e previsto. Il controllo poggia su tre pilastri ---
+trasparenza, ispezione, adattamento --- che richiedono che il
+lavoro sia visibile a chi deve valutarlo, che venga esaminato con adeguata
+frequenza per rilevare le deviazioni e che il processo o il prodotto vengano
+corretti non appena la deviazione emerge \cite{scrumguide2020}. \`E il
+corrispettivo funzionale del controllo per \emph{baseline} degli approcci
+descritti nel capitolo precedente: in entrambi i casi si confronta uno stato
+osservato con un riferimento, ma il riferimento qui non \`e un piano stabilito
+in anticipo, bens\`i l'obiettivo dell'iterazione in corso.
+
+La tabella~\ref{tab:scrum} riporta gli elementi che la guida definisce.
+
+\begin{table}[!htb]
+\centering
+\small
+\caption{Responsabilit\`a, eventi e artefatti di Scrum. I tempi massimi
+indicati valgono per Sprint di un mese e si riducono per Sprint pi\`u brevi
+\cite{scrumguide2020}.}
+\label{tab:scrum}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.4cm}X@{}}
+\toprule
+\textbf{Elemento} & \textbf{Contenuto} \\
+\midrule
+\multicolumn{2}{@{}l}{\textbf{Responsabilit\`a}} \\
+Product Owner &
+Massimizza il valore del prodotto ed \`e l'unico responsabile della gestione
+del Product Backlog \\
+Developers &
+Realizzano in ogni Sprint un upgrade utilizzabile e ne rispondono
+collettivamente \\
+Scrum Master &
+Risponde dell'efficacia del team e dell'applicazione del framework \\
+\addlinespace
+\multicolumn{2}{@{}l}{\textbf{Eventi}} \\
+Sprint &
+Contenitore di lunghezza fissa non superiore a un mese, entro cui si svolgono
+gli altri eventi \\
+Sprint Planning &
+Apre lo Sprint definendone l'obiettivo e il lavoro selezionato; al massimo otto
+ore \\
+Daily Scrum &
+Sincronizzazione quotidiana dei Developers sull'avanzamento verso lo Sprint
+Goal; quindici minuti \\
+Sprint Review &
+Ispezione dell'incremento con gli \emph{stakeholder} e adeguamento del Product
+Backlog; al massimo quattro ore \\
+Sprint Retrospective &
+Chiude lo Sprint esaminando il funzionamento del team; al massimo tre ore \\
+\addlinespace
+\multicolumn{2}{@{}l}{\textbf{Artefatti}} \\
+Product Backlog &
+Elenco ordinato ed emergente di quanto serve al prodotto; vi \`e associato il
+Product Goal \\
+Sprint Backlog &
+Lavoro selezionato per lo Sprint e piano per realizzarlo; vi \`e associato lo
+Sprint Goal \\
+Increment &
+Passo concreto verso il Product Goal; la Definition of Done ne stabilisce lo
+stato di qualit\`a richiesto \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\newpage
+
+Lo Sprint \`e insieme un \emph{timebox} e un'unit\`a di pianificazione: si
+pianifica in dettaglio la sola iterazione in corso, e la durata resta costante
+tra gli Sprint.
+
+Scrum non prescrive alcuna pratica tecnica di
+realizzazione, e non dice nulla su architettura, contratti, budget o gestione
+del portafoglio. Presuppone inoltre un team di dimensione ridotta, che la guida
+fissa in dieci persone o meno \cite{scrumguide2020}. Ci\`o che resta fuori non
+scompare: \`e lo spazio che le pratiche ingegneristiche occupano e che i
+framework di scala vanno a riempire.
 
 \subsection{Kanban}
 
-% Da sviluppare, fonte: l'annex A3.4 dell'Agile Practice Guide
-% \cite{agilepracticeguide2} per il metodo, e il par. 2.3 della stessa guida
-% per i concetti lean da cui discende.
-% - Le pratiche fondamentali: visualizzare il flusso di lavoro, limitare il
-%   lavoro in corso (WIP), gestire il flusso, rendere esplicite le politiche,
-%   istituire cicli di feedback, migliorare in modo collaborativo ed
-%   evolutivo.
-% - Il principio di partenza: "start with what you do now". Kanban e' un metodo
-%   di cambiamento evolutivo, non un modello organizzativo da adottare. Questa
-%   e' la differenza che conta per la tesi: non richiede di riorganizzare il
-%   lavoro prima di cominciare, il che ne spiega l'adozione in contesti dove
-%   Scrum non e' applicabile (manutenzione, supporto, flussi non progettuali).
-% - La schedulazione a flusso e la teoria dei vincoli: il PMBOK 8 le tratta
-%   esplicitamente \cite{pmbok8}, quindi qui esiste gia' un punto di contatto
-%   documentato fra i due mondi. Segnalarlo senza svilupparlo.
-% - Metriche proprie: lead time, cycle time, throughput, invece di velocity.
-% Conclusione: Kanban dimostra che "agile" non implica "iterativo a timebox",
-% e quindi che l'opposizione predittivo/iterativo non esaurisce la questione.
+Due oggetti distinti portano lo stesso nome. Il \emph{kanban} della produzione
+snella \`e un sistema di controllo e riapprovvigionamento delle scorte,
+sviluppato da Taiichi Ohno e applicato allo stabilimento principale Toyota nel
+1953; il termine traduce letteralmente ``segnale visivo'' o ``cartellino''. Il
+\emph{Kanban Method} \`e invece un approccio per il lavoro intellettuale e lo
+sviluppo software, elaborato da David J. Anderson a partire dalle proprie
+applicazioni in Microsoft nel 2004 e in Corbis fra il 2006 e il 2007, e
+consolidato in forma di principi e pratiche nel 2010
+\cite{agilepracticeguide2}.
+
+Il metodo si regge su quattro principi fondanti:
+\begin {itemize}
+\item partire dallo stato attuale
+\item concordare di perseguire un cambiamento incrementale ed evolutivo
+\item rispettare processo, ruoli, responsabilit\`a e titoli attuali
+\item incoraggiare atti di leadership a ogni livello
+\end {itemize}
+
+e su sei propriet\`a centrali: visualizzare il flusso di lavoro, limitare il
+lavoro in corso, gestire il flusso, rendere esplicite le politiche di processo,
+istituire cicli di \emph{feedback} e migliorare in modo collaborativo
+\cite{agilepracticeguide2}.
+
+Il primo principio \`e quello che distingue il metodo da tutti gli altri
+trattati in questo capitolo. Kanban non richiede di riorganizzare il lavoro
+prima di cominciare: si applica sopra il processo esistente, ne rispetta ruoli
+e responsabilit\`a e produce il cambiamento per via evolutiva, non per
+sostituzione. \`E un metodo di cambiamento, non un modello organizzativo da
+adottare, per questo si adatta bene in contesti come:
+manutenzione, supporto e flussi di lavoro che non hanno forma di progetto.
+
+A differenza della maggior parte degli approcci agili, Kanban non prescrive
+iterazioni a durata fissata. Le iterazioni possono essere usate, ma ci\`o che
+deve restare intatto \`e il principio di tirare i singoli elementi attraverso
+il processo in modo continuo, limitando il lavoro in corso per ottimizzare il
+flusso \cite{agilepracticeguide2}. Cambiano di conseguenza le misure: non la
+velocit\`a dell'iterazione, ma grandezze di flusso come il \emph{throughput},
+il lavoro in corso e il tempo di ciclo.
+
+Kanban dimostra infine che \emph{agile} non implica \emph{iterativo a durata
+fissata}, e che un progetto pu\`o non essere predittivo puro o iterativo puro.
 
 \subsection{Le pratiche ingegneristiche e il loro statuto}
 
-% Trattazione volutamente breve: la tesi resta sul piano del project
-% management e non entra nel merito delle singole pratiche.
-% Da dire, e basta:
-% - XP prescrive pratiche di realizzazione oltre che di organizzazione del
-%   lavoro, ed e' l'unico dei metodi qui considerati a farlo.
-% - Il punto rilevante per il project management non e' quali siano quelle
-%   pratiche, ma la TESI che XP sostiene: che l'adattabilita' del processo
-%   dipenda da proprieta' tecniche del prodotto, e che nessuna riorganizzazione
-%   del lavoro possa produrre agilita' se il costo della modifica resta alto.
-%   E' un'affermazione forte, perche' colloca fuori dalla portata del project
-%   manager una delle condizioni del successo del progetto.
-% - Da qui una domanda che il capitolo 4 puo' riprendere: se cio' e' vero,
-%   il perimetro tradizionale del project management e' sufficiente?
-% Non introdurre esempi di pratiche specifiche.
+Scrum e Kanban lasciano deliberatamente vuoto lo strato delle pratiche tecniche
+di realizzazione; Extreme Programming lo occupa \cite{agilepracticeguide2}.
+
+XP \`e l'unico fra i metodi qui considerati a prescrivere pratiche di
+realizzazione oltre che di organizzazione del lavoro, e le ordina in tre aree
+--- organizzativa, tecnica e di pianificazione --- distinguendo fra pratiche
+primarie e pratiche derivate.
+
+XP sostiene che
+l'adattabilit\`a del processo dipenda da propriet\`a tecniche del prodotto, e
+che nessuna riorganizzazione del lavoro possa produrre agilit\`a finch\'e il
+costo della modifica resta alto. Assumendo che tale affermazione sia vera, una delle
+condizioni del successo del progetto rimane fuori dalla portata del project
+manager, il cui perimetro tradizionale non comprende le scelte tecniche di
+realizzazione. \`E necessario dunque valutare se tale perimetro sia sufficiente.
 
 \subsection{Gli altri metodi di team}
 
-% Trattazione tabellare, non discorsiva. Una tabella con: metodo, anno,
-% autore/i, elemento distintivo, e una riga ciascuno per Crystal, FDD, DSDM e
-% Adaptive Software Development. Servono a documentare che il campo e' piu'
-% ampio dei due casi trattati e a giustificare, per contrasto, la selezione
-% dichiarata in 3.3. Fonte per la collocazione relativa: la mappa del
-% PMBOK 8 \cite{pmbok8}.
+Scrum e Kanban, come citato precedentemente, non sono gli unici metodi presenti
+nell'approccio agile. La
+tabella~\ref{tab:altri-metodi} riporta gli altri metodi di team documentati.
 
+\begin{table}[htbp]
+\centering
+\small
+\caption{Altri metodi di team \cite{agilepracticeguide2}.}
+\label{tab:altri-metodi}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.4cm}X@{}}
+\toprule
+\textbf{Metodo} & \textbf{Elemento distintivo} \\
+\midrule
+Crystal &
+Famiglia di metodologie anzich\'e metodo unico: il rigore richiesto varia con
+la dimensione del team e con la criticit\`a del progetto, invece di essere
+fissato in anticipo \\
+\addlinespace
+Feature-Driven Development &
+Organizza il lavoro attorno a funzionalit\`a di valore per il business,
+articolandolo in cinque processi; fra i sei ruoli previsti compare il project
+manager, unico caso fra i metodi qui considerati \\
+\addlinespace
+Dynamic Systems Development Method &
+Consegna guidata dai vincoli: costo, qualit\`a e tempo vengono fissati
+all'inizio, e l'ambito viene prioritizzato in forma codificata per
+rispettarli \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+A questo punto si evince come FDD sia l'unico metodo a nominare il ruolo di project 
+manager; Scrum
+prevede un Product Owner e uno Scrum Master, che non sono project manager;
+negli altri metodi la figura non compare affatto.
+
+La differenza si spiega con l'origine. FDD non nasce per un piccolo gruppo di
+lavoro, ma nel 1997 per un progetto software di grandi dimensioni
+\cite{larman2003}, e i suoi ruoli separano l'architettura dalla gestione dello
+sviluppo e dalla programmazione: \`e l'articolazione di cui un progetto grande
+ha bisogno. Gli altri metodi di team presuppongono invece un gruppo unico e
+ristretto, in cui non c'\`e un esterno con cui coordinarsi.
+
+Il project manager, dunque, ricompare quando il progetto cresce. Non \`e una
+figura che i metodi agili escludano per principio: \`e una figura di cui un
+singolo team non ha bisogno.
+\newpage
+
+% ===========================================================================
+
+% ===========================================================================
 \section{La scala}
+\label{sec:scala}
+
+I metodi della sezione precedente valgono per un team. Quando i team diventano
+molti, le loro premesse smettono di reggere, e la risposta al problema crea una 
+netta divisione fra gli approcci.
 
 \subsection{Perch\'e la scala \`e un problema}
 
-% Da sviluppare, ed e' la sottosezione concettualmente piu' densa di 3.5:
-% - Il Manifesto presuppone team piccoli, co-locati, in comunicazione diretta.
-%   Il principio sulla conversazione faccia a faccia e quello sui team
-%   auto-organizzati non si estendono per semplice moltiplicazione.
-% - Coordinare piu' team richiede sincronizzazione, allineamento
-%   architetturale, gestione delle dipendenze e allocazione di budget: cioe'
-%   esattamente le funzioni che il capitolo 2 ha visto attribuite alla
-%   governance. La scala reintroduce quindi il problema che il livello di team
-%   aveva potuto ignorare.
-% - Da qui l'obiezione ricorrente, da riportare in modo equanime: i framework
-%   di scala reintrodurrebbero cio' che l'Agile aveva rimosso, e sarebbero un
-%   ritorno del predittivo sotto lessico agile. Presentare l'obiezione e la
-%   replica, senza prendere posizione qui (la posizione va nel cap. 4).
+Gli approcci agili pi\`u diffusi, come
+Scrum e XP, si concentrano sulle attivit\`a di un
+singolo team ridotto e interfunzionale; per progetti che richiedono la
+collaborazione di pi\`u team all'interno di un programma o di un portafoglio la
+loro modalit\`a pu\`o rivelarsi insufficiente \cite{agilepracticeguide2}.
+
+La ragione si nota nei principi del Manifesto. Il sesto principio indica la
+conversazione diretta il mezzo di comunicazione pi\`u efficace, l'undicesimo
+attribuisce a team auto-organizzati l'origine di architetture e requisiti:
+entrambi descrivono un gruppo ristretto che si coordina al proprio interno.
+Nessuno dei due si estende per semplice moltiplicazione, perch\'e in nessuno dei
+due compare un esterno con cui coordinarsi.
+
+Ci\`o che compare quando i team si moltiplicano \`e riportato nella guida
+come un insieme di punti critici ricorrenti \cite{agilepracticeguide2}:
+\begin {itemize}
+\item la frammentazione della visione di prodotto, che si verifica quando ogni
+team persegue la propria
+\item l'ingorgo delle dipendenze, tecniche e di sequenza, fra lavori che
+procedono in parallelo
+\item il disallineamento delle caddenze, quando pianificazione, revisioni e
+rilasci non cadono negli stessi momenti
+\item il sovraccarico di governance, quando controlli concepiti per un'unica
+consegna vengono ripetuti su ogni team
+\item la contesa delle persone a livello di portafoglio, quando le stesse
+competenze servono a pi\`u iniziative
+\end {itemize}
+
+L'elenco mostra proprio le funzioni che il capitolo
+precedente ha attribuito alla governance di progetto: allineamento a un
+obiettivo unico, gestione delle dipendenze, sincronizzazione, controllo,
+allocazione delle risorse. La scala non introduce problemi nuovi: riporta in
+superficie quelli che il singolo (e contenuto) team aveva potuto ignorare.
+
+Per attuare i processi e le metodologie di scala, la guida fornisce
+due indicazioni importanti: la prima \`e che il fattore critico di successo resta il singolo team
+in salute: se un approccio agile non funziona su un team, non va esteso a
+pi\`u team, prima \`e necesario rimuovere gli impedimenti organizzativi che lo bloccano.
+La seconda \`e che adottare un framework di scala non \`e obbligatorio, perch\'e
+il coordinamento fra team si pu\`o ottenere anche adattando le pratiche di
+gestione di programma gi\`a in uso.
 
 \subsection{SAFe}
 
-% Da trattare come l'estremo prescrittivo dello spettro.
-% Fonte: l'annex A3.8.2 dell'Agile Practice Guide \cite{agilepracticeguide2}.
-% Il framework e' proprietario e a revisione frequente: descriverlo attraverso
-% la guida evita di doverne inseguire le versioni.
-% - Struttura a livelli (team, programma/ART, portfolio), il Program Increment
-%   e il PI planning come evento di sincronizzazione, i ruoli aggiuntivi.
-% - Il dato interessante per la tesi: SAFe e' il framework agile piu' adottato
-%   nelle grandi organizzazioni ed e' anche il piu' criticato dall'interno del
-%   movimento. Le due cose insieme dicono qualcosa sul rapporto fra
-%   adottabilita' e fedelta' ai principi, che il capitolo 5 potra' verificare
-%   empiricamente.
-% - Non inseguire le versioni: descrivere l'impianto, non il dettaglio
-%   corrente.
+Lo \emph{Scaled Agile Framework} si presenta come una base di conoscenza di
+schemi ricorrenti per estendere il lavoro di sviluppo a tutti i livelli
+dell'impresa \cite{agilepracticeguide2}. Poggia su dieci principi:
+\begin {itemize}
+\item adottare una prospettiva economica
+\item applicare il pensiero sistemico
+\item assumere la variabilit\`a e preservare le opzioni
+\item costruire in modo incrementale con cicli di apprendimento rapidi e
+integrati
+\item fondare i traguardi sulla valutazione oggettiva di sistemi funzionanti
+\item rendere visibile e limitare il lavoro in corso, ridurre la dimensione dei
+lotti e governare la lunghezza delle code
+\item applicare una cadenza e sincronizzarla con una pianificazione che
+attraversi i domini
+\item liberare la motivazione intrinseca di chi svolge lavoro intellettuale
+\item decentrare le decisioni
+\item organizzarsi attorno al valore
+\end {itemize}
+
+Su questa base il framework dettaglia pratiche, ruoli e attivit\`a a tre
+livelli: portafoglio, programma e team; e organizza l'impresa attorno a
+flussi di valore che alimentano il committente in modo continuo
+\cite{agilepracticeguide2}.
+In questo caso l'approccio alla scala consiste
+nell'aggiungere struttura: livelli, ruoli e momenti di sincronizzazione che il
+livello di team non prevedeva.
 
 \subsection{LeSS}
 
-% L'estremo opposto: fonte l'annex A3.8.3 dell'Agile Practice Guide
-% \cite{agilepracticeguide2}.
-% - L'idea di "descaling": non aggiungere strutture di coordinamento ma
-%   rimuovere complessita' organizzativa; un solo Product Backlog, un solo
-%   Product Owner, uno Sprint comune, feature team invece di component team.
-% - Il contrasto con SAFe e' il vero contenuto della sottosezione: due risposte
-%   opposte allo stesso problema. Vale la pena impostarlo come coppia, perche'
-%   mostra che "scalare l'Agile" non e' una questione tecnica ma una scelta
-%   su quanta struttura sia accettabile.
+\emph{Large Scale Scrum} risponde alla stessa domanda in modo opposto. La guida
+lo definisce un insieme di strumenti per organizzare pi\`u team di sviluppo
+verso un obiettivo comune, ottenuto estendendo Scrum; il suo principio
+organizzatore \`e conservare quanti pi\`u elementi possibile del modello Scrum
+a team singolo, riducendo al minimo le estensioni che potrebbero generare
+complessit\`a o confusione non necessarie \cite{agilepracticeguide2}. La
+tabella~\ref{tab:less} riporta ci\`o che resta invariato e ci\`o che viene
+aggiunto.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Che cosa LeSS conserva di Scrum e che cosa vi aggiunge
+\cite{agilepracticeguide2}.}
+\label{tab:less}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.6cm}X@{}}
+\toprule
+\textbf{} & \textbf{Elementi} \\
+\midrule
+In comune con Scrum &
+Un solo Product Backlog; una sola Definition of Done per tutti i team; un solo
+incremento potenzialmente rilasciabile al termine di ogni Sprint; un solo
+Product Owner; team completi e interfunzionali; uno Sprint comune \\
+\addlinespace
+Aggiunto da LeSS &
+Lo Sprint Planning \`e diviso formalmente in due parti, il che cosa e il come;
+coordinamento fra team per via organica; affinamento del backlog esteso a pi\`u
+team; retrospettiva complessiva dedicata ai miglioramenti fra team \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Per estendere Scrum senza snaturarlo, LeSS si appoggia ai
+principi di discernimento:
+\begin {itemize}
+\item il pensiero sistemico
+\item l'attenzione al prodotto nella sua interezza
+\item la trasparenza 
+\end{itemize}
+
+Il contrasto con SAFe \`e immediato. Le due proposte
+affrontano lo stesso problema in modo opposto: SAFe lo risolve aggiungendo
+livelli, ruoli e pratiche; LeSS lo risolve togliendo tutto ci\`o che non sia
+gi\`a Scrum. Scalare l'Agile non \`e quindi una questione tecnica con una
+soluzione migliore delle altre, ma una scelta su quanta struttura organizzativa
+si ritenga accettabile. La stessa dimensione lungo cui la
+figura~\ref{fig:mappa-approcci} dispone gli approcci.
 
 \subsection{Gli altri approcci scalati}
 
-% Solo citati, breve tabellare
+La tabella~\ref{tab:altri-scalati} riporta gli altri approcci di scala
+citati nella guida.
 
+\begin{table}[htbp]
+\centering
+\small
+\caption{Altri approcci scalati \cite{agilepracticeguide2}.}
+\label{tab:altri-scalati}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.4cm}X@{}}
+\toprule
+\textbf{Approccio} & \textbf{Elemento distintivo} \\
+\midrule
+Scrum of Scrums &
+Tecnica, non framework: un rappresentante per team partecipa a un incontro
+comune, in genere due o tre volte a settimana, per coordinare il lavoro e
+rimuovere gli impedimenti. Nei casi di team ancora pi\`u ampi lo schema si
+ripete su un ulteriore livello \\
+\addlinespace
+Scrum@Scale &
+Estende gli schemi operativi del singolo team Scrum a una rete di team,
+istituendo uno strato di governance dichiaratamente minimo e mantenendo la
+funzione di gestione entro una burocrazia deliberatamente ridotta \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+% ===========================================================================
+
+% ===========================================================================
 \section{Che cosa l'Agile dice del project management}
+\label{sec:pm-agile}
 
-% SEZIONE CARDINE DEL CAPITOLO. E' quella che lo rende un capitolo di project
-% management e non di ingegneria del software, ed e' l'aggancio diretto al
-% filo conduttore della tesi (l'interpretazione del Project Management dal
-% punto di vista dei diversi approcci).
+Finora sono stati descritti i metodi di organizzazione del lavoro.
+Resta da stabilire che cosa ne sia, in quei metodi, della disciplina di cui
+tratta il capitolo precedente.
 
-\subsection{L'assenza del project manager}
+\subsection{Il project manager nei testi agili}
 
-% Da sviluppare:
-% - Constatazione documentale: verificarla e dichiararla per ciascuna fonte
-%   (Manifesto, Scrum Guide, Kanban), perche' e' un'osservazione forte e va
-%   sostenuta.
-% - L'assenza non e' una svista ma una conseguenza: se il team e'
-%   auto-gestito, il coordinamento interno non richiede un ruolo dedicato.
-% - Da segnalare che il PMBOK 8 registra questa situazione dal proprio lato,
-%   osservando che negli approcci adattivi funzioni di project management
-%   possono essere assorbite da product owner, scrum master o agile coach, e
-%   che "l'essenza del project management risiede nelle caratteristiche del
-%   progetto stesso piuttosto che nel titolo dell'individuo che lo
-%   supervisiona" \cite{pmbok8}. Qui il richiamo e' legittimo perche' la
-%   sezione parla del rapporto fra Agile e project management in generale.
+Per studiare la figura del project manager, \`e necessario cosa ogni fonte dice in merito: 
+\begin {itemize}
+\item Il Manifesto non usa mai l'espressione \emph{project
+management} e non nomina alcun ruolo gestionale. 
+\item La \emph{Scrum Guide} definisce tre responsabilit\`a :Product Owner, Scrum Master, Developers 
+e nessuna delle tre \`e un project manager.
+\item Kanban non introduce ruoli, anzi, assume fra i propri principi il rispetto di
+ruoli, responsabilit\`a e titoli gi\`a esistenti.
+\item Solo Feature-Driven Development nomina il project manager.
+\end {itemize}
+
+L'assenza non \`e una dimenticanza ma una conseguenza. Se il team \`e ristretto,
+interfunzionale e si gestisce da s\'e, il coordinamento interno non richiede un
+ruolo dedicato: chi decide che cosa fare \`e il Product Owner, chi decide come
+farlo sono i Developers, e non resta nulla da assegnare a un terzo.
+
+I testi degli enti dicono per\`o qualcosa di diverso, e vale la pena riportarlo.
+L'\emph{Agile Practice Guide} dedica al tema un paragrafo
+intitolato \emph{The Role of the Project Manager}, dove afferma che il ruolo
+tradizionale ha spesso bisogno di essere ridefinito in un contesto agile
+\emph{proprio perch\'e} molti framework agili non lo descrivono
+esplicitamente, e che nondimeno i project manager possono aggiungere valore
+significativo in molte situazioni \cite{agilepracticeguide2}. Il PMBOK 8 si
+esprime dal proprio lato in modo convergente: titoli come \emph{scrum master},
+\emph{agile coach} o \emph{team lead} possono condividere responsabilit\`a di
+project management normalmente svolte da un project manager, e l'essenza del
+project management risiede nelle caratteristiche del progetto stesso piuttosto
+che nel titolo di chi lo supervisiona \cite{pmbok8}.
+
+Le due posizioni non si contraddicono: elaborano lo stesso input e ne traggono
+soluzioni diverse. Dire dunque che \emph{l'Agile non ha un project
+manager} non \`e del tutto corretto in quanto il concetto di project manager
+riguarda le funzioni piuttosto ch\'e il titolo.
 
 \subsection{La ridistribuzione delle funzioni di project management}
 
-La domanda corretta non \`e se l'Agile abbia un project manager, ma dove
-finiscano le funzioni che il capitolo precedente ha visto attribuite a quel
-ruolo.
+\emph{Dove finiscono le funzioni che il capitolo precedente ha visto assegnate al PM?}
+\emph{Come vengono gestite?}
 
-% Da sviluppare, ed e' il contributo analitico piu' originale del capitolo.
-% Metodo suggerito: prendere le funzioni identificate nel capitolo 2 e
-% chiedersi per ciascuna dove si collochi in un impianto agile. Una tabella a
-% due colonne (funzione / collocazione) sarebbe efficace. Funzioni da
-% considerare:
-%   - giustificazione dell'investimento e sua rivalidazione;
-%   - definizione e controllo dell'ambito;
-%   - pianificazione e stima;
-%   - controllo dell'avanzamento e reportistica;
-%   - gestione degli stakeholder;
-%   - gestione del rischio;
-%   - gestione della qualita';
-%   - chiusura e realizzazione dei benefici.
-% Esiti attesi, da verificare fonte alla mano: alcune funzioni si spostano sul
-% Product Owner (valore, priorita', ambito), altre sul team (stima,
-% pianificazione di dettaglio, qualita'), altre risalgono all'organizzazione
-% (finanziamento, benefici), altre ancora NON TROVANO COLLOCAZIONE ESPLICITA
-% in nessuna delle fonti agili esaminate: il rischio e la giustificazione
-% continuativa dell'investimento sono i candidati principali.
-% Quest'ultimo punto e' importante e va detto senza indulgenza: e' una lacuna
-% documentale dei testi agili, non un difetto delle organizzazioni che li
-% adottano, ed e' una delle ragioni per cui nascono gli approcci ibridi.
+Per esaminare il tema e rispondere alle domande in modo oggettivo, useremo come base le sette
+pratiche di PRINCE2, gi\`a esaminate una per una nel capitolo precedente, in quanto
+sono definite da una fonte ufficiale, coprono l'intero
+perimetro della disciplina e non sono state scelte per questo confronto. La
+tabella~\ref{tab:ridistribuzione} cerca di collocare ognuna delle pratiche
+nei metodi agili esaminati e nei testi del PMI.
+
+\begin{table}[!htb]
+\centering
+\small
+\caption{Dove si collocano le sette pratiche PRINCE2 nei metodi agili e nei
+testi del PMI.}
+\label{tab:ridistribuzione}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{1.9cm}XX@{}}
+\toprule
+\textbf{Pratica} & \textbf{Nei metodi agili} & \textbf{Nei testi del PMI} \\
+\midrule
+Business case &
+Product Owner, per valore e ordinamento del backlog; nessuna rivalidazione
+periodica dell'investimento n\'e soglia di abbandono &
+Gestione snella del portafoglio per finanziamento e priorit\`a; il project
+manager allinea gli obiettivi agli esiti strategici e assicura le risorse \\
+\addlinespace
+Organizza\-zione &
+Scrum definisce tre responsabilit\`a e nulla oltre il team; Kanban rispetta i
+ruoli esistenti &
+Composizione del team e chiarimento delle responsabilit\`a; il project manager
+come leader di sostegno \\
+\addlinespace
+Piani &
+Team, per la sola iterazione in corso; nessun livello di pianificazione
+superiore &
+Pianificazione del backlog e coordinamento fra pi\`u team \\
+\addlinespace
+Qualit\`a &
+Team: Definition of Done in Scrum, politiche di processo esplicite in Kanban &
+Stessa collocazione, sostenuta da pratiche di esecuzione \\
+\addlinespace
+Rischio &
+Nessuna collocazione esplicita &
+Fra i compiti del project manager \\
+\addlinespace
+Cambia\-menti &
+La funzione decade: senza \emph{baseline} non esiste controllo delle modifiche,
+e il cambiamento si assorbe riordinando il backlog &
+Governance e conformit\`a rientrano fra i compiti del project manager \\
+\addlinespace
+Progresso &
+Team: incremento funzionante, revisione di Sprint, misure di flusso;
+\emph{escalation} limitata agli impedimenti alla portata dello Scrum Master &
+Misurazione e rendicontazione agli sponsor; il project manager escala e rimuove
+gli impedimenti a livello di organizzazione \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\newpage
+
+La colonna centrale mostra tre casi distinti:
+\begin{itemize}
+  \item Alcune funzioni si spostano sul team e vi restano per intero: la qualit\`a e il
+controllo dell'avanzamento entro l'iterazione.
+ \item  Una decade: il controllo delle
+modifiche non viene riassegnato a nessuno perch\'e viene meno il suo oggetto,
+cio\`e la \emph{baseline} da proteggere.
+ \item Altre non trovano collocazione in
+nessuna delle fonti agili esaminate, e sono il rischio, la rivalidazione
+dell'investimento e tutto ci\`o che attraversa il confine del team.
+\end{itemize}
+
+Quest'ultima  tuttavia non \`e una mancanza degli approcci agili e delle organizzazioni
+che si basano su di essi, va vista e trattata come lacuna documentale dei testi
+agili, che non assegnano quelle funzioni poich\'e non se ne occupano.
+
+Il confronto fra le colonne restituisce per\`o una simmetria che merita
+particolare attenzione: le funzioni che i metodi agili lasciano senza titolare
+sono esattamente quelle che i testi del
+PMI riattribuiscono a un project manager. L'\emph{Agile Practice Guide}
+assegna a quella figura le dipendenze fra team, le aspettative degli
+\emph{stakeholder} esterni, i vincoli organizzativi, la conformit\`a normativa
+e contrattuale, la gestione del rischio, l'acquisizione delle risorse, la
+comunicazione con sponsor e dirigenti e la rimozione degli impedimenti di
+livello organizzativo \cite{agilepracticeguide2}. \`E, punto per punto,
+l'elenco di ci\`o che i metodi non collocano.
+
+I metodi agili non escludono il project manager: non ne parlano. I testi del
+PMI invece lo collocano dove quei metodi tacciono, e grazie a questo non si creano
+contraddizioni.
 
 \subsection{Progetto o prodotto}
 
-% Sottosezione breve ma concettualmente decisiva.
-% - L'Agile ragiona per PRODOTTO: flusso continuo di valore, team stabili nel
-%   tempo, backlog che non si esaurisce. Il progetto e' per definizione
-%   TEMPORANEO, e la temporaneita' e' nella definizione di progetto di tutte le
-%   fonti citate nel capitolo 2, ISO compresa \cite{iso21500-2021}.
-% - Ne segue una tensione concettuale reale e non risolta: un'organizzazione
-%   che adotta pienamente il modello a prodotto smette in un certo senso di
-%   fare progetti, e con essi perde i punti di decisione, la chiusura e la
-%   rendicontazione finale.
-% - Questa tensione va lasciata aperta qui: e' materiale per la sezione
-%   "Verso una definizione sintetica di Project Management" del capitolo 4.
+I metodi agili ragionano per prodotto. La distinzione \`e esplicita nella fonte
+del capitolo: i \emph{product team} sono continui, finanziati sulla base degli
+esiti e responsabili della generazione di valore nel lungo periodo, mentre i
+\emph{project team} sono temporanei e circoscritti alla consegna di un esito
+specifico, di norma con vincoli fissi di tempo e di risorse. Il confronto fra i
+due modi di lavorare tocca l'orizzonte temporale, continuo nel primo caso e
+delimitato da un inizio e una fine nel secondo; il modello di finanziamento,
+continuo e basato sul valore contro fisso e ancorato a consegne o traguardi; e
+il trattamento del cambiamento, iterativo e guidato dal \emph{feedback} contro
+controllo delle modifiche rispetto a una \emph{baseline}
+\cite{agilepracticeguide2}.
 
+La temporaneit\`a, per\`o, non \`e un tratto accessorio del progetto: \`e nella
+sua definizione. Tutte le fonti raccolte nel capitolo precedente la pongono per
+prima: la ISO 21500:2021 definisce il progetto un'iniziativa temporanea per
+raggiungere uno o pi\`u obiettivi definiti \cite{iso21500-2021}, il PMBOK 8
+un'iniziativa temporanea in un contesto unico intrapresa per creare valore
+\cite{pmbok8}.
+
+Questo provoca delle incongruenze concrete in quanto un'organizzazione basata sul
+modello a prodotto smette di fare progetti:
+non ha pi\`u un termine, e con il termine perde i punti di decisione che vi
+erano collegati, la chiusura e la rendicontazione finale.
+
+% ===========================================================================
+
+% ===========================================================================
 \section{Critiche, limiti ed evidenza empirica}
 \label{sec:critiche}
+
+Questa sezione raccoglie tutte le considerazioni e gli aspetti di contorno:
+quanto valga l'evidenza che ne sostiene l'efficacia, che cosa ne dicano gli
+stessi soggetti che li promuovono e in quali contesti incontrino difficolt\`a.
+
+\subsection{La base empirica}
+
+La revisione pi\`u citata in materia \`e quella di Dyb\aa\ e
+Dings\o yr \cite{dyba2008}. Gli autori individuano quasi duemila contributi
+sullo sviluppo agile e ne trattengono trentasei, i soli giudicati di rigore,
+credibilit\`a e rilevanza accettabili: trentatr\'e studi primari e tre
+secondari. Gli ambiti esaminati vanno da progetti professionali a corsi
+universitari. Gli studi si raggruppano in quattro temi: introduzione e
+adozione, fattori umani e sociali, percezioni dei metodi e confronti. Le
+rassegne precedenti, osservano gli autori, consistevano in gran parte in
+resoconti di successo redatti da professionisti, e la conclusione principale
+del lavoro \`e la necessit\`a di studi empirici pi\`u numerosi e migliori
+all'interno di un'agenda di ricerca comune \cite{dyba2008}.
+
+Il dato va riportato per quello che \`e. Trentasei studi utilizzabili su quasi
+duemila contributi non dicono che i metodi agili non funzionino: dicono che a
+quella data la letteratura che li sosteneva era in larga parte narrativa. Il
+rapporto fra la diffusione di questi metodi e la robustezza dell'evidenza che
+li accompagna \`e sbilanciato in favore della prima.
+
+Va aggiunto un limite della fonte stessa: la revisione risale al 2008 e
+rappresenta lo stato della ricerca a quella data, mentre la letteratura \`e progredita.
+La revisione tuttavia ci lascia un consiglio importante: distinguere fra adozione documentata
+ed efficacia dimostrata.
+
+\subsection{Le critiche interne}
+
+Le osservazioni pi\`u difficili da respingere non vengono dall'esterno del
+movimento agile ma dai soggetti che ne promuovono le pratiche.
+L'\emph{Agile Practice Guide} apre rilevando che l'ecosistema agile si \`e
+ampliato e per certi versi contratto, e che questo ha prodotto un divario fra i
+vertici aziendali e la loro percezione del valore delle pratiche agili; ne
+sarebbe seguita una certa disillusione verso team che adottano pratiche agili
+senza produrre risultati significativi \cite{agilepracticeguide2}.
+
+Inoltre, la guida stessa riporta che ruoli come lo \emph{scrum master} e
+concetti come la \emph{servant leadership} sono in corso di riesame, senza che
+siano state concordate alternative universalmente accettate
+\cite{agilepracticeguide2}.
+
+La possibilit\`a di adottare le forme senza i principi \`e del resto parte
+della struttura documentale descritta nella sezione~\ref{sec:manifesto}. Il
+Manifesto non ha un proprietario, non \`e mantenuto da alcun organismo e non
+prevede alcuna verifica di conformit\`a: nessun testo, di conseguenza, consente
+di stabilire se un'organizzazione, un corso o una certificazione siano davvero
+agili (anche se si dichiarano tali).
+
+\subsection{Limiti di contesto}
+
+Tre condizioni ricorrenti mettono in difficolt\`a gli approcci agili, e in tutti
+e tre i casi \`e la fonte del capitolo a documentarlo.
+\begin{itemize}
+  \item La prima riguarda i rapporti contrattuali. 
+  Negli approcci agili l'ambito \`e la variabile che resta libera: budget e tempi
+sono fissati, e che cosa realizzare si decide strada facendo. Un contratto che
+fissi insieme prezzo e ambito toglie proprio quella libert\`a. La guida dedica
+al problema un'appendice, con alcune vie d'uscita
+\cite{agilepracticeguide2}:
+\begin {itemize}
+\item tenere in documenti separati le clausole stabili e quelle che cambiano
+spesso
+\item scomporre l'ambito in piccoli incrementi, ciascuno a prezzo fisso
+\item lavorare a tempo e materiali, ma con un tetto di spesa invalicabile
+\item permettere al committente di recedere in anticipo, o di cambiare
+l'ambito a budget invariato
+\item finanziare un team invece di un ambito
+\end {itemize}
+ \item La seconda riguarda i settori regolamentati, dove ogni decisione va documentata
+in modo che un'autorit\`a esterna possa ricostruirla. La guida
+tratta l'attrito fra governance e conformit\`a fra i problemi ricorrenti
+dell'adozione, suggerisce di coinvolgere presto le funzioni di audit, sicurezza
+e conformit\`a, e riconosce che in settori regolamentati il project manager
+contribuisce a mantenere disciplina di consegna e trasparenza
+\cite{agilepracticeguide2}.
+ \item La terza riguarda la distribuzione geografica dei team. Il sesto principio del
+Manifesto indica nella conversazione diretta il mezzo pi\`u efficace di
+trasmettere informazione \cite{agilemanifesto}, e presuppone dunque una
+condizione che in molte organizzazioni non sussiste. La guida dedica al lavoro
+remoto e ibrido una trattazione autonoma, con pratiche specifiche e fattori di
+successo propri \cite{agilepracticeguide2}: il riconoscimento che quella
+condizione va surrogata anzich\'e data per acquisita.
+\end{itemize}
+
+Ciascuno di questi tre limiti \`e una ragione documentata dell'esistenza degli
+approcci ibridi.
+
+\`E possibole ora riportare tre risultati dell'analisi svolta finora:
+\begin {itemize}
+\item I metodi agili non sostituiscono il project management ma ne ricollocano le funzioni,
+lasciandone alcune senza titolare.
+\item L'unit\`a di riferimento si sposta dal progetto al prodotto.
+\item I confini entro cui l'impianto agile opera senza attriti sono pi\`u stretti
+di quanto la sua diffusione faccia sembrare.
+\end {itemize}
+
 
