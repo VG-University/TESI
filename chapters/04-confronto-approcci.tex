@@ -1,22 +1,413 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CAPITOLO 4 --- CONFRONTO TRA APPROCCI TRADIZIONALI E AGILE
+%
+% Capitolo di sintesi, non di riesposizione: usa i capitoli 2 e 3, non li
+% ripete. Estensione prevista: circa dieci pagine.
+%
+% Struttura:
+%   4.1  Regole del confronto   natura dei testi, livelli, cautela sulle fonti
+%   4.2  Affinita'              quattro assi di convergenza
+%   4.3  Differenze             quattro assi di divergenza
+%   4.4  Separazione e assorbimento   la parte originale del capitolo
+%   4.5  Approcci ibridi        perche' esistono e che cosa sono
+%   4.6  Definizione sintetica  il filo conduttore della tesi
+%
+% IMPOSTAZIONE DECISA PER 4.4: le due strategie discendono dallo statuto dei
+% testi, non dal temperamento degli enti. L'apertura del PMBOK agli approcci
+% adattivi va letta come registrazione di un cambiamento della pratica
+% professionale, non come operazione da giudicare. Nessun giudizio sul PMI.
+%
+% Convenzione di questo file: come nel capitolo 3, il testo visibile e'
+% l'ossatura argomentativa, i blocchi commentati contengono le indicazioni di
+% stesura e le fonti.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \chapter{Confronto tra approcci tradizionali e Agile}
 \label{cap:confronto}
 
-L'obiettivo del capitolo \`e confrontare in modo sistematico i due mondi visti finora.
+I capitoli precedenti hanno descritto separatamente gli approcci
+tradizionali e quelli agili, basandosi ognuno sulle proprie fonti. Questo capitolo 
+ivece confronta e i risultati cercano di avere una visione d'insieme portando alla
+luce dettagli e considerazioni che altrimenti sarebbero rimaste escluse.
 
-\section{Affinit\`a}
+% ===========================================================================
 
-Elementi comuni tra approcci tradizionali e Agile
+% ===========================================================================
+\section{Perch\'e il confronto non \`e immediato}
+\label{sec:regole}
 
-\section{Differenze}
+I testi esaminati finora non sono oggetti dello stesso
+tipo, e metterli l'uno accanto all'altro senza dichiarare a che livello
+avvenga il confronto rischia solo di creare contraddizioni e portare a confusione.
 
-Differenze tra approcci tradizionali e Agile
+I cinque testi assunti nei due capitoli precedenti appartengono a categorie
+diverse:
+\begin {itemize}
+\item il PMBOK 8 \`e un corpo di conoscenza, i cui quaranta processi sono
+dichiarativi non prescrittivi
+\item PRINCE2 \`e un metodo, con una soglia di conformit\`a esplicita: se anche
+uno solo dei sette principi non viene applicato, il progetto non \`e un
+progetto PRINCE2
+\item il Manifesto \`e una dichiarazione di valori, priva di proprietario e di
+qualunque criterio di conformit\`a
+\item la \emph{Scrum Guide} \`e un framework che si dichiara deliberatamente
+incompleto
+\item l'\emph{Agile Practice Guide} \`e una guida pratica, pubblicata
+congiuntamente dal PMI e dall'Agile Alliance
+\end {itemize}
 
+Un metodo e una dichiarazione di valori non sono comparabili: il primo
+stabilisce che cosa fare, la seconda che cosa valorizzare di pi\`u quando due
+esigenze entrano in conflitto.
+
+La sezione~\ref{sec:operativizzazione} ha introdotto l'asse lungo cui i testi si
+dispongono (profondit\`a del dettaglio prescrittivo), dove la
+figura~\ref{fig:mappa-approcci} dispone gli approcci agili. Lo stesso asse
+vale per i testi tradizionali: PRINCE2 prescrive pi\`u del PMBOK, che a sua
+volta prescrive pi\`u della ISO 21500, la quale si limita a contesto e concetti.
+Il confronto per essere utile, deve essere fatto tra testi collocati allo stesso livello,
+PRINCE2 e SAFe oppure il PMBOK e l'\emph{Agile Practice Guide}; contrariamente
+rischia di essere fuoriviante.
+
+\`E necessario fare una precisazione sul PMBOK 8, questo, come gi\`a introdotto
+dalla figura~\ref{fig:pmbok-architettura} \`e composto da due volumi di entit\`a diverse.
+Il primo \`e \emph{The Standard for Project Management}, che costituisce lo
+standard ANSI/PMI 99-001-2025. Il secondo \`e la \emph{PMBOK Guide} vera e
+propria, che non \`e
+un \emph{American National Standard} e non \`e stata processata secondo i
+requisiti ANSI; pu\`o quindi contenere materiale non sottoposto a revisione pubblica
+o a un processo di consenso \cite{pmbok8}.
+
+
+
+% ===========================================================================
+
+% ===========================================================================
+\section{Le affinit\`a}
+
+Le convergenze fra i due mondi sono pi\`u numerose di quanto la
+contrapposizione corrente lasci pensare, e in alcuni casi riguardano il
+meccanismo e non soltanto il vocabolario.
+
+
+
+\begin{itemize}
+\item La prima affinit\`a \`e il meccanismo di controllo, che va confrontato a
+livello di metodo. Negli approcci predittivi si confronta l'avanzamento
+effettivo con una \emph{baseline} stabilita in precedenza e si interviene sulla
+deviazione. In Scrum il controllo empirico confronta ci\`o che si osserva con
+l'obiettivo dell'iterazione in corso e corregge processo o prodotto non appena
+la deviazione emerge \cite{scrumguide2020}. La struttura \`e la stessa: un
+riferimento, un'osservazione, una correzione; cambia soltanto il
+riferimento: un piano fissato all'inizio nel primo caso, contro un obiettivo che dura
+il tempo dell'iterazione nel secondo. Gli approcci agili non rinunciano al
+controllo, ma ne accorciano il ciclo.
+
+\item La seconda \`e pi\`u forte ancora, perch\'e i tre testi enunciano la
+stessa regola. PRINCE2 fa dipendere l'articolazione dei piani dall'orizzonte di
+pianificazione: poich\'e i piani si basano su stime, devono coprire solo il
+periodo per cui \`e possibile pianificare con ragionevole confidenza
+\cite{prince27}. Il PMBOK 8 osserva che pu\`o essere impossibile costruire in
+anticipo una schedulazione dettagliata anche nei progetti condotti con approccio
+predittivo, e descrive la pianificazione a onde progressive come la tecnica che
+consente di elaborarla per step \cite{pmbok8}. Scrum pianifica in dettaglio il
+solo Sprint in corso \cite{scrumguide2020}. Tre formulazioni della stessa
+regola: non pianificare in dettaglio ci\`o che non si conosce ancora.
+
+\item La terza riguarda il modo di collegare il lavoro al beneficio, e si
+confronta a livello di standard. PRINCE2 descrive una sequenza in quattro
+passi: i prodotti consegnati abilitano capacit\`a, che generano esiti, da cui
+derivano i benefici \cite{prince27}. Il PMBOK 8 ne propone una analoga:
+output, esito, beneficio, valore\cite{pmbok8}.
+Gli approcci agili non formulano la sequenza, ma ne
+condividono il significato: l'incremento \`e definito come passo concreto verso
+il Product Goal, non come lavoro completato \cite{scrumguide2020}.
+Questa convergenza ha per\`o una conseguenza: Nel modello tradizionale esiti e benefici si
+manifestano dopo la chiusura del progetto(molti progetti
+riescono sul piano della consegna e falliscono su quello dell'investimento), nel
+modello a prodotto la chiusura non esiste(la verifica del beneficio cade
+dentro l'orizzonte di chi lavora anzich\'e fuori).
+
+\item La quarta affinit\`a in realtà non \`e una convergenza strutturale ma un prestito:
+Il PMBOK 8 tratta esplicitamente la schedulazione a flusso e la riconduce ad
+approcci di massimizzazione del flusso quali il Kanban Method\cite{pmbok8}.
+Un testo tradizionale sta quindi adottando una tecnica nata
+nel mondo agile, la nomina e la colloca fra i propri strumenti.
+Questo \`e sicuramente indice che la separazione fra i due mondi \`e
+meno netta di come viene raccontata.
+
+\end{itemize}
+
+La tabella~\ref{tab:affinita} riassume i quattro assi.
+\begin{table}[htbp]
+\centering
+\small
+\caption{I quattro assi di convergenza fra approcci tradizionali e agili.}
+\label{tab:affinita}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.9cm}XX@{}}
+\toprule
+\textbf{Asse} & \textbf{Approcci tradizionali} & \textbf{Approcci agili} \\
+\midrule
+Meccanismo di controllo &
+Confronto con una \emph{baseline} stabilita all'inizio &
+Confronto con l'obiettivo dell'iterazione in corso \\
+\addlinespace
+Orizzonte di pianificazione &
+Fase di gestione in PRINCE2; pianificazione a onde progressive nel PMBOK &
+Sprint, o flusso continuo in Kanban \\
+\addlinespace
+Catena del valore &
+Prodotti, capacit\`a, esiti, benefici; output, esito, beneficio, valore &
+Incremento, Product Goal, valore consegnato \\
+\addlinespace
+Tecniche di flusso &
+Schedulazione a flusso, ricondotta a Kanban &
+Limitazione del lavoro in corso, misure di flusso \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+
+
+
+% ===========================================================================
+
+% ===========================================================================
+\section{Le differenze}
+
+Anche per le divergenze tra approccio tradizionale e agle \`epossibile 
+identificare quattro punti strutturali:
+
+\begin{itemize}
+    \item Il primo \`e la scelta di che cosa tenere fermo. Negli approcci predittivi
+l'ambito \`e fissato e le variazioni vengono assorbite su tempi e costi; negli
+approcci adattivi tempi e budget sono fissati e la variabile \`e l'ambito. Il
+PMBOK chiama \emph{triangolo invertito} questa inversione \cite{pmbok8}.
+
+    \item Il secondo riguarda la collocazione dell'autorit\`a, e va confrontato a livello
+di metodo. PRINCE2 prevede quattro livelli di gestione, un \emph{project board}
+obbligatorio e vincoli espliciti sulle combinazioni di ruoli \cite{prince27}.
+Scrum prevede tre responsabilit\`a e un team che si autogestisce
+\cite{scrumguide2020}. Fra i due estremi il PMBOK si colloca gi\`a a met\`a
+strada: descrive sette funzioni associate ai progetti, assegnabili a individui o
+a team, e non rende obbligatorio alcun ruolo \cite{pmbok8}. La divergenza
+massima non \`e quindi fra tradizionale e agile, ma fra PRINCE2 e Scrum.
+
+    \item Il terzo riguarda l'unit\`a di riferimento ed \`e stato gi\`a discusso nella
+sezione~\ref{sec:progetto-prodotto}: il progetto \`e temporaneo mentre
+il prodotto non ha termine. I due mondi non misurano la stessa cosa.
+
+    \item Il quarto riguarda la conformit\`a: PRINCE2 dichiara
+quando un progetto sia condotto secondo il metodo, e la dichiarazione ha una
+soglia stabilita: sette principi \cite{prince27}. Il PMBOK non
+prescrive e non definisce alcuna conformit\`a. Per gli approcci agili non esiste
+alcun testo che la definisca. Le tre posizioni non stanno su una scala: la terza
+non \`e una conformit\`a pi\`u debole, \`e l'assenza della nozione stessa.
+\end{itemize}
+
+
+\begin{table}[!htb]
+\centering
+\small
+\caption{I quattro assi di divergenza fra approcci tradizionali e agili.}
+\label{tab:differenze}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.9cm}XX@{}}
+\toprule
+\textbf{Asse} & \textbf{Approcci tradizionali} & \textbf{Approcci agili} \\
+\midrule
+Che cosa \`e fisso &
+L'ambito; tempi e costi assorbono le variazioni &
+Tempi e budget; l'ambito assorbe le variazioni \\
+\addlinespace
+Collocazione dell'autorit\`a &
+\emph{Project board} obbligatorio in PRINCE2; funzioni assegnabili senza ruoli
+obbligatori nel PMBOK &
+Team che si autogestisce, con tre responsabilit\`a e nessun livello superiore \\
+\addlinespace
+Unit\`a di riferimento &
+Il progetto, temporaneo per definizione &
+Il prodotto, privo di termine \\
+\addlinespace
+Conformit\`a &
+Soglia esplicita in PRINCE2; nessuna prescrizione nel PMBOK &
+Nozione assente: nessun testo la definisce \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+
+% ===========================================================================
+
+% ===========================================================================
+\section{Separazione e assorbimento}
+\label{sec:strategie}
+
+Nell'ultimo decennio gli approcci agili diventano un
+riferimento diffuso, e i due testi tradizionali devono
+prenderne atto.
+
+\subsection{La risposta di PRINCE2: separazione}
+
+PRINCE2 riconosce tre metodi di consegna: quello lineare-sequenziale, quello
+iterativo-incrementale e quello ibrido e verso di essi si dichiara neutrale \cite{prince27}.
+
+La neutralit\`a \`e possibile grazie ad una separazione che gi\`a era presente.
+Il livello di consegna era fuori dal perimetro del metodo fin
+dall'inizio: il processo che governa la consegna dei prodotti prevede che il
+\emph{team manager} riceva un \emph{work package}, lo esegua e rendiconti,
+senza specificare come debba lavorare. Gli approcci agili non entrano
+quindi in una struttura che si apre per accoglierli, ma in un vuoto
+gi\`a presente.
+
+Vi \`e per\`o anche un'altra ragione: un
+metodo che dichiara una soglia di conformit\`a non pu\`o assorbire un metodo
+estraneo: se i sette principi
+stabiliscono che cosa sia un progetto PRINCE2, includere fra le proprie
+componenti un metodo che non li applica significherebbe rinunciare alla
+definizione.
+
+\subsection{La risposta del PMI: assorbimento}
+
+Il PMI si muove nella direzione opposta, e lo fa in tre modi:
+\begin{itemize}
+    \item Il primo è strutturale: l'approccio di sviluppo diventa uno spettro (predittivo, ibrido, adattivo)
+e per gli approcci adattivi la guida dedica una trattazione autonoma\cite{pmbok8}.
+
+    \item  Il secondo \`e editoriale:
+l'\emph{Agile Practice Guide} \`e pubblicata congiuntamente dal PMI e
+dall'Agile Alliance \cite{agilepracticeguide2}, cio\`e dall'organizzazione nata
+dall'incontro che ha prodotto il Manifesto.
+
+    \item Il terzo \`e la pubblicazione di
+Disciplined Agile come prodotto proprio.
+
+\end{itemize}
+
+Anche qui la ragione \`e nello statuto del testo: un corpo di
+conoscenza che dichiara di raccogliere la pratica professionale riconosciuta non
+pu\`o ignorare una pratica largamente diffusa senza smentire la definizione che
+d\`a di s\'e. L'assorbimento\`e quindi l'unica mossa compatibile.
+
+\subsection{Disciplined Agile}
+
+Disciplined Agile \`e un \emph{tool kit} di decisioni di processo che integra
+diverse pratiche agili in un unico modello. \`E stato concepito per bilanciare i
+metodi giudicati troppo ristretti nel campo d'azione o troppo prescrittivi nel
+dettaglio \cite{agilepracticeguide2}.
+
+La definizione \emph{tool kit} dariva dal fatto che non \`e formale.
+Un metodo prescrive una
+sequenza di passi; un \emph{tool kit} raccoglie opzioni e lascia la scelta al
+contesto. Due dei principi su cui Disciplined Agile si fonda lo ribadiscono:
+\emph{il contesto conta},ogni situazione \`e unica e il
+modo di lavorare va scelto e fatto evolvere in base alle condizioni,
+e \emph{avere scelta \`e un bene}, per cui vanno mantenute opzioni
+aperte e compresi i compromessi che ciascuna comporta
+\cite{agilepracticeguide2}.
+
+Un terzo principio porta invece la posizione ibrida al
+livello prescrittivo: \emph{essere pragmatici} prescrive di impiegare
+tecniche agili, \emph{lean} o tradizionali a seconda di quale si adatti meglio
+al lavoro da svolgere \cite{agilepracticeguide2}. Il PMI stabilisce
+quindi, fra i propri principi, che la scelta fra i due mondi sia una questione di
+adeguatezza al caso.
+
+
+\subsection{Che cosa dicono le due risposte}
+
+Le due strategie non dipendono dall'orientamento dei due enti ma dallo statuto.
+Un metodo con soglia
+di conformit\`a pu\`o solo separare; un corpo di conoscenza che registra la
+pratica pu\`o solo assorbire.
+
+Il PMBOK 8 dichiara di essere il
+risultato di una rilevazione: decine di migliaia di dati raccolti presso i
+professionisti, squadre indipendenti di esperti, due consultazioni pubbliche
+\cite{pmbok8}. Assunta questa premessa, l'ingresso degli approcci adattivi
+nello standard non \`e una decisione, ma una conseguenza: la pratica
+professionale \`e cambiata, e nel testo viene fuori.
+Gli approcci adattivi sono entrati nel corpo di
+conoscenza perch\'e erano gi\`a entrati nel lavoro.
+
+PRINCE2 invece si dichaira neutrale verso il metodo di consegna, ci\`o significa
+non fornire indicazioni proprio
+nel punto in cui la difficolt\`a si presenta: chi adotta PRINCE2 con un metodo
+di consegna iterativo trova tutto ci\`o che riguarda
+direzione, fasi e giustificazione dell'investimento, e nulla su come quelle
+funzioni si raccordino a un team che si autogestisce. La neutralit\`a preserva
+l'integrit\`a del metodo e lascia il raccordo a chi lo applica.
+
+
+% ===========================================================================
+
+% ===========================================================================
 \section{Scenari di integrazione: approcci ibridi}
 
-Come e perch\'e integrare approcci tradizionali e Agile in scenari reali di progetto.
+Un approccio ibrido nasce
+dal bisogno di collocare le funzioni di project manager, e la scala da qualche parte.
 
+Il PMBOK colloca l'ibrido al
+centro dello spettro degli approcci di sviluppo e lo indica come il pi\`u
+vantaggioso per la maggior parte dei progetti \cite{pmbok8}; PRINCE2 lo
+riconosce come uno dei tre metodi di consegna \cite{prince27}. L'ibrido non \`e
+perci\`o una deviazione tollerata: \`e una posizione che entrambi i testi
+prevedono.
+
+L'\emph{Agile Practice Guide}
+osserva che \emph{ibrido} designa combinazioni troppo diverse fra loro per
+costituire una categoria utile, e riformula perci\`o la consegna come un
+continuum lungo il quale ciascuno sceglie la propria combinazione
+\cite{agilepracticeguide2}.
+
+\`E anche la ragione per cui l'ibrido non \`e una scelta a met\`a, ma una scelta
+di progettazione organizzativa: richiede di decidere, funzione per funzione,
+chi ne risponde.
+
+% ===========================================================================
+
+% ===========================================================================
 \section{Verso una definizione sintetica di Project Management}
 
-Il filo conduttore della tesi \`e l'interpretazione del Project Management, dal punto di vista dei diversi approcci.
-Ora si vuole ricostruire una visione unitaria del Project Management ricomponendo le definizioni viste nei capitoli precedenti.
+Le definizioni raccolte nel capitolo~\ref{cap:tradizionali} divergono
+per alcuni dettagli: La ISO 21500:2021 definisce il progetto un'iniziativa temporanea
+per raggiungere uno pi\`u obiettivi definiti \cite{iso21500-2021}; il PMBOK 8
+un'iniziativa temporanea in un contesto unico, intrapresa per creare valore
+\cite{pmbok8}; PRINCE2 sottolinea l'ambiente controllato entro cui il lavoro si
+svolge \cite{prince27}. Tuttavia il nucleo è lo stesso: esistono attivit\`a
+coordinate, dirette a obiettivi concordati, che qualcuno deve governare.
+
+Gli approcci agili invece non ne forniscono una
+definizione: il Manifesto non nomina mai il project management. La loro
+posizione in merito si ricava quindi a dalle funzioni~\ref{sec:pm-agile}.
+
+Bisogna dunque definire un criterio per una definizione che adattabile a tutti
+gli approcci presi in oggetto. Non pu\`o contenere ruoli, perch\'e il project manager manca nei
+metodi agili; n\'e documenti, perch\'e il \emph{business case} manca in Scrum;
+n\'e fasi, perch\'e l'iterazione a durata fissa manca in Kanban; n\'e riunioni
+ricorrenti, perch\'e nessun testo tradizionale le prescrive. Ognuno di questi
+elementi \`e assente in almeno uno degli approcci, e includerlo significherebbe
+dare una definizione non adatta per quell'approccio.
+
+L'idea è quella di basarsi sulle funzioni che ciascun approccio, \`e costretto a
+trattare.
+
+La definizione che seguir\'a non \'e una novità assoluta; nel PMBOK 8 l'essenza del
+project management sta nelle caratteristiche del progetto e non
+nel titolo di chi lo supervisiona \cite{pmbok8}.
+
+\begin{quote}
+Il project management \`e l'insieme delle funzioni che permettono di gestire
+un'iniziativa a esito incerto:
+\begin{itemize}
+    \item Giustifiare l'investimento
+    \item Attribuire le responsabilit\'a
+    \item Pianificare il lavoro entro un'orizzonte credibile
+    \item Garantire la qualit\'a
+    \item Gestire l'incertezza
+    \item Assorbire il cambiamento e renderne conto
+\end{itemize}
+
+L'approccio utilizzato definisce poi il come e a chi sono assegnate tali
+funzioni.
+\end{quote}
 
