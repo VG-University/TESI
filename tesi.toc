@@ -80,8 +80,5 @@
 \contentsline {subsection}{\numberline {3.4.4}Che cosa dicono le due risposte}{78}{}%
 \contentsline {section}{\numberline {3.5}Scenari di integrazione: approcci ibridi}{78}{}%
 \contentsline {section}{\numberline {3.6}Verso una definizione sintetica di Project Management}{79}{}%
-\contentsline {chapter}{\numberline {4}Stato attuale del Project Management nelle aziende IT}{81}{}%
-\contentsline {chapter}{Conclusioni}{83}{}%
-\contentsline {chapter}{\numberline {A}Prima Appendice}{85}{}%
-\contentsline {chapter}{\numberline {B}Seconda Appendice}{87}{}%
-\contentsline {chapter}{Bibliografia}{89}{}%
+\contentsline {chapter}{Conclusioni}{81}{}%
+\contentsline {chapter}{Bibliografia}{83}{}%
