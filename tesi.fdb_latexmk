@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1790096769.35476 "c:/Users/giann/Documents/GitHub/TESI/tesi.tex" "tesi.pdf" "tesi" 1790096771.21684 0
+["pdflatex"] 1790097028.1961 "c:/Users/giann/Documents/GitHub/TESI/tesi.tex" "tesi.pdf" "tesi" 1790097030.11633 0
   "C:/Users/giann/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1784307986 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/giann/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx0800.pk" 1782821801 19872 0f9ca11b5ce825726b1879e7e2b320ee ""
   "C:/Users/giann/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk" 1782821802 25420 c9d9ca448f3047ceded825704b2becef ""
@@ -191,19 +191,19 @@
   "C:/Users/giann/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty" 1761901070 7243 a2c17f18e2c9b702b84fad03d5f9c78b ""
   "C:/Users/giann/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "c:/Users/giann/Documents/GitHub/TESI/tesi.tex" 1790096167 4480 fb31e7651eb6547b37708a658be80f7d ""
-  "chapters/00-dedica.tex" 1790096768 281 ecfede10ff352584d1339695f2366ab8 ""
-  "chapters/01-introduzione.tex" 1790092018 2850 b4c7ce47517f635e44c7ef4caffec193 ""
+  "chapters/00-dedica.tex" 1790096797 281 ecfede10ff352584d1339695f2366ab8 ""
+  "chapters/01-introduzione.tex" 1790096984 3028 be81bb52ceaf6bc00e15e5a3ed272d98 ""
   "chapters/02-metodi-tradizionali.tex" 1790093600 79859 6598503bc7be242442f452161d26e6db ""
   "chapters/03-approccio-agile.tex" 1790094825 46552 1ba70745fb15e0be8765e2b3ec67f1fc ""
   "chapters/04-confronto-approcci.tex" 1790095975 19410 144505c5926089ac295bb1b4e1f0f624 ""
   "chapters/05-conclusioni.tex" 1790096003 3741 a88b45c16f26e0cd97a2d86358467f6e ""
   "chapters/06-bibliografia.tex" 1789507388 3574 927301304870bda5997680a431229296 ""
   "chapters/frontespizio/frontespizio.pdf" 1790096405 260901 228c546d82eac151d79b96b4337266d7 ""
-  "tesi.aux" 1790096770 21063 218dd43c10301e82ef42223bc66f9a2a "pdflatex"
-  "tesi.lof" 1790096770 1681 7070884da29b0849a06874c9ab8cd478 "pdflatex"
-  "tesi.lot" 1790096770 2703 5027bad96929c66bae800275cffaadb7 "pdflatex"
+  "tesi.aux" 1790097029 21012 4ba8e81d662824fb6c65192533233f24 "pdflatex"
+  "tesi.lof" 1790097029 1681 7070884da29b0849a06874c9ab8cd478 "pdflatex"
+  "tesi.lot" 1790097029 2703 5027bad96929c66bae800275cffaadb7 "pdflatex"
   "tesi.tex" 1790096167 4480 fb31e7651eb6547b37708a658be80f7d ""
-  "tesi.toc" 1790096770 6086 2f583d060e5c6592a74fea7cde845238 "pdflatex"
+  "tesi.toc" 1790097029 6035 16e7922332d38cd25a9b29cb4da658e3 "pdflatex"
   (generated)
   "tesi.aux"
   "tesi.lof"

@@ -1,9 +1,9 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
 \contentsline {chapter}{Introduzione}{i}{}%
-\contentsline {section}{\numberline {0.1}Contesto e obiettivi della tesi}{i}{}%
-\contentsline {section}{\numberline {0.2}Metodologia di analisi}{i}{}%
-\contentsline {section}{\numberline {0.3}Struttura del documento}{ii}{}%
+\contentsline {section}{Contesto e obiettivi della tesi}{i}{}%
+\contentsline {section}{Metodologia di analisi}{i}{}%
+\contentsline {section}{Struttura del documento}{ii}{}%
 \contentsline {chapter}{\numberline {1}Metodi tradizionali di Project Management}{1}{}%
 \contentsline {section}{\numberline {1.1}Cos'\`e il Project Management: origini e definizioni}{1}{}%
 \contentsline {subsection}{\numberline {1.1.1}Evoluzione storica: da Gantt a PERT/CPM}{2}{}%
